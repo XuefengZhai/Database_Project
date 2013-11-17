@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="FACB9517-D774-5C60-DE3D-7BB6AD15519C" directorySegmentName="seg_0" name="Sales_agent">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-17 02:17:48 UTC</createdTime>
+<generatorID>526F3FAB-E769-63CF-407B-8A78A73A9566</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<pkName>Sales_agent_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="sales_agent_id" id="3C34E634-F79B-BF98-244B-F22E4E783F45">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-17 02:17:48 UTC</createdTime>
+<generatorID>5050B002-7D35-A8F5-D04D-669EB27D71C2</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="contract_id" id="F3C14446-8F29-B565-B124-C40855B29651">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-17 02:17:48 UTC</createdTime>
+<generatorID>760B476C-430B-6C8D-3103-B61061410B04</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>16B942D8-C68E-9A3B-2CB0-950466BF0155</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="647A3FD3-BECB-E7C0-8DD9-4CBE1C706431" referredColumn="16B942D8-C68E-9A3B-2CB0-950466BF0155"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="employee_id" id="855478EE-D2E2-6F26-A849-68C8ADF03969">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-17 02:17:48 UTC</createdTime>
+<generatorID>257C576D-FF06-8DDF-AB70-CFFEEF1B3EEB</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="F700F3A3-7694-E51D-1F7F-11248B7EAF88" name="Sales_agent_PK">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-17 02:17:48 UTC</createdTime>
+<generatorID>AB43209B-4B9D-AC5B-8ACA-7A3EB88F6CAA</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="3C34E634-F79B-BF98-244B-F22E4E783F45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="89AFE0B3-7266-308F-F1E4-8203B2F90B26" name="Sales_agent__IDX">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-17 02:17:48 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<indexColumnUsage>
+<colUsage columnID="F3C14446-8F29-B565-B124-C40855B29651"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="6983EC28-6A96-C4E6-6EAC-56F29089BAD8" name="contract_sales_agent">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-17 02:17:48 UTC</createdTime>
+<generatorID>E92FCD83-56C9-0113-F721-11ED0E766F56</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="F3C14446-8F29-B565-B124-C40855B29651"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

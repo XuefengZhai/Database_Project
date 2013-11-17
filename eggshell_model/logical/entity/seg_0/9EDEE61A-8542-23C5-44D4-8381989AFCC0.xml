@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="9EDEE61A-8542-23C5-44D4-8381989AFCC0" directorySegmentName="seg_0" name="Subdivision style option">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-11 00:56:23 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="560F6595-6159-1583-2431-89FF6CCF4FEA" value="true"/>
+</engineerTo>
+<pkName>Subdivision_style_option PK</pkName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Attribute</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="subdivision style option id" id="316EC64B-A7FF-97F6-FC45-0DABE401BD03">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-11 00:56:44 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="560F6595-6159-1583-2431-89FF6CCF4FEA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="subdivision id" id="C8134313-DF55-A7F5-7E3C-0BE6F68DD631">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-11 00:58:04 UTC</createdTime>
+<generatorID>1EB8AFF9-E1C7-69E4-360B-D87F7F645DE6</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="560F6595-6159-1583-2431-89FF6CCF4FEA" value="true"/>
+</engineerTo>
+<referedAttribute>857B7BFB-3B65-D3CA-3584-78B8906BC850</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="style id" id="828062AE-0C43-9621-ED1D-DC244DCC09F2">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-11 16:11:45 UTC</createdTime>
+<generatorID>C3814C34-54F8-754B-3CC7-FE6D7DD48E67</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="560F6595-6159-1583-2431-89FF6CCF4FEA" value="true"/>
+</engineerTo>
+<referedAttribute>4A383B35-2B51-48DA-5846-4F9ED758283C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
+</attributes>
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="0849D9B5-FC6B-686F-358C-87F3297E7288" name="Subdivision_style_option_PK">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-11 00:57:26 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="560F6595-6159-1583-2431-89FF6CCF4FEA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>316EC64B-A7FF-97F6-FC45-0DABE401BD03</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

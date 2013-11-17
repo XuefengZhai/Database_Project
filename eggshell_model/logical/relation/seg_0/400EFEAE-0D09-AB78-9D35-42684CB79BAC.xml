@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="last possible stage rel" id="400EFEAE-0D09-AB78-9D35-42684CB79BAC" directorySegmentName="seg_0">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-17 03:05:46 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="560F6595-6159-1583-2431-89FF6CCF4FEA" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D50916A1-ADD9-9E78-8AFF-E87F84AEEAF1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>96111BE2-2D75-FB51-802F-B1BF16469648</targetEntity>
+<transferable>true</transferable>
+</Relation>

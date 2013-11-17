@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="school_district_school_rel" id="71267EC2-AAB8-6062-EB98-E50BF65B65B7" directorySegmentName="seg_0">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-11 00:50:39 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="560F6595-6159-1583-2431-89FF6CCF4FEA" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7FEDC114-0824-CC1E-26DD-D37C178F4C2E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>43A6A3FC-5AE3-602D-931F-3E33E66F27BD</targetEntity>
+<transferable>true</transferable>
+</Relation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="house sales agent assign rel" id="B30D4AF6-E6EA-C1B8-77F0-9F8DC83F5692" directorySegmentName="seg_0">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-11 00:23:14 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="560F6595-6159-1583-2431-89FF6CCF4FEA" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>116358B9-0DBA-D749-4F23-FFC5F1C55A02</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9D3A55CC-0FB7-7865-35D8-3DFF7D34C118</targetEntity>
+<transferable>true</transferable>
+</Relation>

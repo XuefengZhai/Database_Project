@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="sales_agent_employee_rel" id="0D6CF176-FFBF-62FA-8AA8-A4EC775050DB" directorySegmentName="seg_0">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-11 17:28:40 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="560F6595-6159-1583-2431-89FF6CCF4FEA" value="true"/>
+</engineerTo>
+<dominantRole>8FFFF711-A437-0904-0962-79C12BE4193A</dominantRole>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>526F3FAB-E769-63CF-407B-8A78A73A9566</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>8FFFF711-A437-0904-0962-79C12BE4193A</targetEntity>
+<transferable>true</transferable>
+</Relation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="subdivision_style_rel" id="1EB8AFF9-E1C7-69E4-360B-D87F7F645DE6" directorySegmentName="seg_0">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-11 00:58:04 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="560F6595-6159-1583-2431-89FF6CCF4FEA" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>66241B9B-CF86-20CA-76FC-71C12C6A1D52</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9EDEE61A-8542-23C5-44D4-8381989AFCC0</targetEntity>
+<transferable>true</transferable>
+</Relation>
