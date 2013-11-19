@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="992A5B1F-055C-9366-6DC9-F07C2186DF8F" name="Construction project">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>B1A5A8B5-2E0C-CCB0-36F6-D46FDA623FB1</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="construction project id" id="56867A57-20A4-4E27-5E29-10115BED861F">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>110E7049-1257-61A9-F8C6-0C4D790457C5</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
+<Attribute name="house id" id="441EA6D7-8522-75F3-DC6A-AD400A127477">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>A6AF41D1-4B8B-06DE-9A2A-81DD3FD1BA01</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<referedAttribute>A88E0069-510D-5467-64A7-13C2859E2B7D</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
+<Attribute name="project manager id" id="5CD27766-A814-FB66-1292-9E536004D532">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<comment>project_manager_id</comment>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>91925FA8-1939-E4E5-CC6B-1826501C3FBF</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<referedAttribute>A7CDEF2E-AE63-F12B-CFDD-421121F93CC3</referedAttribute>
+<synonym>project_manager_id</synonym>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<preferredAbbreviation>project_manager_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="state date" id="C00F7CEC-0554-092D-90D8-944FE08A6168">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>D565C4D0-9C2A-5747-49E8-94608DA2D4E4</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>2FF7B1E7-B0D4-FE14-1A61-196E6487640C</domain>
+</Attribute>
+<Attribute name="estimated completion date" id="11F9CD3B-E028-59C4-1567-017295D857A3">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>760B7463-5845-0D60-95E4-0CF3561770E0</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>2FF7B1E7-B0D4-FE14-1A61-196E6487640C</domain>
+</Attribute>
+<Attribute name="end date" id="FC596476-EB25-58E4-BA02-9E35F0374EBF">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>E659EED0-FEAE-08E9-F7F3-DD9203B47335</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>2FF7B1E7-B0D4-FE14-1A61-196E6487640C</domain>
+</Attribute>
+<Attribute name="employee id" id="5E22F104-11DF-F782-937D-DE98ADD37715">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>0960CC07-415B-7A44-3CF9-D98EE714A2B8</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<referedAttribute>A7CDEF2E-AE63-F12B-CFDD-421121F93CC3</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
+<Attribute name="house id1" id="B05909CA-7573-F03D-2257-0F7F9F34D757">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>02F37912-C38E-8D24-E9B4-175381B050CA</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<referedAttribute>A88E0069-510D-5467-64A7-13C2859E2B7D</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BC6E2203-4A90-5C74-A0CC-381EAC1868FB" name="Construction_project_PK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>0FA8B617-856F-50FF-E2E1-E68BCD94E6CD</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>56867A57-20A4-4E27-5E29-10115BED861F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

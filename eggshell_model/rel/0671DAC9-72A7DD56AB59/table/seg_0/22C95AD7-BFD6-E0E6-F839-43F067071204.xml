@@ -1,0 +1,173 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="22C95AD7-BFD6-E0E6-F839-43F067071204" name="House">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>D59730B6-A2C4-835C-5000-7C888EC342ED</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>2EB589CE-8056-534A-38BE-844AB9DCD7E9</importedID>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="house_id" id="B313FA2C-1C85-4715-1434-5EA9D7A53E47">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>477421AD-A93D-EAD2-B400-602BBE69C688</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lot_id" id="26C24F01-9E7D-A898-3D65-DFC2FA19D08C">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>24FBDF6D-976B-6E4B-E502-BF5C39CCC9C8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="escrow_amount" id="ECD7E01B-15AA-B089-A048-E496CD20DA58">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>87430727-A752-671C-6A77-C8ADB746800B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>42CFCA16-5DF7-76B8-C211-FEDB73AE3C57</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_reversed" id="0B50A11F-CF11-3549-AD7E-70BAFC2C70D2">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>F7B80627-8DD5-EFD2-0784-41F3AF504484</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>F6CF928F-8DCF-CFF7-420C-450DC2BF973F</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="financing_info" id="973CA26E-1EFE-BE4D-AF5E-FFA023D08A80">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>DF5D8156-E1B6-74DF-7224-558BDB2A11F9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="house_style_id2" id="D9EF5CBF-512B-3BC5-DAA5-8A2FED6FD06F">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>563362F8-271F-7592-CC7A-37279A94F25B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>D6D53329-EDDA-7116-802C-68FA5DE96A5B</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BCDB3C50-7716-8186-64E1-B05A9F370429" referredColumn="D6D53329-EDDA-7116-802C-68FA5DE96A5B"/>
+</associations>
+</Column>
+<Column name="Attribute_2" id="48C8422C-6D88-8525-6AD4-5B78B58199A8">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>799A80C7-8787-99C5-E764-5C197120C41A</importedID>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contract_id" id="7C51351D-48D9-E013-424C-F39B61BFC8A1">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>E344A037-3C78-F35A-F788-71374C8CEA7F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>3A1471F6-6638-73F2-A8C1-B37B414FC6C1</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="12707125-AB7C-D2F0-057E-EC66EF18D981" referredColumn="3A1471F6-6638-73F2-A8C1-B37B414FC6C1"/>
+</associations>
+</Column>
+<Column name="construction_project_id" id="44E01203-3438-8668-BF49-16C6BA9C24F5">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>53DEFA41-D897-0B1C-9241-24520BBD6142</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>EB4A97CB-8315-40D7-D081-077A767F5CA0</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4B4F40F9-BFB1-BA30-1021-45FF8E9B029F" referredColumn="EB4A97CB-8315-40D7-D081-077A767F5CA0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A6FFE62A-EB46-10B8-C2F7-B5B31AAE2D1B" name="House PK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>C00C53A4-3ACD-51BF-FAAA-17EAF1DA9810</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>88E65450-6FEB-3554-74D6-306A63E4BA73</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B313FA2C-1C85-4715-1434-5EA9D7A53E47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC63642B-C662-A42E-31F8-E1A09CF0C7FA" name="House__IDX">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>C6811BC3-5F81-1424-F955-EC537D7824CD</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C51351D-48D9-E013-424C-F39B61BFC8A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C07E5B05-E9CC-0D5E-AEC5-039D87B2CF0F" name="House_construction_project_rel">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>F07E58D8-49ED-7425-6B8D-7C901A068354</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44E01203-3438-8668-BF49-16C6BA9C24F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="41724428-6D39-474F-6D0C-959FAF647707" name="house_house_style_rel">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>ADC2435C-8C17-428F-0FC1-28BFF72FF351</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9EF5CBF-512B-3BC5-DAA5-8A2FED6FD06F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D607B396-8C86-F95F-2CA5-C998D8EB2754" name="house_contract">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>D0DB62E6-51F7-272D-F42B-C0DADFA5DCEE</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C51351D-48D9-E013-424C-F39B61BFC8A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

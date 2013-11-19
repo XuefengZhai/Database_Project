@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7CA1ED44-C025-0458-BDCD-73C199A229F2" name="Stage_code_table">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>C73C7665-6C3C-6B23-0031-D6FB7F6C1CC8</importedID>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="stage_id" id="D8964F80-DDDD-B7CE-DAF3-FAD075C2DA18">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>9C7141F2-628A-8F6E-CC97-01AF66B05A45</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="number" id="57E16C26-7D6A-CEB1-D340-D935AB416829">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>5802B0F2-D393-9017-DC8C-56E53E5B32CC</importedID>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="94474361-1C6B-A0F9-0FF3-7CC572C1C884">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>47050E1E-F4AF-EDA8-1D92-A911BB617F42</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F6DC742-E579-9F3D-EB3F-7388EDCABD4A" name="Stage_code_table PK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>4D173F34-4513-BDC0-8CB0-3F8C75664742</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8964F80-DDDD-B7CE-DAF3-FAD075C2DA18"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

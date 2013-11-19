@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B1031CDF-D7FE-E9CE-710E-A7936B34421A" name="Customer">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>F3E9DEDF-D625-3315-1A83-BB41CBBFBA6C</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="customer id" id="8474858E-5410-EF83-2980-F34C44325F0D">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>37451B39-3BB6-9E85-2FE0-6D6A72AC7617</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
+<Attribute name="user id" id="C0B4EF5D-2055-8C34-F0FF-6DDE34959FDB">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>356AD3AA-AC86-9DC2-30CB-E6F7D236EBA1</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>DF6E9B81-1B34-77AB-97F6-96E0B7FDF13C</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>7A5E15CC-81E5-CE94-A7DF-8586DF105D0A</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
+<Attribute name="contract id" id="A3C4DB74-4CB4-3FCD-8693-4F562C398E60">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>929AD285-8E77-99F5-220E-881FE1B19E1D</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>4624D7F9-96A2-93C7-F526-CE18F6741053</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<referedAttribute>89644A5E-3E99-651E-9921-D133A8F05D65</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
+<Attribute name="mortgage info" id="B81645D5-309F-C0E1-ABA4-AB91782D6194">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>B32E71C1-1DE7-8338-8702-838F7C34B159</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</domain>
+</Attribute>
+<Attribute name="first name" id="D68DA889-BF54-A41D-651C-F42273EE6ED4">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>CB373D38-B2A5-B575-1A24-85F78AE12CB2</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>86AA045B-36F3-1583-4152-E165A08977B7</domain>
+</Attribute>
+<Attribute name="last name" id="176D82CA-8230-B2E3-0F7F-FBEBD48DBA40">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>71B53118-E74F-AE08-9D18-6BF07771D96F</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>86AA045B-36F3-1583-4152-E165A08977B7</domain>
+</Attribute>
+<Attribute name="phone number" id="D420E77B-FC71-DCBB-0F9E-4607B1D4009E">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>B1F7A6D1-CBDF-B975-A932-1F45D5C38025</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>40E07E34-97A2-BAF2-36CF-C6FC09EE1E1E</domain>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E14145D6-FF61-319A-E7B4-05F1A937003C" name="Customer PK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>65CC6DC3-88D4-1CD2-38F4-3CFFA636592A</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8474858E-5410-EF83-2980-F34C44325F0D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

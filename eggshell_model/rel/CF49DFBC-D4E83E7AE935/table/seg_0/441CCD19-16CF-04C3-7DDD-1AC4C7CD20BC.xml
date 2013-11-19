@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="441CCD19-16CF-04C3-7DDD-1AC4C7CD20BC" name="Crew">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>0FEA02A8-21E4-1A4A-140D-D4831FC83A75</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="crew_id" id="D04EA7A0-04A6-0B43-B91F-111D4AFE2907">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>F95C03CA-86DE-F67E-1A92-2B056DD1E264</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="manager_id" id="1E235C06-6798-FCD0-163A-65A90B4954C8">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>4E67518D-F21A-9924-3B51-2BFE85353305</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="construction_worker_id" id="E480B12C-A4C4-E9C2-8274-D081C6179E7B">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>7AC4D43C-9A82-7176-29AF-C69D1437BD2F</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>FD6DC570-E9A0-FFB5-CB80-DEBB41914391</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0781A012-7410-C36D-BA58-E5C8F29D3E89" referredColumn="FD6DC570-E9A0-FFB5-CB80-DEBB41914391"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="74834264-6B72-A7C7-84FC-657933F44AC8" name="Crew_PK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>31827DCB-0D65-9A1A-BBE1-6A71DAD1AA9B</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D04EA7A0-04A6-0B43-B91F-111D4AFE2907"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CF2B48A-FB5B-4EB4-D764-812C1A8E1643" name="Crew__IDX">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>7D9BC73D-F638-6FE6-AF04-985557B7D3EF</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="E480B12C-A4C4-E9C2-8274-D081C6179E7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27ADD99A-87D3-1C5E-F92D-0F548F2AFAB3" name="Crew_Construction_worker_FK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>7D9BC73D-F638-6FE6-AF04-985557B7D3EF</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E480B12C-A4C4-E9C2-8274-D081C6179E7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

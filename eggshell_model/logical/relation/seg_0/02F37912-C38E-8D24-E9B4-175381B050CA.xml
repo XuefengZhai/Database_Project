@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="House_construction_project_rel" directorySegmentName="seg_0" id="02F37912-C38E-8D24-E9B4-175381B050CA">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>F07E58D8-49ED-7425-6B8D-7C901A068354</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<targetPk>C00C53A4-3ACD-51BF-FAAA-17EAF1DA9810</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>992A5B1F-055C-9366-6DC9-F07C2186DF8F</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>D59730B6-A2C4-835C-5000-7C888EC342ED</targetEntity>
+<transferable>true</transferable>
+</Relation>

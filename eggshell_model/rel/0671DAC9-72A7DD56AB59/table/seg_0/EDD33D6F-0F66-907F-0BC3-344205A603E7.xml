@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EDD33D6F-0F66-907F-0BC3-344205A603E7" name="Stage_selected_option">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>10F44642-F4F4-70B5-DF18-A4D00E4C7EA6</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>51E51C22-306B-D779-BF3E-6510AD57CDDE</importedID>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="option_for_stage_id" id="417F5013-8EBC-8A93-42B1-1E8DDBE38FDC">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>475B7ADD-FB25-CF7B-7A3E-36600571FAE8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>E169615D-0A54-96B3-19E3-C30C65DEB2DF</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9DCEC21E-5DED-F6FA-51DD-D11B78DD7E70" referredColumn="E169615D-0A54-96B3-19E3-C30C65DEB2DF"/>
+</associations>
+</Column>
+<Column name="stage_selected_option" id="1C62CA49-0639-5B6B-A890-58B5732E79A8">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>E0171C77-FB80-BE47-2B3D-5CE905F5EE57</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="house_id" id="0D42F0D3-F550-A7C4-058F-A4969427BFB9">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>7587F9D7-F55E-7DF7-B0C3-F2F89DA3F694</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>B313FA2C-1C85-4715-1434-5EA9D7A53E47</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D84CD1F-4BD7-1655-48FB-0C5C728A5493" referredColumn="B313FA2C-1C85-4715-1434-5EA9D7A53E47"/>
+</associations>
+</Column>
+<Column name="task_id" id="EA50ADC6-4647-448A-7298-3013F73A42F1">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>44FBD1F3-E42B-01F2-4BCC-08BE321E0F9F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>B03A9577-3611-7B70-4D14-6050DE22AA78</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="471D72DF-6254-A794-CF24-88CCF4B9234C" referredColumn="B03A9577-3611-7B70-4D14-6050DE22AA78"/>
+</associations>
+</Column>
+<Column name="room_assignment_id1" id="B07500BB-7BD2-B1AD-4C7B-22CB05366C9C">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>5BE713F7-8800-86A7-135C-9E88FFEA83C8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>85256F79-B131-3166-C3CC-FF5CC9A61B29</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="95D52188-FB56-D655-2678-5B8BF8833B0C" referredColumn="85256F79-B131-3166-C3CC-FF5CC9A61B29"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="93A6AF6E-6A96-81CA-E86D-E4D48192D81A" name="Stage_selected_option PK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>F1D1B2BD-FEB9-6C87-C33A-8BBA87C4D298</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>5000A297-B669-31AF-BA6A-9A98CF63B204</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C62CA49-0639-5B6B-A890-58B5732E79A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63DC95EA-D85C-E9C2-15C5-F082F19B4B17" name="Stage_selected_option__IDX">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>EAAE9B4A-CE34-A28E-C405-AF179247A527</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA50ADC6-4647-448A-7298-3013F73A42F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF7F921F-FEAC-9669-EA72-A8FC4A937F93" name="house_stage_selected_option_rel">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>A90E503D-5D46-5954-2926-0398E4C20D13</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D42F0D3-F550-A7C4-058F-A4969427BFB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C39DA85C-00D4-36AE-7948-1BB8D7270189" name="stage_selected_task_rel">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>4AE563FD-1385-AE6B-725A-79C4AC6DEC59</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA50ADC6-4647-448A-7298-3013F73A42F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="973B909F-34D4-715A-C742-6F610EB3CC12" name="stage_selected_option_room_rel">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>189B2C6C-CF59-E841-E5EE-B16F3DB069B0</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B07500BB-7BD2-B1AD-4C7B-22CB05366C9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D19BD788-A2FA-D04E-6CAD-AC19372FD90A" name="stage_stage_option">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>A0320B1E-A455-22FC-B1C7-277DB7FFA672</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="417F5013-8EBC-8A93-42B1-1E8DDBE38FDC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

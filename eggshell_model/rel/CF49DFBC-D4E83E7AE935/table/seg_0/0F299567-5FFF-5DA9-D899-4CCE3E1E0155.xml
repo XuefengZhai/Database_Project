@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0F299567-5FFF-5DA9-D899-4CCE3E1E0155" name="Construction_worker">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>3A63D5AF-55A3-E1B6-CD64-9E1C55902BA1</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="construction_worker_id" id="FD6DC570-E9A0-FFB5-CB80-DEBB41914391">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>DEA9D2CC-ED21-B48A-E16E-6815C3FF0099</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_id" id="B421FCF0-D65D-47E2-B48C-CCB8C5B84CC4">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>27B6A996-7A33-C9E1-2F7D-709C87F23044</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="skills" id="37C403A7-DEEE-B10B-91FA-8204A01B8D5F">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>841B9B7B-C934-6C90-1F4B-A3675E38F7F7</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_id1" id="55E8A8A1-01C3-08B2-D17B-77BF8E6D13AC">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>3E600CC9-79D6-C2BC-FDB7-3E215F75F29E</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>7BCC9979-C780-72C4-39C9-A3C5C4084F14</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="774112D7-B0C9-4E4C-273E-9D48420B9A12" referredColumn="7BCC9979-C780-72C4-39C9-A3C5C4084F14"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE1931DD-0856-877D-15AE-AEC3FD9A3302" name="Construction_worker_PK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>BD2D0619-BA53-00D2-D2D5-CCBD69A071DF</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD6DC570-E9A0-FFB5-CB80-DEBB41914391"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="48D9598E-A4C4-507B-4C57-0EFBEA13BBB1" name="Construction_worker__IDX">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>0EAA76FA-68C6-47F0-A237-937920FD2DC4</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="55E8A8A1-01C3-08B2-D17B-77BF8E6D13AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="016DE079-3247-CEA7-D063-4335A9DCC41A" name="Construction_worker_Employee_FK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>0EAA76FA-68C6-47F0-A237-937920FD2DC4</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55E8A8A1-01C3-08B2-D17B-77BF8E6D13AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

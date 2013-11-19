@@ -2,17 +2,21 @@
 <DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="defaultdomains">
    <domains>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="email" id="06246EB8-5867-28F6-D772-4765119B2DE8">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-17 01:07:19 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-18 18:27:14 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
+         <importedID>06246EB8-5867-28F6-D772-4765119B2DE8</importedID>
          <avTSortOrder>0</avTSortOrder>
          <dataTypeSize>25</dataTypeSize>
          <fileName>defaultdomains</fileName>
          <logicalDatatype>LOGDT024</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="email LIKE &amp;apos;%@%&amp;apos;"/>
+         </checkConstraint>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="percent" id="13B81282-A966-2A6C-1FA1-5D69B2E11F8D">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-11 14:31:44 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>13B81282-A966-2A6C-1FA1-5D69B2E11F8D</importedID>
          <avTSortOrder>0</avTSortOrder>
@@ -22,8 +26,8 @@
          <logicalDatatype>LOGDT019</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="numeric_id" id="1C83044F-F4AD-B495-5726-6FF2A6D331C5">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-02 11:52:20 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>1C83044F-F4AD-B495-5726-6FF2A6D331C5</importedID>
          <avTSortOrder>0</avTSortOrder>
@@ -33,8 +37,8 @@
          <logicalDatatype>LOGDT019</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="date" id="2FF7B1E7-B0D4-FE14-1A61-196E6487640C">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-10 21:28:39 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>2FF7B1E7-B0D4-FE14-1A61-196E6487640C</importedID>
          <avTSortOrder>0</avTSortOrder>
@@ -42,8 +46,8 @@
          <logicalDatatype>LOGDT008</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="type" id="3295C118-96D2-925D-C8AD-6EF54944255A">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-10 22:01:47 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>3295C118-96D2-925D-C8AD-6EF54944255A</importedID>
          <avTSortOrder>0</avTSortOrder>
@@ -52,8 +56,8 @@
          <logicalDatatype>LOGDT024</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="street" id="36D2249F-8453-1EF4-FE68-9EC84FC541BF">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-02 02:41:18 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>36D2249F-8453-1EF4-FE68-9EC84FC541BF</importedID>
          <avTSortOrder>0</avTSortOrder>
@@ -62,17 +66,17 @@
          <logicalDatatype>LOGDT024</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="is_active" id="3F67407E-BBF3-29CB-9676-B2C96D674A93">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-17 17:25:06 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-18 18:27:14 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
+         <importedID>3F67407E-BBF3-29CB-9676-B2C96D674A93</importedID>
          <avTSortOrder>0</avTSortOrder>
-         <defaultValue>true</defaultValue>
          <fileName>defaultdomains</fileName>
          <logicalDatatype>LOGDT006</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="zipcode" id="3F78F865-5F81-7CD9-3E48-851757EE5DEA">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-02 02:42:10 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>3F78F865-5F81-7CD9-3E48-851757EE5DEA</importedID>
          <avTSortOrder>0</avTSortOrder>
@@ -81,8 +85,8 @@
          <logicalDatatype>LOGDT024</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="phone" id="40E07E34-97A2-BAF2-36CF-C6FC09EE1E1E">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-02 02:44:28 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>40E07E34-97A2-BAF2-36CF-C6FC09EE1E1E</importedID>
          <avTSortOrder>0</avTSortOrder>
@@ -91,8 +95,8 @@
          <logicalDatatype>LOGDT024</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="escrow_amount" id="42CFCA16-5DF7-76B8-C211-FEDB73AE3C57">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-10 21:48:15 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>42CFCA16-5DF7-76B8-C211-FEDB73AE3C57</importedID>
          <avTSortOrder>0</avTSortOrder>
@@ -103,8 +107,8 @@
          <logicalDatatype>LOGDT019</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="price" id="45E88AC4-E9B6-166A-D114-E2A0D4BE2282">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-11 14:45:56 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>45E88AC4-E9B6-166A-D114-E2A0D4BE2282</importedID>
          <avTSortOrder>0</avTSortOrder>
@@ -114,8 +118,8 @@
          <logicalDatatype>LOGDT019</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="latitude_longitude" id="4BCCE704-B58C-501E-940C-C630A7B16250">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-11 00:46:48 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>4BCCE704-B58C-501E-940C-C630A7B16250</importedID>
          <avTSortOrder>0</avTSortOrder>
@@ -123,17 +127,18 @@
          <logicalDatatype>LOGDT026</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="password_recovery_q_a" id="5A92A68D-FEA6-3147-D88F-944C0B9FD1D0">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-17 01:08:21 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-18 18:27:14 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
+         <importedID>5A92A68D-FEA6-3147-D88F-944C0B9FD1D0</importedID>
          <avTSortOrder>0</avTSortOrder>
          <dataTypeSize>50</dataTypeSize>
          <fileName>defaultdomains</fileName>
          <logicalDatatype>LOGDT024</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="map" id="7215B1A5-BC3B-7FBD-DD04-378B227A4FCD">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-11 00:31:50 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>7215B1A5-BC3B-7FBD-DD04-378B227A4FCD</importedID>
          <avTSortOrder>0</avTSortOrder>
@@ -141,8 +146,8 @@
          <logicalDatatype>LOGDT010</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="description" id="7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-10 21:30:15 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</importedID>
          <avTSortOrder>0</avTSortOrder>
@@ -151,18 +156,17 @@
          <logicalDatatype>LOGDT024</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="is_main_sales_agent" id="821CBC73-2DD2-8FEB-B71A-BE21387296EE">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-11 16:27:06 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>821CBC73-2DD2-8FEB-B71A-BE21387296EE</importedID>
          <avTSortOrder>0</avTSortOrder>
-         <defaultValue>false</defaultValue>
          <fileName>defaultdomains</fileName>
          <logicalDatatype>LOGDT006</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="name" id="86AA045B-36F3-1583-4152-E165A08977B7">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-10 21:32:28 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>86AA045B-36F3-1583-4152-E165A08977B7</importedID>
          <avTSortOrder>0</avTSortOrder>
@@ -171,8 +175,8 @@
          <logicalDatatype>LOGDT024</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="integer" id="B14E95A0-A9EE-186A-1FAA-220A57BC1F34">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-11 14:34:54 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>B14E95A0-A9EE-186A-1FAA-220A57BC1F34</importedID>
          <avTSortOrder>0</avTSortOrder>
@@ -180,36 +184,109 @@
          <logicalDatatype>LOGDT011</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="state" id="B26A9CB8-8453-6ACF-5F8B-0F2552EDFCF3">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-02 02:43:31 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>B26A9CB8-8453-6ACF-5F8B-0F2552EDFCF3</importedID>
          <avTSortOrder>0</avTSortOrder>
          <dataTypeSize>2</dataTypeSize>
          <fileName>defaultdomains</fileName>
          <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="AK" description="ALASKA"/>
+            <valueDef value="AL" description="ALABAMA"/>
+            <valueDef value="AR" description="ARKANSAS"/>
+            <valueDef value="AZ" description="ARIZONA"/>
+            <valueDef value="CA" description="CALIFORNIA"/>
+            <valueDef value="CO" description="COLORADO"/>
+            <valueDef value="CT" description="CONNECTICUT"/>
+            <valueDef value="DE" description="DELEWARE"/>
+            <valueDef value="FL" description="FLORIDA"/>
+            <valueDef value="GA" description="GEORGIA"/>
+            <valueDef value="HI" description="HAWAII"/>
+            <valueDef value="IA" description="IOWA"/>
+            <valueDef value="ID" description="IDAHO"/>
+            <valueDef value="IL" description="ILLINOIS"/>
+            <valueDef value="IN" description="INDIANA"/>
+            <valueDef value="KS" description="KANSAS"/>
+            <valueDef value="KY" description="KENTUCKY"/>
+            <valueDef value="LA" description="LOUISIANA"/>
+            <valueDef value="MA" description="MASSACHUSETTS"/>
+            <valueDef value="MD" description="MARYLAND"/>
+            <valueDef value="ME" description="MAINE"/>
+            <valueDef value="MI" description="MICHIGAN"/>
+            <valueDef value="MN" description="MINNESTOA"/>
+            <valueDef value="MO" description="MISSOURI"/>
+            <valueDef value="MS" description="MISSISSIPPI"/>
+            <valueDef value="MT" description="MONTANA"/>
+            <valueDef value="NC" description="NORTH CAROLINA"/>
+            <valueDef value="ND" description="NORTH DAKOTA"/>
+            <valueDef value="NE" description="NEBRASKA"/>
+            <valueDef value="NH" description="NEW HAMPSHIRE"/>
+            <valueDef value="NJ" description="NEW JERSEY"/>
+            <valueDef value="NM" description="NEW MEXICO"/>
+            <valueDef value="NV" description="NEVADA"/>
+            <valueDef value="NY" description="NEW YORK"/>
+            <valueDef value="OH" description="OHIO"/>
+            <valueDef value="OK" description="OKLAHOMA"/>
+            <valueDef value="OR" description="OREGON"/>
+            <valueDef value="PA" description="PENNSYLVANIA"/>
+            <valueDef value="RI" description="RHODE ISLAND"/>
+            <valueDef value="SC" description="SOUTH CAROLINA"/>
+            <valueDef value="SD" description="SOUTH DAKOTA"/>
+            <valueDef value="TN" description="TENNESSEE"/>
+            <valueDef value="TX" description="TEXAS"/>
+            <valueDef value="UT" description="UTAH"/>
+            <valueDef value="VA" description="VIRGINIA"/>
+            <valueDef value="VT" description="VERMONT"/>
+            <valueDef value="WA" description="WASHINGTON"/>
+            <valueDef value="WI" description="WISCONSIN"/>
+            <valueDef value="WV" description="WEST VIRGINIA"/>
+            <valueDef value="WY" description="WYOMING"/>
+         </listOfValues>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="password" id="C3BC60B5-E4AC-9E2D-8E44-A9A3EDE1F49F">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-17 01:07:50 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-18 18:27:14 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
+         <importedID>C3BC60B5-E4AC-9E2D-8E44-A9A3EDE1F49F</importedID>
          <avTSortOrder>0</avTSortOrder>
          <dataTypeSize>16</dataTypeSize>
          <fileName>defaultdomains</fileName>
          <logicalDatatype>LOGDT024</logicalDatatype>
       </Domain>
-      <Domain class="oracle.dbtools.crest.model.design.Domain" name="stage_number" id="D2545A4D-3262-B77A-2A7C-63A345F86857">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-17 02:19:55 UTC</createdTime>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="option_type" id="CFE589A4-C8F9-1DE2-BCBC-C7C1F1FD842B">
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-19 03:54:58 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>25</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="Decoration" description="Decoration"/>
+            <valueDef value="Electrical" description="Electrical"/>
+            <valueDef value="Exterior" description="Exterior"/>
+            <valueDef value="Interior" description="Interior"/>
+            <valueDef value="Plumbing" description="Plumbing"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="stage_number" id="D2545A4D-3262-B77A-2A7C-63A345F86857">
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-18 18:27:14 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>D2545A4D-3262-B77A-2A7C-63A345F86857</importedID>
          <avTSortOrder>0</avTSortOrder>
          <dataTypeSize>1</dataTypeSize>
          <fileName>defaultdomains</fileName>
          <logicalDatatype>LOGDT019</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="stage_number &amp;lt;= 7"/>
+         </checkConstraint>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="city" id="DE67D666-AFD5-D16C-A705-637A4530F164">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-02 02:40:11 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>DE67D666-AFD5-D16C-A705-637A4530F164</importedID>
          <avTSortOrder>0</avTSortOrder>
@@ -218,17 +295,44 @@
          <logicalDatatype>LOGDT024</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="Unknown" id="DOM3000004">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-02 01:26:46 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:18 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>DOM3000004</importedID>
          <avTSortOrder>0</avTSortOrder>
          <fileName>defaultdomains</fileName>
          <logicalDatatype>LOGDT017</logicalDatatype>
       </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="room_type" id="ED0A9BA5-EBE8-699C-8E1F-3280E22180BA">
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-18 19:07:10 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>25</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="Attic" description="Attic"/>
+            <valueDef value="Basement" description="Basement"/>
+            <valueDef value="Bath Room" description="Bath Room"/>
+            <valueDef value="Bed Room" description="Bed Room"/>
+            <valueDef value="Den" description="Den"/>
+            <valueDef value="Dining Room" description="Dining Room"/>
+            <valueDef value="Foyer" description="Foyer"/>
+            <valueDef value="Garage" description="Garage"/>
+            <valueDef value="Hall" description="Hall"/>
+            <valueDef value="Kitchen" description="Kitchen"/>
+            <valueDef value="Laundry Room" description="Laundry Room"/>
+            <valueDef value="Living Room" description="Living Room"/>
+            <valueDef value="Mud Room" description="Mud Room"/>
+            <valueDef value="Office" description="Office"/>
+            <valueDef value="Study" description="Study"/>
+            <valueDef value="Work Room" description="Work Room"/>
+         </listOfValues>
+      </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="document" id="EE30804D-DECE-2382-CA51-7E87EA989C3F">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-11 15:51:50 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>EE30804D-DECE-2382-CA51-7E87EA989C3F</importedID>
          <avTSortOrder>0</avTSortOrder>
@@ -236,8 +340,8 @@
          <logicalDatatype>LOGDT010</logicalDatatype>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="is_reversed" id="F6CF928F-8DCF-CFF7-420C-450DC2BF973F">
-         <createdBy>Katarina</createdBy>
-         <createdTime>2013-11-10 21:29:45 UTC</createdTime>
+         <createdBy>Gummoe</createdBy>
+         <createdTime>2013-11-13 23:58:38 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
          <importedID>F6CF928F-8DCF-CFF7-420C-450DC2BF973F</importedID>
          <avTSortOrder>0</avTSortOrder>

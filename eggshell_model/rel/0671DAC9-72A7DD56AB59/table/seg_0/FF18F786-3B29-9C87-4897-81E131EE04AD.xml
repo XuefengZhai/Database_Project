@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FF18F786-3B29-9C87-4897-81E131EE04AD" name="Elevation_code_table">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>473F7A40-37C7-F1CC-A7FA-2532C8638658</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>58B3189B-60AF-C794-FF82-146C3EE3D23A</importedID>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="elevation_id" id="7E64DC95-F30E-337B-235D-81B532E8C828">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>07B0CB0F-2AC7-9DD9-D89C-AF92B8C7AA8D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="9B0A1FDD-BDBE-4784-1F72-86E469CE9C5B">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>3D3718F0-E79C-0E2E-2319-95362CAD46F0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>86AA045B-36F3-1583-4152-E165A08977B7</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="4CBC5252-4A21-899C-DEC6-F5697A053CE6">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>F3E8FE1C-268B-3F12-B66B-261EDB92F7C9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="060B0533-ABA1-947A-F1E3-BF9DF8F215F6" name="Elevation_code_table PK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>3D5E6280-2F74-319B-1734-4AD23E8A38B7</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>3FF66F00-514E-AFB4-5077-FCE20E20A16C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E64DC95-F30E-337B-235D-81B532E8C828"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

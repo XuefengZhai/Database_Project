@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7FCF369E-B01E-4593-37E6-A4A0F5472963" name="Crew_project_assignment">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>3A3B2CA4-26F9-1DBD-6C5C-22A36D1E8AB3</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>D1A0F66A-4224-CE13-1241-3033AEE6E0D4</importedID>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="crew_project_assignment_id" id="233697B5-342A-8477-A46E-1AAE1724D067">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>5D3AB986-621F-6465-E546-B8957895D196</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="crew_id" id="5059A128-2E23-3580-6D47-9B1FDC79B6DF">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>0A297542-4817-F448-58B9-04C4A586A45C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>9C719942-E58D-8CE0-9B68-589A92BCDBB9</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DEC4CA8D-DE1E-F291-374F-D51C1859D00C" referredColumn="9C719942-E58D-8CE0-9B68-589A92BCDBB9"/>
+</associations>
+</Column>
+<Column name="Attribute_2" id="6744ABE9-EC2B-561E-0B4B-8A0E7B4AB51B">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>3AB51370-292F-46DF-29DC-8C3FFBAE61BB</importedID>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="construction_project_id2" id="65052523-80AA-C172-7B94-478430920CA1">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>EA77D5A3-B22F-B945-F178-598220ADE811</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>EB4A97CB-8315-40D7-D081-077A767F5CA0</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4829828C-1347-9B8C-F400-38969395213B" referredColumn="EB4A97CB-8315-40D7-D081-077A767F5CA0"/>
+</associations>
+</Column>
+<Column name="crew_id_1" id="5898BE99-ECB1-86FE-F9CD-09ADB7647DC0">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>8CDA003F-D4B1-8D22-AF69-48582CC12450</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7F61304A-38E1-15CB-DE14-880D3C1AE319" name="Crew_project_assignment PK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>FC32F719-33D2-41DF-0E87-7FD62C11BB03</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>1AD36DF7-6F08-4D13-5AF7-2B1FE77ECE9D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6744ABE9-EC2B-561E-0B4B-8A0E7B4AB51B"/>
+<colUsage columnID="233697B5-342A-8477-A46E-1AAE1724D067"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B7F53BE8-8B3E-F584-8175-DC7453333219" name="Crew_construction_project_rel">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>636FECAF-D67F-1672-F276-53F760AB9244</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65052523-80AA-C172-7B94-478430920CA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3991384C-C7FB-50C2-9447-3FB1F69E4718" name="Crew_crew_assignment_rel">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>D12D2F52-2C37-A54A-1718-C44882223BAE</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5059A128-2E23-3580-6D47-9B1FDC79B6DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

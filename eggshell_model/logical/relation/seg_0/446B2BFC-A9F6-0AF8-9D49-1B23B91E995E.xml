@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Lot_style_elevation" directorySegmentName="seg_0" id="446B2BFC-A9F6-0AF8-9D49-1B23B91E995E">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>36D41AAF-22BE-A748-43C9-1386F44D93FB</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<sourcePk>61C5A88F-6705-9571-0C99-EE6BB0B7AF0E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4B29210F-9264-3E09-D869-733D24D5BBE4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B461C78F-D442-A34E-FFB4-2A2C7207F49F</targetEntity>
+<transferable>true</transferable>
+</Relation>

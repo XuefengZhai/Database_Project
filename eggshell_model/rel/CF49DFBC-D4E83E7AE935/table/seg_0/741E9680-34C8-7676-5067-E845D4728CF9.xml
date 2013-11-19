@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="741E9680-34C8-7676-5067-E845D4728CF9" name="Subdivision">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>5214ECCC-7A45-6E2A-DEB9-E38D7AE778AE</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="subdivision_id" id="8550B080-77E8-32CD-56E1-96718D38166A">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>118317B3-02DA-7781-DDA6-8EC7703355F1</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="school_district_id" id="EF697515-FFCE-A315-BE2E-78D4A0BF071E">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>3BC5C543-BC7A-F04F-AC57-61FE10C64F53</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>E592654B-D016-E397-4A2D-8608046D98F4</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58A7B471-6EC9-C828-6991-EDF9685DEF15" referredColumn="E592654B-D016-E397-4A2D-8608046D98F4"/>
+</associations>
+</Column>
+<Column name="name" id="DC1CD1F8-DF19-346B-1114-5FA518252488">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>C4678221-91E2-FA66-EF6D-A9C7566BA1BF</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>86AA045B-36F3-1583-4152-E165A08977B7</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="map" id="9BC871DC-899B-DDD8-5A04-8EEA145D984B">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>4398720F-F45D-A667-D763-E7BD7122BC38</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<domain>7215B1A5-BC3B-7FBD-DD04-378B227A4FCD</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city" id="DF2BF3B5-59A6-B918-3858-2F006E287EA8">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>CED41817-682A-B8C0-30B6-8D80F26CF450</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DE67D666-AFD5-D16C-A705-637A4530F164</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="state" id="C155EFE3-66A8-FF57-3A33-BECCDCCBE35D">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>2B6B6F44-76DE-2128-3840-689209DA7972</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B26A9CB8-8453-6ACF-5F8B-0F2552EDFCF3</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="14B01D8E-F306-CBF9-1EE1-02571E769A5E" name="Subdivision_PK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>01F64377-EFFA-BF27-DB6B-45D766CB290C</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8550B080-77E8-32CD-56E1-96718D38166A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="880B19D0-DFA7-6A9C-01B7-05FD310FA2FD" name="Subdivision_School_district_FK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>9C45759C-4148-A996-123C-B04E92BAF9D7</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF697515-FFCE-A315-BE2E-78D4A0BF071E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

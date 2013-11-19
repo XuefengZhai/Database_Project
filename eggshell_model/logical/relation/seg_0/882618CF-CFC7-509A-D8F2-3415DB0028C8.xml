@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="subdiv agreement assign rel" directorySegmentName="seg_0" id="882618CF-CFC7-509A-D8F2-3415DB0028C8">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>A7EFBA34-0636-3E0F-35F5-4DC31882D23F</importedID>
+<engineerTo>
+<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
+<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+</engineerTo>
+<sourcePk>A412CAD1-FBA8-D0D7-53BA-3810BF2BE9CF</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>850F8901-7E17-2FDF-5F8C-F135136DD224</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>153BE0F6-7B7B-56DB-348C-6EDA4F890812</targetEntity>
+<transferable>true</transferable>
+</Relation>

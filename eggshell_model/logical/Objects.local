@@ -1,83 +1,83 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.logical.LogicalDesign>
-   <object objectType="Entity" objectID="016E1D14-8254-7869-ADA1-822D7D003997" name="Subdivision agreement" seqName="seg_0"/>
-   <object objectType="Entity" objectID="095E2047-84E0-D415-5D75-DA8859E00798" name="Style elevation" seqName="seg_0"/>
-   <object objectType="Entity" objectID="0D8F8141-083E-0AB7-39B7-D2876F2D39D8" name="Constr worker crew assign" seqName="seg_0"/>
-   <object objectType="Entity" objectID="116358B9-0DBA-D749-4F23-FFC5F1C55A02" name="House" seqName="seg_0"/>
-   <object objectType="Entity" objectID="214B0112-DC91-A71C-266D-F1EABF6BD487" name="Task" seqName="seg_0"/>
-   <object objectType="Entity" objectID="32984433-8C5A-FB76-7794-D75827781BAD" name="Elevation code table" seqName="seg_0"/>
-   <object objectType="Entity" objectID="43A6A3FC-5AE3-602D-931F-3E33E66F27BD" name="School" seqName="seg_0"/>
-   <object objectType="Entity" objectID="4A9933D6-4FC5-9E03-1A67-DB50794ABE50" name="Style code table" seqName="seg_0"/>
-   <object objectType="Entity" objectID="4C9BDC9F-F9B0-9A05-0B1D-F8D1CA04BEBC" name="Task update" seqName="seg_0"/>
-   <object objectType="Entity" objectID="526F3FAB-E769-63CF-407B-8A78A73A9566" name="Sales agent" seqName="seg_0"/>
-   <object objectType="Entity" objectID="5667326B-6391-91C3-D867-039372FA2330" name="Contract" seqName="seg_0"/>
-   <object objectType="Entity" objectID="60FDF0BE-E02D-5C2D-8903-77A9C9C5866C" name="Room assignment" seqName="seg_0"/>
-   <object objectType="Entity" objectID="66241B9B-CF86-20CA-76FC-71C12C6A1D52" name="Subdivision" seqName="seg_0"/>
-   <object objectType="Entity" objectID="67C6630C-E66B-4056-AF21-304BF30D68B7" name="House style" seqName="seg_0"/>
-   <object objectType="Entity" objectID="7FEDC114-0824-CC1E-26DD-D37C178F4C2E" name="School district" seqName="seg_0"/>
-   <object objectType="Entity" objectID="89FF3AD2-E27A-F4C4-89B5-D2DDF555DF62" name="Subdiv agreement assign" seqName="seg_0"/>
-   <object objectType="Entity" objectID="8E6729A2-0BFD-FEDF-0C57-76B69DBE85FA" name="Crew" seqName="seg_0"/>
-   <object objectType="Entity" objectID="8EFFB2D5-2526-D7AC-2F31-283EDAA53562" name="Option for stage" seqName="seg_0"/>
-   <object objectType="Entity" objectID="8FFFF711-A437-0904-0962-79C12BE4193A" name="Employee" seqName="seg_0"/>
-   <object objectType="Entity" objectID="96111BE2-2D75-FB51-802F-B1BF16469648" name="Option code table" seqName="seg_0"/>
-   <object objectType="Entity" objectID="9BB51CE3-7307-1B2B-5FCC-EF80B6C0496C" name="Room" seqName="seg_0"/>
-   <object objectType="Entity" objectID="9D3A55CC-0FB7-7865-35D8-3DFF7D34C118" name="Sales agent assignment" seqName="seg_0"/>
-   <object objectType="Entity" objectID="9EDEE61A-8542-23C5-44D4-8381989AFCC0" name="Subdivision style option" seqName="seg_0"/>
-   <object objectType="Entity" objectID="A3484040-FD66-1019-B936-D5C968B48677" name="Stage assignment" seqName="seg_0"/>
-   <object objectType="Entity" objectID="B1A5A8B5-2E0C-CCB0-36F6-D46FDA623FB1" name="Construction project" seqName="seg_0"/>
-   <object objectType="Entity" objectID="BDA0229B-FC22-5728-4B31-BF0DCBA59CD3" name="Disclosure form" seqName="seg_0"/>
-   <object objectType="Entity" objectID="C2659810-0147-1AB2-3D25-BADD97009B57" name="Stage selected option" seqName="seg_0"/>
-   <object objectType="Entity" objectID="CF1761AD-447B-C3F6-F7DA-C6D3B15CEDBD" name="Disclosure form assignment" seqName="seg_0"/>
-   <object objectType="Entity" objectID="CF602023-D22B-45A7-4FC5-D546AEAEE6FD" name="Crew project assignment" seqName="seg_0"/>
-   <object objectType="Entity" objectID="D104F706-AE39-0576-598B-65D202EE4E63" name="Lot" seqName="seg_0"/>
-   <object objectType="Entity" objectID="D314CC85-7BE1-32E1-69F0-240C475918C4" name="User" seqName="seg_0"/>
-   <object objectType="Entity" objectID="D50916A1-ADD9-9E78-8AFF-E87F84AEEAF1" name="Stage code table" seqName="seg_0"/>
-   <object objectType="Entity" objectID="ECEAEFD1-9A54-6E6C-F7AE-A0164261052E" name="Construction worker" seqName="seg_0"/>
-   <object objectType="Entity" objectID="F3E9DEDF-D625-3315-1A83-BB41CBBFBA6C" name="Customer" seqName="seg_0"/>
-   <object objectType="Relation" objectID="0D0CFD78-C175-35C1-CEC0-C7FF5CB4BB5B" name="disclosure_form_assignment_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="0D6CF176-FFBF-62FA-8AA8-A4EC775050DB" name="sales_agent_employee_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="13E22277-306A-4E9C-EA38-8DEAB6159F26" name="subdiv agreement rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="189B2C6C-CF59-E841-E5EE-B16F3DB069B0" name="stage_selected_option_room_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="1A92E984-400F-4D8D-3436-E14FC1E55A30" name="stage_stage_assignment_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="1AEB5A1C-6946-544A-D5C1-A001BFE8F7DA" name="subdiv contract agreement rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="1E8541A6-DE13-F86E-9545-4290B8512EC4" name="reversed_style" seqName="seg_0"/>
-   <object objectType="Relation" objectID="1EB8AFF9-E1C7-69E4-360B-D87F7F645DE6" name="subdivision_style_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="2F1FF2D1-90C3-E751-B7DA-773109037037" name="stage_option_for_stage_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="36D41AAF-22BE-A748-43C9-1386F44D93FB" name="Lot_style_elevation" seqName="seg_0"/>
-   <object objectType="Relation" objectID="3BC08811-1D73-F7F6-D1B8-6CBC24B2C07B" name="subdiv school district rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="400EFEAE-0D09-AB78-9D35-42684CB79BAC" name="last possible stage rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="4E4D531B-55CE-6C9C-8D3D-E8F5BEEA02EA" name="construction_project_update" seqName="seg_0"/>
-   <object objectType="Relation" objectID="58D4F290-E1A8-5ACC-EDF2-8863E74F18A2" name="stage_option_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="5C277770-5DBC-540A-983D-E4CFE8B80C8E" name="construction_project_stage" seqName="seg_0"/>
-   <object objectType="Relation" objectID="5C95BED3-819F-738E-7DEF-69DBF9B852AE" name="customer_user" seqName="seg_0"/>
-   <object objectType="Relation" objectID="6110E29F-E4AC-8940-2869-A1082EBB50B9" name="room_room_assignment_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="636FECAF-D67F-1672-F276-53F760AB9244" name="Crew_construction_project_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="6486524B-D6F8-0251-B198-491A2C3FFE43" name="task_update_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="6D25A2D1-7665-CDA2-EB09-406722CB6B7D" name="contract_disclosure_form" seqName="seg_0"/>
-   <object objectType="Relation" objectID="7046C2BD-8605-368D-03C2-5E11AB244A13" name="house_room_assignment_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="70C3720B-33A2-CA10-9224-1094BBB8C74B" name="Style_elevation_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="71267EC2-AAB8-6062-EB98-E50BF65B65B7" name="school_district_school_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="93C25E96-0C44-735F-9558-646C664450CB" name="crew_manager" seqName="seg_0"/>
-   <object objectType="Relation" objectID="93C8B3A2-9F45-032E-E41D-3178C8CD712E" name="house stage selected opt rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="97FF8052-3716-152B-FCD3-34FC8C790401" name="employee_update" seqName="seg_0"/>
-   <object objectType="Relation" objectID="A006ABC4-BA0E-581D-F638-D266E4547B79" name="task_stage_option_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="A0320B1E-A455-22FC-B1C7-277DB7FFA672" name="stage_stage_option" seqName="seg_0"/>
-   <object objectType="Relation" objectID="A7EFBA34-0636-3E0F-35F5-4DC31882D23F" name="subdiv agreement assign rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="ADC2435C-8C17-428F-0FC1-28BFF72FF351" name="house_house_style_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="B115974C-DE5F-D80E-AE87-8567F41F1C30" name="sales_agent_assignment_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="B30D4AF6-E6EA-C1B8-77F0-9F8DC83F5692" name="house sales agent assign rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="C3814C34-54F8-754B-3CC7-FE6D7DD48E67" name="style_for_subdivision_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="CA56D12B-734F-E1F8-9776-99DDD6BB51EC" name="const worker crew assign rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="CD4DCA59-B5E9-1966-0FE1-A5A437125F60" name="constr project manager rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="CF6C2B45-460C-05A5-5911-D0A896B85561" name="Subdivision_lot_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="D0DB62E6-51F7-272D-F42B-C0DADFA5DCEE" name="house_contract" seqName="seg_0"/>
-   <object objectType="Relation" objectID="D12D2F52-2C37-A54A-1718-C44882223BAE" name="Crew_crew_assignment_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="DD7E3603-24CE-FBC0-165C-0F0DA1639523" name="Employee_user_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="DE9D7AE8-4B2B-738E-6491-AA277D53A5EF" name="employee_construction_worker" seqName="seg_0"/>
-   <object objectType="Relation" objectID="E6F7F074-29B9-4A3C-F2FD-EBDC8113626B" name="Crew constr worker assign rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="E92FCD83-56C9-0113-F721-11ED0E766F56" name="contract_sales_agent" seqName="seg_0"/>
-   <object objectType="Relation" objectID="F038AFE9-97EF-0B5B-5602-98DC6B54F7F2" name="House_lot_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="F07E58D8-49ED-7425-6B8D-7C901A068354" name="House_construction_project_rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="F0CC33EB-E1B2-08F5-9499-5A49E54A6F1B" name="Style style elevation rel" seqName="seg_0"/>
-   <object objectType="Relation" objectID="F1016D1C-24B5-032C-669D-BC52D3DFD37E" name="Customer_contract_rel" seqName="seg_0"/>
+   <object objectType="Entity" objectID="6F5B6306-BFEC-5517-1BED-00562DDD0DE8" name="Constr worker crew assign" seqName="seg_0"/>
+   <object objectType="Entity" objectID="992A5B1F-055C-9366-6DC9-F07C2186DF8F" name="Construction project" seqName="seg_0"/>
+   <object objectType="Entity" objectID="3A63D5AF-55A3-E1B6-CD64-9E1C55902BA1" name="Construction worker" seqName="seg_0"/>
+   <object objectType="Entity" objectID="C5007AC8-1B84-7753-DF23-F2E5CAB69276" name="Contract" seqName="seg_0"/>
+   <object objectType="Entity" objectID="0FEA02A8-21E4-1A4A-140D-D4831FC83A75" name="Crew" seqName="seg_0"/>
+   <object objectType="Entity" objectID="3A3B2CA4-26F9-1DBD-6C5C-22A36D1E8AB3" name="Crew project assignment" seqName="seg_0"/>
+   <object objectType="Entity" objectID="B1031CDF-D7FE-E9CE-710E-A7936B34421A" name="Customer" seqName="seg_0"/>
+   <object objectType="Entity" objectID="C2FB8747-4207-FA8A-80E9-D2C297BEC0B7" name="Disclosure form" seqName="seg_0"/>
+   <object objectType="Entity" objectID="53F011FB-802D-59E7-39DB-9FA19DF7BF98" name="Disclosure form assignment" seqName="seg_0"/>
+   <object objectType="Entity" objectID="473F7A40-37C7-F1CC-A7FA-2532C8638658" name="Elevation code table" seqName="seg_0"/>
+   <object objectType="Entity" objectID="9A6C5022-8988-C37B-27D9-9524689EEA8D" name="Employee" seqName="seg_0"/>
+   <object objectType="Entity" objectID="D59730B6-A2C4-835C-5000-7C888EC342ED" name="House" seqName="seg_0"/>
+   <object objectType="Entity" objectID="D4338C43-3588-C9FF-6738-8CCC23296A2A" name="House style" seqName="seg_0"/>
+   <object objectType="Entity" objectID="B461C78F-D442-A34E-FFB4-2A2C7207F49F" name="Lot" seqName="seg_0"/>
+   <object objectType="Entity" objectID="33D24D67-CD02-77A5-3C4D-DFC4900712D6" name="Option code table" seqName="seg_0"/>
+   <object objectType="Entity" objectID="C20F8763-1E32-159A-6B69-004304FA479D" name="Option for stage" seqName="seg_0"/>
+   <object objectType="Entity" objectID="8C049AA9-B21F-64DC-43C1-E3E09ED1B977" name="Room" seqName="seg_0"/>
+   <object objectType="Entity" objectID="F5467BCF-DCC8-024E-F128-26E0B87F71BD" name="Room assignment" seqName="seg_0"/>
+   <object objectType="Entity" objectID="4C61336B-5460-B073-0CBA-F54B2E769066" name="Sales agent" seqName="seg_0"/>
+   <object objectType="Entity" objectID="4990A0FC-C0F3-71CE-D3E5-A7EDF6ECDE10" name="Sales agent assignment" seqName="seg_0"/>
+   <object objectType="Entity" objectID="9A64A152-47D6-9F1F-F97A-8C769E73188C" name="School" seqName="seg_0"/>
+   <object objectType="Entity" objectID="F4B6D13E-F52B-7990-4548-69EA18FAF60D" name="School district" seqName="seg_0"/>
+   <object objectType="Entity" objectID="90B55B91-DF99-4E9D-348F-4DBCC9B3FCDD" name="Stage assignment" seqName="seg_0"/>
+   <object objectType="Entity" objectID="F5D2126F-C910-D6B8-E167-AC1F445CC060" name="Stage code table" seqName="seg_0"/>
+   <object objectType="Entity" objectID="10F44642-F4F4-70B5-DF18-A4D00E4C7EA6" name="Stage selected option" seqName="seg_0"/>
+   <object objectType="Entity" objectID="DA4990FC-B299-4E62-0FDF-6F7C09ECA9D2" name="Style code table" seqName="seg_0"/>
+   <object objectType="Entity" objectID="4B29210F-9264-3E09-D869-733D24D5BBE4" name="Style elevation" seqName="seg_0"/>
+   <object objectType="Entity" objectID="153BE0F6-7B7B-56DB-348C-6EDA4F890812" name="Subdiv agreement assign" seqName="seg_0"/>
+   <object objectType="Entity" objectID="5214ECCC-7A45-6E2A-DEB9-E38D7AE778AE" name="Subdivision" seqName="seg_0"/>
+   <object objectType="Entity" objectID="850F8901-7E17-2FDF-5F8C-F135136DD224" name="Subdivision agreement" seqName="seg_0"/>
+   <object objectType="Entity" objectID="AA24F0BA-E00B-820C-A075-3A1B3F644AC6" name="Subdivision style option" seqName="seg_0"/>
+   <object objectType="Entity" objectID="5AC24D95-3B4B-D7D7-070B-A13202BF927D" name="Task" seqName="seg_0"/>
+   <object objectType="Entity" objectID="68D2B261-3838-25D9-CCB0-15F787392A59" name="Task update" seqName="seg_0"/>
+   <object objectType="Entity" objectID="20824E67-988E-4D36-76C3-A0EFDB03FD10" name="User" seqName="seg_0"/>
+   <object objectType="Relation" objectID="9900190F-DDD6-0F06-7C11-837E4C4C19D6" name="Crew constr worker assign rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A8DF093F-4C0E-016F-699E-1AF99934C4A2" name="Crew_construction_project_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="DA363259-085E-D068-15BF-7BFE6C1401BC" name="Crew_crew_assignment_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="929AD285-8E77-99F5-220E-881FE1B19E1D" name="Customer_contract_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="DF5A5DC3-9980-B0A7-E81F-13687ED26E5C" name="Employee_user_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="02F37912-C38E-8D24-E9B4-175381B050CA" name="House_construction_project_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D7D7D32B-FBE2-C34E-4AA6-2BB718755F16" name="House_lot_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="446B2BFC-A9F6-0AF8-9D49-1B23B91E995E" name="Lot_style_elevation" seqName="seg_0"/>
+   <object objectType="Relation" objectID="C4BF4538-D7AD-3222-4B58-24B7E7C23195" name="Style style elevation rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="26C026AB-A3FF-25BE-0AAF-D328A4108DCE" name="Style_elevation_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="707BCA74-BB73-43DB-D9E9-6D22149161BA" name="Subdivision_lot_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A1858739-10D8-5834-29C9-1420A85F3377" name="const worker crew assign rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="0960CC07-415B-7A44-3CF9-D98EE714A2B8" name="constr project manager rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="166C7BEA-DFB9-7769-13CF-B8EB9712A881" name="construction_project_stage" seqName="seg_0"/>
+   <object objectType="Relation" objectID="C38C31C5-6064-1914-3B4B-4738F40828E3" name="construction_project_update" seqName="seg_0"/>
+   <object objectType="Relation" objectID="56A90D0A-3FC5-9E79-CCC8-354C6121E13E" name="contract_disclosure_form" seqName="seg_0"/>
+   <object objectType="Relation" objectID="92E9F059-C68E-0EFB-0B6A-5C47B2ADB399" name="contract_sales_agent" seqName="seg_0"/>
+   <object objectType="Relation" objectID="7D9BC73D-F638-6FE6-AF04-985557B7D3EF" name="crew_manager" seqName="seg_0"/>
+   <object objectType="Relation" objectID="356AD3AA-AC86-9DC2-30CB-E6F7D236EBA1" name="customer_user" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2CACF0E7-C87D-7D51-C4B0-C7C4B9CD4FED" name="disclosure_form_assignment_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="0EAA76FA-68C6-47F0-A237-937920FD2DC4" name="employee_construction_worker" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D42E50C1-B9C6-BCA1-642D-AF406E44A4C2" name="employee_update" seqName="seg_0"/>
+   <object objectType="Relation" objectID="8A7D147D-4F02-1969-3294-D3039B22D592" name="house sales agent assign rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="84FD723A-5DCB-3246-E9B9-A84CD6118DA5" name="house stage selected opt rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="07692E7D-3842-D480-8F35-4337D3F87850" name="house_contract" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2473B586-F412-6DE2-9ED5-2CC321ADFA7A" name="house_house_style_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="84BB6856-CF26-D5C9-45C4-1333A1981B68" name="house_room_assignment_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="13206639-F670-4EBF-1DE0-31C0A727B40E" name="last possible stage rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="E33A8FED-F77A-7A1C-E28A-4E43DEEF2BD4" name="reversed_style" seqName="seg_0"/>
+   <object objectType="Relation" objectID="EC49CB26-92A6-8DEE-8D98-6E1AA5F0FC88" name="room_room_assignment_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="749991F0-6E93-90C6-1C2E-2F960600A903" name="sales_agent_assignment_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="1FCC8C01-A8D8-F3E2-7F0F-476021FFD6BF" name="sales_agent_employee_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="7B6C01B3-C74B-9817-179F-2D4353869CA3" name="school_district_school_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A5AE5C98-66CC-5295-13B2-6DE8685687E1" name="stage_option_for_stage_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="B352C517-C008-422F-5A8E-AF5688C0FFEC" name="stage_option_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="6E23502B-309F-333B-FD86-555BB51B3648" name="stage_selected_option_room_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="527BB720-8757-9180-95F1-22360E967C25" name="stage_stage_assignment_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="7F71C637-051D-5020-E00F-550776316A2F" name="stage_stage_option" seqName="seg_0"/>
+   <object objectType="Relation" objectID="02432B15-D229-323A-C13C-E0CC738DC335" name="style_for_subdivision_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="882618CF-CFC7-509A-D8F2-3415DB0028C8" name="subdiv agreement assign rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="BB47C381-FDC2-CFAF-608B-2F9A08582640" name="subdiv agreement rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D4768694-0E68-2AAF-C8AA-F8DF7F663E92" name="subdiv contract agreement rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="9C45759C-4148-A996-123C-B04E92BAF9D7" name="subdiv school district rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="0ADD8CB1-3E9E-E6F8-3BC9-4DA58C87359E" name="subdivision_style_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F98EF6B9-52AE-AD5C-12C3-30601AC3FB7C" name="task_stage_option_rel" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F5854807-AB48-C129-BA10-3E1CB13E3386" name="task_update_rel" seqName="seg_0"/>
 </oracle.dbtools.crest.model.design.logical.LogicalDesign>

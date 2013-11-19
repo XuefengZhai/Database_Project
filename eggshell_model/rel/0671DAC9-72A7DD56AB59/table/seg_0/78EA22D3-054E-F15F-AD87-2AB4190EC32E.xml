@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="78EA22D3-054E-F15F-AD87-2AB4190EC32E" name="Room">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>8C049AA9-B21F-64DC-43C1-E3E09ED1B977</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>3BB87598-9C34-6EBD-779A-763730A3B9A5</importedID>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="room_id" id="E1EC3B3C-AB53-24C9-77D7-046EA7C6AAC0">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>AB39D3AB-F6A1-E099-99E3-0298B312BE5C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="room_type" id="CC7923E2-8B1A-67EF-50C5-3E86BC4DD0F9">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>4B310334-7FEE-0165-E863-2DCCA0903182</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3295C118-96D2-925D-C8AD-6EF54944255A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="0CC0FE07-84B3-F81A-A7C4-3C61834538C7">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>84C1FF67-B788-4C70-EDCE-9E7316671B0F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D920EC7-8D61-D9B7-EC23-EB60FB3F5D7C" name="Room PK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>12B91627-3210-F7AF-A1E6-D6E21641363E</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>A66B232B-A9B0-7682-0929-285A9605E174</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1EC3B3C-AB53-24C9-77D7-046EA7C6AAC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

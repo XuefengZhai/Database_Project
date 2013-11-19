@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B64DEE9A-1612-BAC7-FE2B-CF925DC5AEDA" name="Stage_selected_option">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>10F44642-F4F4-70B5-DF18-A4D00E4C7EA6</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="stage_selected_option_id" id="99F0F97F-0ABA-36FE-8B48-B8E04BBC9663">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>45AF11CA-9E6E-AE2E-30D4-55A45E6DA8DD</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="option_for_stage_id" id="24ABCE01-0F28-9F46-3D04-A5F3F13E70B1">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>92601A43-FB83-26D6-C73C-162C2656F573</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>4ACD02D7-0297-EB2A-3434-101EB91F5476</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BA6D03EA-822F-7627-F929-774B5D43FD84" referredColumn="4ACD02D7-0297-EB2A-3434-101EB91F5476"/>
+</associations>
+</Column>
+<Column name="room_assignment_id" id="4048B04B-22B3-E6FF-466C-CB7A9C51340C">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>0A8A1BF7-C84E-A998-A8A9-3745E721C7DD</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>BE2AD454-8A54-23C4-9173-A928A566B8E9</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EA0F16AE-9834-C2A2-0FB9-204FDF42B595" referredColumn="BE2AD454-8A54-23C4-9173-A928A566B8E9"/>
+</associations>
+</Column>
+<Column name="construction_project_id" id="7B38782D-D083-7FB5-D5D7-E5706D582EE1">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>5077079A-43AC-CC36-100E-8029CC8F7662</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>D1EDB29F-D45F-53DB-5E4A-BCE9769922AD</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3ECAD09A-917A-44F5-A25C-EAB2D8A16D2C" referredColumn="D1EDB29F-D45F-53DB-5E4A-BCE9769922AD"/>
+</associations>
+</Column>
+<Column name="date_selected" id="284FD9E4-FB4E-CE63-29A5-F87F098E7016">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>264031C7-682F-7A10-DC0A-6E0E51530668</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>2FF7B1E7-B0D4-FE14-1A61-196E6487640C</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F6341D79-6B80-86A9-6F26-71D1423631F6" name="Stage_selected_option_PK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>F1D1B2BD-FEB9-6C87-C33A-8BBA87C4D298</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99F0F97F-0ABA-36FE-8B48-B8E04BBC9663"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C41D2DC-45D4-43B4-25B4-90863387ED62" name="Stage_selected_option__IDX">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>84FD723A-5DCB-3246-E9B9-A84CD6118DA5</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="7B38782D-D083-7FB5-D5D7-E5706D582EE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CBF1BE12-ED20-F198-E7CB-6492381CCAD2" name="Stage_selected_option_Construction_project_FK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>84FD723A-5DCB-3246-E9B9-A84CD6118DA5</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B38782D-D083-7FB5-D5D7-E5706D582EE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A3D69ED-C40E-FEDD-6AAB-3FACC9C8BA36" name="Stage_selected_option_Room_assignment_FK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>6E23502B-309F-333B-FD86-555BB51B3648</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4048B04B-22B3-E6FF-466C-CB7A9C51340C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8D35B7D6-3085-9586-8566-5CC293E4020E" name="Stage_selected_option_Option_for_stage_FK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:59:13 UTC</createdTime>
+<generatorID>7F71C637-051D-5020-E00F-550776316A2F</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24ABCE01-0F28-9F46-3D04-A5F3F13E70B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

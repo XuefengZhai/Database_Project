@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="044A165E-9BB2-FF0B-A526-351B73F7730B" name="School_district">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>F4B6D13E-F52B-7990-4548-69EA18FAF60D</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>4EDD6CF9-918F-55BC-7B0E-286F2D853058</importedID>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="school_district_id" id="EBD01AD9-5F31-D79A-C56E-6E7528EA0B9D">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>1FAB73B2-2E67-5B28-0BA4-6CEB42CF12E2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="FB236A16-6D65-BF0B-D484-419014C41975">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>D9322315-34F3-4591-6BA9-B3DC7BFC04AE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>86AA045B-36F3-1583-4152-E165A08977B7</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6E671976-4966-3780-34C7-172F9EA35F95" name="School_district PK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>F82F71DD-EF86-0560-FBB9-FF7B4C022E94</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>552DDFD6-E770-5E20-FEB0-5FADF1C88087</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBD01AD9-5F31-D79A-C56E-6E7528EA0B9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

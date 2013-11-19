@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="eggshell_model" id="A4EC127F-A84E-A765-A54C-69AEEF980C96" version="3.5">
-<createdBy>Katarina</createdBy>
-<createdTime>2013-11-10 21:21:20 UTC</createdTime>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="eggshell_model" id="45C306D1-1276-437B-F5EF-9CA1B2421276" version="3.5">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:51:28 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <capitalNames>false</capitalNames>
-<designId>A4EC127F-A84E-A765-A54C-69AEEF980C96</designId>
+<designId>45C306D1-1276-437B-F5EF-9CA1B2421276</designId>
 </OSDM_Design>

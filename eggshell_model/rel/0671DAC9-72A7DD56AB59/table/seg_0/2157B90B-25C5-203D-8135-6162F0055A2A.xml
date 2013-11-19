@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2157B90B-25C5-203D-8135-6162F0055A2A" name="Lot">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>B461C78F-D442-A34E-FFB4-2A2C7207F49F</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>AEF6F155-A0B4-1271-BA0E-BAB494210279</importedID>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="lot_id" id="69BDE3EB-53D0-9F82-657B-7A80427C0D5F">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>DB41AFCE-FDBC-1B87-8589-09746EDFE1B8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="latitude" id="487FA768-7E82-70E6-FEC0-2CBBA6F6CA81">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>D0909E79-F7D3-3442-3774-760F972AD59A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>4BCCE704-B58C-501E-940C-C630A7B16250</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="longitude" id="A54024F2-7E49-30DA-4A42-3B181430F6C6">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>97483658-1368-70C2-C35E-C78A60E23C4A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>4BCCE704-B58C-501E-940C-C630A7B16250</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="house_id" id="5DF8F5DF-F1F6-501F-1CE2-EA39FA49B9CE">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>0EDF7561-C0A6-4283-97AD-64E7C7316072</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>B313FA2C-1C85-4715-1434-5EA9D7A53E47</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8D4F84FC-FA8C-9D39-3242-36D6A8C6CF16" referredColumn="B313FA2C-1C85-4715-1434-5EA9D7A53E47"/>
+</associations>
+</Column>
+<Column name="subdivision_id" id="7686DD1F-0422-8393-9F9B-33F4F9B5AD41">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>1A7D20BF-A9A3-7925-92D5-A0C71A9DDFA9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>88582C9C-16B6-E569-E830-F465C540631A</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C17CFA1-A280-72EB-D105-C7A7E700A0F6" referredColumn="88582C9C-16B6-E569-E830-F465C540631A"/>
+</associations>
+</Column>
+<Column name="style_elevation_id" id="3F7F2A12-0D5A-9F0D-1CD3-76DCE301ED85">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>3D273F35-B400-4106-7AC8-D8D32E756D42</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>8E329931-15A1-8F67-B850-8444D81FACE2</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CCC0A1CF-A6D5-4D2A-0BFB-B606AEC61D48" referredColumn="8E329931-15A1-8F67-B850-8444D81FACE2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B9BB10DF-43C1-7AED-A958-7338ADCD30F5" name="Lot PK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>406C086C-6EE4-CB96-D00D-E0AFC2F6157D</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>77090968-DAFA-3645-7676-C4B83935D639</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69BDE3EB-53D0-9F82-657B-7A80427C0D5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B5457B9D-12F8-12DF-CC8F-C56C443A8A80" name="Lot__IDX">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>186B7A25-AAA3-C565-1CBF-3D6382183CD1</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DF8F5DF-F1F6-501F-1CE2-EA39FA49B9CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D7307FEE-864C-3CE0-E5B9-F3040A57D79A" name="House_lot_rel">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>F038AFE9-97EF-0B5B-5602-98DC6B54F7F2</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DF8F5DF-F1F6-501F-1CE2-EA39FA49B9CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8471F64A-900F-483A-D9B4-6760D4157C11" name="Lot_style_elevation">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>36D41AAF-22BE-A748-43C9-1386F44D93FB</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F7F2A12-0D5A-9F0D-1CD3-76DCE301ED85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="477D4AD1-E576-DF7C-039F-6E147E8E7AD8" name="Subdivision_lot_rel">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>CF6C2B45-460C-05A5-5911-D0A896B85561</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7686DD1F-0422-8393-9F9B-33F4F9B5AD41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

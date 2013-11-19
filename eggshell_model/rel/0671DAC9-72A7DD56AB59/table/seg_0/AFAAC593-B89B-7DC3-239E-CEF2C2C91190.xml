@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AFAAC593-B89B-7DC3-239E-CEF2C2C91190" name="Style_elevation">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>4B29210F-9264-3E09-D869-733D24D5BBE4</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>AB0E72DC-8679-F252-E732-DA862B6708D0</importedID>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="style_elevation_id" id="8E329931-15A1-8F67-B850-8444D81FACE2">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>86573E77-C46E-7150-6C00-23488381FDB4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="style_id" id="1FC79548-3FD4-A2AF-2D65-EDE84FEAD8EF">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>3A7CD276-55FA-D1AE-7825-A8FEF0333462</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>ABDC1D11-6295-2FDB-1358-E2D9C3422B74</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9336572C-C658-9ADF-C3FF-DEF824ADDED0" referredColumn="ABDC1D11-6295-2FDB-1358-E2D9C3422B74"/>
+</associations>
+</Column>
+<Column name="elevation_id" id="5802728D-96AC-3EC9-1271-7C4395B9C29C">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>8C60A603-8A5F-B799-878F-31EA6EA170D6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>7E64DC95-F30E-337B-235D-81B532E8C828</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F3814432-8345-8D38-D2B6-B45554401A09" referredColumn="7E64DC95-F30E-337B-235D-81B532E8C828"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6B872C05-4EB2-BEE7-6FCE-403075DC3FE6" name="Style_elevation PK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>61C5A88F-6705-9571-0C99-EE6BB0B7AF0E</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>D8F1366F-C5B5-CC23-B2E7-1DFD0190F11A</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E329931-15A1-8F67-B850-8444D81FACE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="250BA441-670C-A978-F257-BCA11299E7F0" name="Style_elevation_rel">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>70C3720B-33A2-CA10-9224-1094BBB8C74B</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5802728D-96AC-3EC9-1271-7C4395B9C29C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5229224E-7948-2643-2589-BA8EA3196D95" name="Style_elevation_relv2">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>F0CC33EB-E1B2-08F5-9499-5A49E54A6F1B</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1FC79548-3FD4-A2AF-2D65-EDE84FEAD8EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

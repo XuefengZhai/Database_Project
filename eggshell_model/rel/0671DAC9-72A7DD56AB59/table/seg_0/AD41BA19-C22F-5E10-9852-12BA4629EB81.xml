@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AD41BA19-C22F-5E10-9852-12BA4629EB81" name="User">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>20824E67-988E-4D36-76C3-A0EFDB03FD10</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>941A8DAA-FC8F-5286-EDC7-4D14A3C2B7C9</importedID>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="40260360-7CA0-F7E6-7718-8C7FD2862C98">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>61FFA68D-37D4-8525-9248-759BC36A41CB</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_type" id="DA85CE61-96AB-21CA-8438-9DF57469AF3C">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>CE17902E-223D-DF53-0C01-394B8A13DEC4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3295C118-96D2-925D-C8AD-6EF54944255A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="username" id="ADC7B5AA-7521-D899-CCCD-1A78FFFD353D">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>049981CB-02D8-166D-10BA-F0219A10776E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>86AA045B-36F3-1583-4152-E165A08977B7</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="DBA031BF-D4BC-1EC7-DFC4-3132DB1EAE53">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>20F0F07B-9AE6-000F-55D6-54AFE60B71B7</importedID>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password_recovery_question" id="80302BC3-B127-023D-4D07-02F8D77EADBE">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>94ECB1F8-50E4-3A89-CDC8-A58F06D4DEBF</importedID>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password_recovery_answer" id="F3192A91-5F80-8B71-7931-B57D01F38A8D">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>B434196E-BEB9-795D-46D0-24D76D8D8F25</importedID>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="67E13BDE-3AB5-A27F-2922-75E60174543F">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>0F0D5BF9-265D-02CF-C8A2-A458D86E2DD9</importedID>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_id" id="CB6C3024-2665-DCB1-7E76-3FAAB8E2C0FA">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>30504416-D227-F888-DEDB-DABBA9F2587E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>D1509BFA-8ECB-6B00-26E9-80BD9764DC1A</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="51758F08-D140-C130-7923-73AFD2D23E43" referredColumn="D1509BFA-8ECB-6B00-26E9-80BD9764DC1A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F69BF602-9E0C-A3CB-646D-960C0E6C2AFF" name="User PK">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>2937A895-DD24-0A75-7FE9-E6AE6666D885</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>771667FA-3740-4531-447F-D8038C89F7C8</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40260360-7CA0-F7E6-7718-8C7FD2862C98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A4888A3-7F1C-9617-E909-D5D707F7B873" name="User__IDX">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>4C59DB82-BBA8-9EC7-6AD2-4A1B800F7ADA</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="A476993C-0041-3B57-D7B9-B0A04739F800" name="User__IDXv1">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>CE6A9BF8-00C2-CA03-8EFD-38564909E375</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="F0B05A5C-FF04-9A7C-1CC4-9CB25149F0CB" name="User__IDXv2">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<importedID>2B8791DE-2F74-AC76-3A51-7CA02663C332</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB6C3024-2665-DCB1-7E76-3FAAB8E2C0FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52E238BB-AEAE-6E17-E38A-C11EC29DDAF5" name="customer_user">
+<createdBy>Gummoe</createdBy>
+<createdTime>2013-11-19 03:52:00 UTC</createdTime>
+<generatorID>5C95BED3-819F-738E-7DEF-69DBF9B852AE</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB6C3024-2665-DCB1-7E76-3FAAB8E2C0FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
