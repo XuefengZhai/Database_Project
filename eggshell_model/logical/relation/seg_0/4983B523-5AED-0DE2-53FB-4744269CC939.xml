@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="employee_construction_worker_rel" id="4983B523-5AED-0DE2-53FB-4744269CC939" directorySegmentName="seg_0">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-21 00:07:09 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+</engineerTo>
+<dominantRole>9A6C5022-8988-C37B-27D9-9524689EEA8D</dominantRole>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9A6C5022-8988-C37B-27D9-9524689EEA8D</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>3A63D5AF-55A3-E1B6-CD64-9E1C55902BA1</targetEntity>
+<transferable>true</transferable>
+</Relation>
