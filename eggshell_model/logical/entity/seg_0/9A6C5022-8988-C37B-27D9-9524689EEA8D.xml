@@ -1,13 +1,13 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9A6C5022-8988-C37B-27D9-9524689EEA8D" name="Employee">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="9A6C5022-8988-C37B-27D9-9524689EEA8D" directorySegmentName="seg_0" name="Employee">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>8FFFF711-A437-0904-0962-79C12BE4193A</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
+<pkName>Employee PK</pkName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,29 +16,62 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="employee id" id="A7CDEF2E-AE63-F12B-CFDD-421121F93CC3">
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Attribute</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="employee id" id="A7CDEF2E-AE63-F12B-CFDD-421121F93CC3">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>8A5D5ADF-F556-543C-44C0-3BCF98AD8E14</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 </Attribute>
-<Attribute name="user id" id="0ECDAD60-69FB-BC71-35BF-3D71CBB20E68">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="user id" id="0ECDAD60-69FB-BC71-35BF-3D71CBB20E68">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <generatorID>DF5A5DC3-9980-B0A7-E81F-13687ED26E5C</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>CAD610E4-3831-6A4B-1874-0FDBE2D71707</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>7A5E15CC-81E5-CE94-A7DF-8586DF105D0A</referedAttribute>
@@ -46,147 +79,136 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 </Attribute>
-<Attribute name="first name" id="270445F3-7893-3985-608A-EB036ED667C1">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="first name" id="270445F3-7893-3985-608A-EB036ED667C1">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>93215AF2-F9BA-CFE0-5F50-00F01EF3EF86</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>86AA045B-36F3-1583-4152-E165A08977B7</domain>
 </Attribute>
-<Attribute name="last name" id="9EA67E7F-7FC1-60EE-1616-BB0B840C7A5D">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="last name" id="9EA67E7F-7FC1-60EE-1616-BB0B840C7A5D">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>430DF614-D1EC-85A2-A615-70EEC2D61271</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>86AA045B-36F3-1583-4152-E165A08977B7</domain>
 </Attribute>
-<Attribute name="home phone number" id="F616B6F3-1371-A4D4-1595-A72E298D1925">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="home phone number" id="F616B6F3-1371-A4D4-1595-A72E298D1925">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>8E286528-BF8A-EBE1-EB28-7194408A9915</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>40E07E34-97A2-BAF2-36CF-C6FC09EE1E1E</domain>
 </Attribute>
-<Attribute name="work phone number" id="6DF545E9-CEFF-02C4-E2B6-740856278648">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="work phone number" id="6DF545E9-CEFF-02C4-E2B6-740856278648">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>FFD7657F-9838-B93C-D1D1-EB0A639F5CB6</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>40E07E34-97A2-BAF2-36CF-C6FC09EE1E1E</domain>
 </Attribute>
-<Attribute name="cell phone number" id="76A8C321-B59C-89D1-BA29-3228DF2D9B88">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="cell phone number" id="76A8C321-B59C-89D1-BA29-3228DF2D9B88">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>2DEA6F15-1F5C-E5AD-ED2A-80D73A8E4D38</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>40E07E34-97A2-BAF2-36CF-C6FC09EE1E1E</domain>
 </Attribute>
-<Attribute name="street address" id="893133B1-41B2-B2CF-7FCC-CC17FCCE16BC">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="street address" id="893133B1-41B2-B2CF-7FCC-CC17FCCE16BC">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>175C5C5A-24C8-A84A-77B9-4E47D537F4E3</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>36D2249F-8453-1EF4-FE68-9EC84FC541BF</domain>
 </Attribute>
-<Attribute name="city" id="C7F32634-FCA2-1AE1-0A53-4BE45EAF9057">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="city" id="C7F32634-FCA2-1AE1-0A53-4BE45EAF9057">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>8A43D0D9-F28B-3EC2-FBD3-E8C5835712C3</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>DE67D666-AFD5-D16C-A705-637A4530F164</domain>
 </Attribute>
-<Attribute name="state" id="7FCB4F09-34E3-90C8-EE7D-6505008D406E">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="state" id="7FCB4F09-34E3-90C8-EE7D-6505008D406E">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>51BCA5C7-83AF-263F-6451-D94EE7567A7A</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>B26A9CB8-8453-6ACF-5F8B-0F2552EDFCF3</domain>
 </Attribute>
-<Attribute name="zip code" id="93FCBEE6-AF8E-FC57-515D-2E86E047C72A">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="zip code" id="93FCBEE6-AF8E-FC57-515D-2E86E047C72A">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>AC24AF22-1B30-A040-E8B3-1E530CAB5A6D</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>3F78F865-5F81-7CD9-3E48-851757EE5DEA</domain>
 </Attribute>
-<Attribute name="start date" id="602496A8-CC4F-6E6E-0427-A948E61A84BF">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="start date" id="602496A8-CC4F-6E6E-0427-A948E61A84BF">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>C86EA2E6-0C0D-9588-865F-8DCBC6292491</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT008</logicalDatatype>
 <domain>2FF7B1E7-B0D4-FE14-1A61-196E6487640C</domain>
 </Attribute>
-<Attribute name="end date" id="71C99896-274F-FA46-5A79-F5BE85D5DAD2">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="end date" id="71C99896-274F-FA46-5A79-F5BE85D5DAD2">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>E2444C47-853D-AF86-7C98-7FD3FDBE3C6C</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -194,15 +216,14 @@
 <domain>2FF7B1E7-B0D4-FE14-1A61-196E6487640C</domain>
 </Attribute>
 </attributes>
-<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="2F9D5FFB-668F-0298-FEED-DCE6BCFE6330" name="Employee PK">
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="2F9D5FFB-668F-0298-FEED-DCE6BCFE6330" name="Employee PK">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>599C4EE3-0D36-4FB6-FF1E-85121A338C0C</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -1,13 +1,47 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B974EE7F-4111-DC56-F9E2-A9D9C105D35D" name="School">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="B974EE7F-4111-DC56-F9E2-A9D9C105D35D" directorySegmentName="seg_0" name="School">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>9A64A152-47D6-9F1F-F97A-8C769E73188C</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
-<allowColumnReorder>false</allowColumnReorder>
-<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
-<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="school_id" id="80066B0D-13FA-D7A1-C3C8-E161C3B7FF59">
+<pkName>School_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="school_id" id="80066B0D-13FA-D7A1-C3C8-E161C3B7FF59">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>ED4CADFD-68CA-D44F-70B8-AADE1F2BA2DF</generatorID>
@@ -17,7 +51,7 @@
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="school_district_id" id="1C8E51EE-5AC0-D633-7334-0396A95A6B87">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="school_district_id" id="1C8E51EE-5AC0-D633-7334-0396A95A6B87">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>68FF6DFF-6D19-F4D7-0A84-26060FC702A1</generatorID>
@@ -32,7 +66,7 @@
 <colAssociation fkAssociation="D5D04391-7ED4-DADC-6DB3-668C2EAA7C18" referredColumn="E592654B-D016-E397-4A2D-8608046D98F4"/>
 </associations>
 </Column>
-<Column name="name" id="53BB01FF-B564-EB69-2EDA-CE1D1943C69C">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="name" id="53BB01FF-B564-EB69-2EDA-CE1D1943C69C">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>0C90B90E-BBF9-4CD3-851A-0565BCE5FDB7</generatorID>
@@ -43,26 +77,24 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
-<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="30C8E921-E4E6-4C55-CEC8-0B8BDECB986E" name="School_PK">
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="30C8E921-E4E6-4C55-CEC8-0B8BDECB986E" name="School_PK">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>497E2A01-DB4F-8F5B-2D71-718D778CA13C</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
-<isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="80066B0D-13FA-D7A1-C3C8-E161C3B7FF59"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="80293ADB-28C2-EB92-9053-E005C856054E" name="School_School_district_FK">
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="80293ADB-28C2-EB92-9053-E005C856054E" name="school_district_school_rel">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>7B6C01B3-C74B-9817-179F-2D4353869CA3</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="1C8E51EE-5AC0-D633-7334-0396A95A6B87"/>
 </indexColumnUsage>

@@ -1,13 +1,47 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7B8A0A8A-383E-2ADB-A90D-4D845F831308" name="Construction_project">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="7B8A0A8A-383E-2ADB-A90D-4D845F831308" directorySegmentName="seg_0" name="Construction_project">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>992A5B1F-055C-9366-6DC9-F07C2186DF8F</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
-<allowColumnReorder>false</allowColumnReorder>
-<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
-<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="construction_project_id" id="D1EDB29F-D45F-53DB-5E4A-BCE9769922AD">
+<pkName>Construction_project_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="construction_project_id" id="D1EDB29F-D45F-53DB-5E4A-BCE9769922AD">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>56867A57-20A4-4E27-5E29-10115BED861F</generatorID>
@@ -17,7 +51,7 @@
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="house_id" id="49135C5E-9888-4F0F-D58A-E8A7CA6F9520">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="house_id" id="49135C5E-9888-4F0F-D58A-E8A7CA6F9520">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>441EA6D7-8522-75F3-DC6A-AD400A127477</generatorID>
@@ -27,7 +61,7 @@
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="project_manager_id" id="B458EF3C-03E4-8DC4-B70E-D9B10207D65B">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="project_manager_id" id="B458EF3C-03E4-8DC4-B70E-D9B10207D65B">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <comment>project_manager_id</comment>
@@ -38,7 +72,7 @@
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="state_date" id="C8D2E6C4-0356-65F0-466A-569E8D4EE6F8">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="state_date" id="C8D2E6C4-0356-65F0-466A-569E8D4EE6F8">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>C00F7CEC-0554-092D-90D8-944FE08A6168</generatorID>
@@ -48,7 +82,7 @@
 <domain>2FF7B1E7-B0D4-FE14-1A61-196E6487640C</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="estimated_completion_date" id="47A9D839-46CF-5566-D3AF-BCCF23680050">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="estimated_completion_date" id="47A9D839-46CF-5566-D3AF-BCCF23680050">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>11F9CD3B-E028-59C4-1567-017295D857A3</generatorID>
@@ -58,7 +92,7 @@
 <domain>2FF7B1E7-B0D4-FE14-1A61-196E6487640C</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="end_date" id="096C4BD7-E547-F8AB-2EEA-52D15843751D">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="end_date" id="096C4BD7-E547-F8AB-2EEA-52D15843751D">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>FC596476-EB25-58E4-BA02-9E35F0374EBF</generatorID>
@@ -69,7 +103,7 @@
 <domain>2FF7B1E7-B0D4-FE14-1A61-196E6487640C</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="employee_id" id="957CC8FD-132D-F98F-B983-D313C63DD578">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="employee_id" id="957CC8FD-132D-F98F-B983-D313C63DD578">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>5E22F104-11DF-F782-937D-DE98ADD37715</generatorID>
@@ -84,7 +118,7 @@
 <colAssociation fkAssociation="95276FC1-A2D2-6978-F045-0953A5870260" referredColumn="7BCC9979-C780-72C4-39C9-A3C5C4084F14"/>
 </associations>
 </Column>
-<Column name="house_id1" id="B6017A79-943D-FA6F-75B7-5FAB3E5868FF">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="house_id1" id="B6017A79-943D-FA6F-75B7-5FAB3E5868FF">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>B05909CA-7573-F03D-2257-0F7F9F34D757</generatorID>
@@ -100,59 +134,52 @@
 </associations>
 </Column>
 </columns>
-<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="52409C24-4170-3FAB-1096-3785633E06F7" name="Construction_project_PK">
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="52409C24-4170-3FAB-1096-3785633E06F7" name="Construction_project_PK">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>BC6E2203-4A90-5C74-A0CC-381EAC1868FB</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
-<isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="D1EDB29F-D45F-53DB-5E4A-BCE9769922AD"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="30654D06-379B-7280-FB27-7F537462B7EB" name="Construction_project__IDX">
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="30654D06-379B-7280-FB27-7F537462B7EB" name="Construction_project__IDX">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <indexState>Unique Plain Index</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<relationGeneratorID>02F37912-C38E-8D24-E9B4-175381B050CA</relationGeneratorID>
 <indexColumnUsage>
 <colUsage columnID="B6017A79-943D-FA6F-75B7-5FAB3E5868FF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E0EFE8C9-F26D-37EB-7D3C-08B33A5DD10A" name="Construction_project__IDXv1">
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="E0EFE8C9-F26D-37EB-7D3C-08B33A5DD10A" name="Construction_project__IDXv1">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <indexState>Unique Plain Index</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<relationGeneratorID>0960CC07-415B-7A44-3CF9-D98EE714A2B8</relationGeneratorID>
 <indexColumnUsage>
 <colUsage columnID="957CC8FD-132D-F98F-B983-D313C63DD578"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F326B054-9C71-C1DB-C4AF-58490E4156A4" name="Construction_project_House_FK">
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="F326B054-9C71-C1DB-C4AF-58490E4156A4" name="House_construction_project_rel">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>02F37912-C38E-8D24-E9B4-175381B050CA</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B6017A79-943D-FA6F-75B7-5FAB3E5868FF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="1A53C4B1-AF8E-0450-CF1B-A7449D603322" name="Construction_project_Employee_FK">
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="1A53C4B1-AF8E-0450-CF1B-A7449D603322" name="constr_project_manager_rel">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>0960CC07-415B-7A44-3CF9-D98EE714A2B8</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="957CC8FD-132D-F98F-B983-D313C63DD578"/>
 </indexColumnUsage>

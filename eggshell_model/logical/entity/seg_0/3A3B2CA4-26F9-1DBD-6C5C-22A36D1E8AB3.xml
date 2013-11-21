@@ -1,13 +1,13 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3A3B2CA4-26F9-1DBD-6C5C-22A36D1E8AB3" name="Crew project assignment">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="3A3B2CA4-26F9-1DBD-6C5C-22A36D1E8AB3" directorySegmentName="seg_0" name="Crew project assignment">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>CF602023-D22B-45A7-4FC5-D546AEAEE6FD</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
+<pkName>Crew_project_assignment_PK</pkName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,44 +16,76 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="crew project assignment id" id="E51F66B4-8A3E-3289-2EA2-1AAAB0646C33">
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Attribute</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="crew project assignment id" id="E51F66B4-8A3E-3289-2EA2-1AAAB0646C33">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>27B458E8-595C-E3BF-F550-4F663DFB40A4</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 </Attribute>
-<Attribute name="crew id" id="8B15BF3D-59EE-3514-1254-90A6734ED1B1">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="crew id" id="8B15BF3D-59EE-3514-1254-90A6734ED1B1">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <generatorID>DA363259-085E-D068-15BF-7BFE6C1401BC</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>8F57AAC5-43F6-C03C-E6CE-68E25FCA703E</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
 <referedAttribute>F95C03CA-86DE-F67E-1A92-2B056DD1E264</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 </Attribute>
-<Attribute name="construction project id" id="295EC51F-6AE5-38A6-EC67-568F8FCF3E78">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="construction project id" id="295EC51F-6AE5-38A6-EC67-568F8FCF3E78">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <generatorID>A8DF093F-4C0E-016F-699E-1AF99934C4A2</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>69C6A8C4-7DCD-831D-C42F-BB5A9283A8A8</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
 <referedAttribute>56867A57-20A4-4E27-5E29-10115BED861F</referedAttribute>
 <use>0</use>
@@ -61,15 +93,14 @@
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 </Attribute>
 </attributes>
-<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="FC32F719-33D2-41DF-0E87-7FD62C11BB03" name="Crew_project_assignment_PK">
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="FC32F719-33D2-41DF-0E87-7FD62C11BB03" name="Crew_project_assignment_PK">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>D09DB557-92FD-15FB-3917-11E3EAF87D32</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

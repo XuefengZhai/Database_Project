@@ -1,13 +1,47 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="86B89B56-36FC-6B09-B4E2-84A6D142C951" name="Constr_worker_crew_assign">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="86B89B56-36FC-6B09-B4E2-84A6D142C951" directorySegmentName="seg_0" name="Constr_worker_crew_assign">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>6F5B6306-BFEC-5517-1BED-00562DDD0DE8</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
-<allowColumnReorder>false</allowColumnReorder>
-<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
-<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="constr_worker_crew_assign_id" id="BF46E058-8DA9-F349-DACD-7B1E18E41C5D">
+<pkName>Constr_worker_crew_assign_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="constr_worker_crew_assign_id" id="BF46E058-8DA9-F349-DACD-7B1E18E41C5D">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>98183EB4-2385-EBEC-B437-1DC7659C7AF8</generatorID>
@@ -17,7 +51,7 @@
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="crew_id" id="28CAD731-2417-45F7-7EF1-D27A92E82D7D">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="crew_id" id="28CAD731-2417-45F7-7EF1-D27A92E82D7D">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>3100838C-D08C-48DC-04D6-D5DB452A79F1</generatorID>
@@ -32,7 +66,7 @@
 <colAssociation fkAssociation="619D0DB6-1C76-3914-1E43-4C7691919477" referredColumn="D04EA7A0-04A6-0B43-B91F-111D4AFE2907"/>
 </associations>
 </Column>
-<Column name="construction_worker_id" id="88C2A487-2110-FDFF-618B-A65DD6986A89">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="construction_worker_id" id="88C2A487-2110-FDFF-618B-A65DD6986A89">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>0D4ABC3E-8750-353B-7F60-A7EBE16D2134</generatorID>
@@ -47,7 +81,7 @@
 <colAssociation fkAssociation="AD7ED325-AB28-345E-5F21-D841BDFF4695" referredColumn="FD6DC570-E9A0-FFB5-CB80-DEBB41914391"/>
 </associations>
 </Column>
-<Column name="start_date" id="1B126375-3E04-E35E-D1CD-9309BA8CD711">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="start_date" id="1B126375-3E04-E35E-D1CD-9309BA8CD711">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>CDA0764B-45BC-56E9-46FA-5C059B00E645</generatorID>
@@ -57,7 +91,7 @@
 <domain>2FF7B1E7-B0D4-FE14-1A61-196E6487640C</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="end_date" id="F80F788F-6AED-C5FD-59D3-991EF492EA0F">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="end_date" id="F80F788F-6AED-C5FD-59D3-991EF492EA0F">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>FC7F74ED-7191-C181-0396-5F55CF3C5297</generatorID>
@@ -69,37 +103,34 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
-<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="BEE20260-0E59-7B07-95EA-0F6D115861CC" name="Constr_worker_crew_assign_PK">
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="BEE20260-0E59-7B07-95EA-0F6D115861CC" name="Constr_worker_crew_assign_PK">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>A331AA29-9C5F-2988-E528-6475FCD396DC</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
-<isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="BF46E058-8DA9-F349-DACD-7B1E18E41C5D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C459E889-E67C-FAC8-7CAD-2D9D92EB7381" name="Constr_worker_crew_assign_Crew_FK">
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="C459E889-E67C-FAC8-7CAD-2D9D92EB7381" name="Crew_constr_worker_assign_rel">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>9900190F-DDD6-0F06-7C11-837E4C4C19D6</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="28CAD731-2417-45F7-7EF1-D27A92E82D7D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="1BF9E754-1A3A-C081-4008-FEAABA70543A" name="Constr_worker_crew_assign_Construction_worker_FK">
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="1BF9E754-1A3A-C081-4008-FEAABA70543A" name="const_worker_crew_assign_rel">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>A1858739-10D8-5834-29C9-1420A85F3377</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="88C2A487-2110-FDFF-618B-A65DD6986A89"/>
 </indexColumnUsage>
