@@ -1,14 +1,12 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="constr project manager rel" directorySegmentName="seg_0" id="0960CC07-415B-7A44-3CF9-D98EE714A2B8">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="constr project manager rel" id="0960CC07-415B-7A44-3CF9-D98EE714A2B8" directorySegmentName="seg_0">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>CD4DCA59-B5E9-1966-0FE1-A5A437125F60</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
-<targetPk>2F9D5FFB-668F-0298-FEED-DCE6BCFE6330</targetPk>
 <dominantRole>9A6C5022-8988-C37B-27D9-9524689EEA8D</dominantRole>
 <identifying>false</identifying>
 <optionalSource>false</optionalSource>

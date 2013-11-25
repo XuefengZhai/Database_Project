@@ -1,14 +1,12 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="const worker crew assign rel" directorySegmentName="seg_0" id="A1858739-10D8-5834-29C9-1420A85F3377">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="const worker crew assign rel" id="A1858739-10D8-5834-29C9-1420A85F3377" directorySegmentName="seg_0">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>CA56D12B-734F-E1F8-9776-99DDD6BB51EC</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
-<sourcePk>BD2D0619-BA53-00D2-D2D5-CCBD69A071DF</sourcePk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>

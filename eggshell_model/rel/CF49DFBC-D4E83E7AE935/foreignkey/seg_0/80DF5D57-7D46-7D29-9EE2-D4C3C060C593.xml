@@ -1,14 +1,13 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="80DF5D57-7D46-7D29-9EE2-D4C3C060C593" name="Subdivision_style_option_Subdivision_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="80DF5D57-7D46-7D29-9EE2-D4C3C060C593" directorySegmentName="seg_0" name="subdivision_style_rel">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>0ADD8CB1-3E9E-E6F8-3BC9-4DA58C87359E</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <containerWithKeyObject>EF4FD6CC-9653-F2BB-8D03-4F702228461A</containerWithKeyObject>
-<deleteRule>NO ACTION</deleteRule>
+<deleteRule>RESTRICT</deleteRule>
 <localFKIndex>C97ADD86-617B-8828-563A-4DB2DB9B3F80</localFKIndex>
 <keyObject>14B01D8E-F306-CBF9-1EE1-02571E769A5E</keyObject>
 <mandatory>true</mandatory>
 <transferable>true</transferable>
-<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
 </FKIndexAssociation>

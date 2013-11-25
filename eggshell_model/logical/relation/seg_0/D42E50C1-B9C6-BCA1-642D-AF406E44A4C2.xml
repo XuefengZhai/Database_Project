@@ -1,14 +1,12 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="employee_update" directorySegmentName="seg_0" id="D42E50C1-B9C6-BCA1-642D-AF406E44A4C2">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="employee_update" id="D42E50C1-B9C6-BCA1-642D-AF406E44A4C2" directorySegmentName="seg_0">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>97FF8052-3716-152B-FCD3-34FC8C790401</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
-<sourcePk>2F9D5FFB-668F-0298-FEED-DCE6BCFE6330</sourcePk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>

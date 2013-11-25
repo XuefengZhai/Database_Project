@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="20824E67-988E-4D36-76C3-A0EFDB03FD10" name="User">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="20824E67-988E-4D36-76C3-A0EFDB03FD10" directorySegmentName="seg_0" name="User">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
@@ -8,6 +8,7 @@
 <item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
 <item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
 </engineerTo>
+<pkName>User PK</pkName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,8 +17,43 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="user id" id="7A5E15CC-81E5-CE94-A7DF-8586DF105D0A">
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Attribute</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="user id" id="7A5E15CC-81E5-CE94-A7DF-8586DF105D0A">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
@@ -30,7 +66,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 </Attribute>
-<Attribute name="user type" id="437F8A15-A225-D2CC-44EF-8258C23D7B4A">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="user type" id="437F8A15-A225-D2CC-44EF-8258C23D7B4A">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
@@ -43,7 +79,7 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>3295C118-96D2-925D-C8AD-6EF54944255A</domain>
 </Attribute>
-<Attribute name="username" id="E88B19CE-AC28-7006-DB8D-C0E439F29672">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="username" id="E88B19CE-AC28-7006-DB8D-C0E439F29672">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
@@ -56,7 +92,7 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>86AA045B-36F3-1583-4152-E165A08977B7</domain>
 </Attribute>
-<Attribute name="password" id="D86E3D40-8A19-5129-6D53-25DE00A0A47E">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="password" id="D86E3D40-8A19-5129-6D53-25DE00A0A47E">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
@@ -69,7 +105,7 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>C3BC60B5-E4AC-9E2D-8E44-A9A3EDE1F49F</domain>
 </Attribute>
-<Attribute name="password recovery question" id="4AE30268-A46A-4E65-20C2-2BED0DC674F3">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="password recovery question" id="4AE30268-A46A-4E65-20C2-2BED0DC674F3">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
@@ -82,7 +118,7 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>5A92A68D-FEA6-3147-D88F-944C0B9FD1D0</domain>
 </Attribute>
-<Attribute name="password recovery answer" id="7B10453E-C33E-F984-C354-8141E8050C60">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="password recovery answer" id="7B10453E-C33E-F984-C354-8141E8050C60">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
@@ -95,7 +131,7 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>5A92A68D-FEA6-3147-D88F-944C0B9FD1D0</domain>
 </Attribute>
-<Attribute name="email" id="FE42A59D-213B-4B6F-A454-3558BA328697">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="email" id="FE42A59D-213B-4B6F-A454-3558BA328697">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
@@ -108,7 +144,7 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>06246EB8-5867-28F6-D772-4765119B2DE8</domain>
 </Attribute>
-<Attribute name="is active" id="FD83B3FA-849B-4734-5B17-6E290C0C9058">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="is active" id="FD83B3FA-849B-4734-5B17-6E290C0C9058">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
@@ -123,8 +159,8 @@
 <domain>3F67407E-BBF3-29CB-9676-B2C96D674A93</domain>
 </Attribute>
 </attributes>
-<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="2937A895-DD24-0A75-7FE9-E6AE6666D885" name="User PK">
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="2937A895-DD24-0A75-7FE9-E6AE6666D885" name="User PK">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>

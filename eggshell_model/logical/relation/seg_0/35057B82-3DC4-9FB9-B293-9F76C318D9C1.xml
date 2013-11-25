@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Subdiv_agreement_contract" id="35057B82-3DC4-9FB9-B293-9F76C318D9C1" directorySegmentName="seg_0">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-21 00:04:28 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+</engineerTo>
+<dominantRole>850F8901-7E17-2FDF-5F8C-F135136DD224</dominantRole>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C5007AC8-1B84-7753-DF23-F2E5CAB69276</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>850F8901-7E17-2FDF-5F8C-F135136DD224</targetEntity>
+<transferable>true</transferable>
+</Relation>

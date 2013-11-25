@@ -1,13 +1,47 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9FC8195F-0003-A0A8-3A1C-5053866CDC2D" name="House_style">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="9FC8195F-0003-A0A8-3A1C-5053866CDC2D" directorySegmentName="seg_0" name="House_style">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>D4338C43-3588-C9FF-6738-8CCC23296A2A</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
-<allowColumnReorder>false</allowColumnReorder>
-<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
-<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="house_style_id" id="CEB02657-ED15-75E6-8339-802DADDE1BB8">
+<pkName>House_style_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="house_style_id" id="CEB02657-ED15-75E6-8339-802DADDE1BB8">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>009EC4C0-27D0-AEB3-5354-0EFDF4D8D429</generatorID>
@@ -17,7 +51,7 @@
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="reversed_style_id" id="761B539A-C8EE-61F1-0839-B356369A335D">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="reversed_style_id" id="761B539A-C8EE-61F1-0839-B356369A335D">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <comment>reversed_style_id</comment>
@@ -34,7 +68,7 @@
 <colAssociation fkAssociation="6AB869DD-689F-33ED-139C-5AA0E79A1595" referredColumn="CEB02657-ED15-75E6-8339-802DADDE1BB8"/>
 </associations>
 </Column>
-<Column name="floorplan" id="E4AD55D2-DEB5-9228-D9D3-65F3AE09DAC5">
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="floorplan" id="E4AD55D2-DEB5-9228-D9D3-65F3AE09DAC5">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>BFE8D629-DE6F-BE10-284C-0AA077ADA0A5</generatorID>
@@ -45,37 +79,33 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
-<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D94DFD10-A785-4852-9B77-0697AA2887CF" name="House_style_PK">
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="D94DFD10-A785-4852-9B77-0697AA2887CF" name="House_style_PK">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>49C02CA2-853E-6853-5513-BA82E824AEF1</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
-<isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="CEB02657-ED15-75E6-8339-802DADDE1BB8"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="8727F3DC-085F-9A1D-5B87-5E7B177FFBD4" name="House_style__IDX">
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="8727F3DC-085F-9A1D-5B87-5E7B177FFBD4" name="House_style__IDX">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <indexState>Unique Plain Index</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<relationGeneratorID>E33A8FED-F77A-7A1C-E28A-4E43DEEF2BD4</relationGeneratorID>
 <indexColumnUsage>
 <colUsage columnID="761B539A-C8EE-61F1-0839-B356369A335D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="EC95067D-969B-280A-7920-2DD7AB3546B1" name="House_style_House_style_FK">
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="EC95067D-969B-280A-7920-2DD7AB3546B1" name="reversed_style">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:59:13 UTC</createdTime>
 <generatorID>E33A8FED-F77A-7A1C-E28A-4E43DEEF2BD4</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="761B539A-C8EE-61F1-0839-B356369A335D"/>
 </indexColumnUsage>

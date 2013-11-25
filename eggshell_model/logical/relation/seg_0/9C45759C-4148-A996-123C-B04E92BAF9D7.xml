@@ -1,14 +1,12 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="subdiv school district rel" directorySegmentName="seg_0" id="9C45759C-4148-A996-123C-B04E92BAF9D7">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="subdiv school district rel" id="9C45759C-4148-A996-123C-B04E92BAF9D7" directorySegmentName="seg_0">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>3BC08811-1D73-F7F6-D1B8-6CBC24B2C07B</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
 </engineerTo>
-<sourcePk>F82F71DD-EF86-0560-FBB9-FF7B4C022E94</sourcePk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
