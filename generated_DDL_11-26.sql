@@ -516,7 +516,7 @@ ALTER TABLE Stage_assignment
 CREATE TABLE Stage_code_table 
     ( 
      stage_id NUMBER  NOT NULL , 
-     "number" NUMBER  NOT NULL CHECK ( stage_number <= 7) , 
+     stage_number NUMBER  NOT NULL CHECK ( stage_number <= 7) , 
      description VARCHAR2 (250) 
     ) 
 ;
@@ -1216,38 +1216,3 @@ ALTER TABLE Task_update
     ) 
 ;
 
-
-
--- Oracle SQL Developer Data Modeler Summary Report: 
--- 
--- CREATE TABLE                            35
--- CREATE INDEX                             0
--- ALTER TABLE                             81
--- CREATE VIEW                              0
--- CREATE PACKAGE                           0
--- CREATE PACKAGE BODY                      0
--- CREATE PROCEDURE                         0
--- CREATE FUNCTION                          0
--- CREATE TRIGGER                           0
--- ALTER TRIGGER                            0
--- CREATE STRUCTURED TYPE                   0
--- CREATE COLLECTION TYPE                   0
--- CREATE CLUSTER                           0
--- CREATE CONTEXT                           0
--- CREATE DATABASE                          0
--- CREATE DIMENSION                         0
--- CREATE DIRECTORY                         0
--- CREATE DISK GROUP                        0
--- CREATE ROLE                              0
--- CREATE ROLLBACK SEGMENT                  0
--- CREATE SEQUENCE                          0
--- CREATE MATERIALIZED VIEW                 0
--- CREATE SYNONYM                           0
--- CREATE TABLESPACE                        0
--- CREATE USER                              0
--- 
--- DROP TABLESPACE                          0
--- DROP DATABASE                            0
--- 
--- ERRORS                                   0
--- WARNINGS                                 0
