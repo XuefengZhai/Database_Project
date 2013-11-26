@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="4BB2B0D7-3567-6C87-6642-D57547F6F7D4" directorySegmentName="seg_0" name="Construction_worker">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 19:29:30 UTC</createdTime>
+<generatorID>3A63D5AF-55A3-E1B6-CD64-9E1C55902BA1</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<pkName>Construction_worker_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="construction_worker_id" id="7E6EB240-5416-B069-C0CC-32EC3994299A">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 19:29:30 UTC</createdTime>
+<generatorID>DEA9D2CC-ED21-B48A-E16E-6815C3FF0099</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="skills" id="83E8FAFC-48DE-7BD5-2189-C5275D952EC4">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 19:29:30 UTC</createdTime>
+<generatorID>841B9B7B-C934-6C90-1F4B-A3675E38F7F7</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</domain>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="employee_id" id="3D061AF1-5B94-1289-6E8D-69B0FD5A23F7">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 19:29:35 UTC</createdTime>
+<generatorID>43A0FC17-4B1A-5BF0-0D80-FB560AEEC5BA</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>918A0098-03B6-1EFA-D6AE-6251DDD65052</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="662DFAAE-CF36-2ADB-B38C-D0140293CED7" referredColumn="918A0098-03B6-1EFA-D6AE-6251DDD65052"/>
+</associations>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="BFB24DAA-EA2B-D494-3483-EBDAE0339BF4" name="Construction_worker_PK">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 19:29:30 UTC</createdTime>
+<generatorID>BD2D0619-BA53-00D2-D2D5-CCBD69A071DF</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="7E6EB240-5416-B069-C0CC-32EC3994299A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="86901C1E-D00C-CB15-E9AA-4AEF7AF05FFD" name="employee_consty_worker_rel">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 19:29:31 UTC</createdTime>
+<generatorID>4983B523-5AED-0DE2-53FB-4744269CC939</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="3D061AF1-5B94-1289-6E8D-69B0FD5A23F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -5,7 +5,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>60FDF0BE-E02D-5C2D-8903-77A9C9C5866C</importedID>
 <engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+<item key="DD1A6AF4-BB68-DB1E-3C86-379B9B89FCF6" value="true"/>
 </engineerTo>
 <pkName>Room_assignment_PK</pkName>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -58,22 +58,8 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>9A3342B3-70FB-6FAD-64C7-A7CB94C672D1</importedID>
 <engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+<item key="DD1A6AF4-BB68-DB1E-3C86-379B9B89FCF6" value="true"/>
 </engineerTo>
-<use>0</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
-</Attribute>
-<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="house id" id="FF744761-D3A7-CE16-0520-A27D46DD89FC">
-<createdBy>Gummoe</createdBy>
-<createdTime>2013-11-19 03:52:00 UTC</createdTime>
-<generatorID>84BB6856-CF26-D5C9-45C4-1333A1981B68</generatorID>
-<ownerDesignName>eggshell_model</ownerDesignName>
-<importedID>7715F3E7-53F2-FC94-93C3-8B61596419C6</importedID>
-<engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
-</engineerTo>
-<referedAttribute>A88E0069-510D-5467-64A7-13C2859E2B7D</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
@@ -85,9 +71,24 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>32F9A058-C777-7D2E-5051-C78A934488DB</importedID>
 <engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+<item key="DD1A6AF4-BB68-DB1E-3C86-379B9B89FCF6" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <referedAttribute>065B4C69-514D-1897-5B22-46D0A6DDC60E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="floor_id" id="7F8918A7-93B1-E54E-A7F6-381FF6B65483">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:46:45 UTC</createdTime>
+<generatorID>709E8B0B-CE22-A15A-F1B6-838B3D2395DC</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="DD1A6AF4-BB68-DB1E-3C86-379B9B89FCF6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>0B4435AB-C7A5-C4F4-C363-06BC1ADD28F8</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
@@ -100,7 +101,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>DE5F61B4-A6C8-8494-CC2D-679940B00645</importedID>
 <engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+<item key="DD1A6AF4-BB68-DB1E-3C86-379B9B89FCF6" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

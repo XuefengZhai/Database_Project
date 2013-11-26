@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="B1A8875E-FC9C-F74F-8B78-76609F28FB68" directorySegmentName="seg_0" name="Lot_style_elevation">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 17:31:49 UTC</createdTime>
+<generatorID>446B2BFC-A9F6-0AF8-9D49-1B23B91E995E</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<containerWithKeyObject>3BDE5227-3EF9-7E0A-B1EE-8B6A2ABCB728</containerWithKeyObject>
+<deleteRule>RESTRICT</deleteRule>
+<localFKIndex>D5D7202B-E195-D815-BBE7-981CBCD71E6D</localFKIndex>
+<keyObject>1153E22B-21FB-7988-93D4-7F2738621373</keyObject>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+</FKIndexAssociation>

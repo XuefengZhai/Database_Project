@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="2FA03A19-2EC8-DFCD-4298-98A0A69703CC" directorySegmentName="seg_0" name="Floor">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:42:00 UTC</createdTime>
+<generatorID>36DD15E7-CC7C-BBCC-5570-789C7F2C99A9</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="floor_id" id="1BFE50E3-E9F0-A1BF-902F-4C2910B4B5EA">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:42:00 UTC</createdTime>
+<generatorID>0B4435AB-C7A5-C4F4-C363-06BC1ADD28F8</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="house_id" id="2A1AC825-0395-804B-0F84-31B59C0FA8D2">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:42:00 UTC</createdTime>
+<generatorID>E65BDAB0-0EBC-F6DC-044C-F52145B37DF8</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>C054A924-4B68-48FF-17C1-BC68B29273E4</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="680218A7-963B-2568-F44B-0C9B3EEFE4D8" referredColumn="C054A924-4B68-48FF-17C1-BC68B29273E4"/>
+</associations>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="15F13D60-AA4E-B685-442D-13A7BFCFA91D" name="floor_assignment">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:42:00 UTC</createdTime>
+<generatorID>72053AF9-E2A6-6355-C1C8-9F725647E16A</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="2A1AC825-0395-804B-0F84-31B59C0FA8D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

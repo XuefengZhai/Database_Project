@@ -1,0 +1,178 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="7E52006A-57AD-26E4-B3D9-B7B6F8BBC834" directorySegmentName="seg_0" name="Task_update">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:39:32 UTC</createdTime>
+<generatorID>68D2B261-3838-25D9-CCB0-15F787392A59</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<pkName>Update_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="task_update_id" id="A48FB507-7033-7285-D34D-5236DF1771AB">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:39:32 UTC</createdTime>
+<generatorID>8D9C1E27-888F-F780-B018-F246B213DCC0</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="task_id" id="0F5469C6-9B6C-CAA1-4276-FA0FE593B59E">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:39:38 UTC</createdTime>
+<generatorID>14C5D15B-260A-CAF6-C126-2151D4CF6AF2</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>8B6540E0-F808-498B-CEC8-055BE6836D76</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75FD224F-EECA-F2EA-9425-B85B4F7C8BB0" referredColumn="8B6540E0-F808-498B-CEC8-055BE6836D76"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="employee_id" id="8A32A47E-D206-0716-FDBA-F072621EC83F">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:39:38 UTC</createdTime>
+<comment>updated by this employee</comment>
+<generatorID>5F230B15-E8E1-27BD-7450-98CFBE293F98</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>B3E1841F-23E2-FDE2-5D40-26A3C5A4ED6F</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="000A42E5-4FFC-86BD-2EAE-BB3ABD54D68D" referredColumn="B3E1841F-23E2-FDE2-5D40-26A3C5A4ED6F"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="construction_project_id" id="6EE3E198-EA3B-ABBD-1776-303A5015570D">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:39:38 UTC</createdTime>
+<generatorID>C0E4D8B9-9525-5853-8D37-857EF476CAC8</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>50815AC8-3D58-3F3F-FB41-F07433CCB310</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="57E56404-99D7-9680-45ED-BFDA58968A0D" referredColumn="50815AC8-3D58-3F3F-FB41-F07433CCB310"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="date" id="C9477502-8E82-84FC-6C4E-66F32148923C">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:39:32 UTC</createdTime>
+<generatorID>F2EBD67F-2007-15F5-B973-9890F0B0F518</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>2FF7B1E7-B0D4-FE14-1A61-196E6487640C</domain>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="percent_complete" id="B5D511AD-9069-492D-BFBA-7BC024DCE14B">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:39:32 UTC</createdTime>
+<generatorID>9EAF8A8F-089C-2CA6-5649-0CCA5120B3BF</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>13B81282-A966-2A6C-1FA1-5D69B2E11F8D</domain>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="notes" id="750CA674-6878-CC7B-725F-FE2707755A2B">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:39:32 UTC</createdTime>
+<generatorID>0B9C6F69-C1B3-ABFE-8CB4-F46976176739</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</domain>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="A144AC0F-629E-98D0-2A8C-9858B15099CB" name="Update_PK">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:39:32 UTC</createdTime>
+<generatorID>6642D0AB-B7F1-F156-7E5F-683DC3828A2F</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="A48FB507-7033-7285-D34D-5236DF1771AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="0D72ACD7-770D-C514-3BBB-F86E43E1131D" name="construction_project_update">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:39:32 UTC</createdTime>
+<generatorID>C38C31C5-6064-1914-3B4B-4738F40828E3</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="6EE3E198-EA3B-ABBD-1776-303A5015570D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="E0DF7464-A2D3-6202-4DE5-A54659504498" name="employee_update">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:39:32 UTC</createdTime>
+<generatorID>D42E50C1-B9C6-BCA1-642D-AF406E44A4C2</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="8A32A47E-D206-0716-FDBA-F072621EC83F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="4015EFE5-6C4C-6D1C-8014-D5F74DF63F9D" name="task_update_rel">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:39:32 UTC</createdTime>
+<generatorID>F5854807-AB48-C129-BA10-3E1CB13E3386</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="0F5469C6-9B6C-CAA1-4276-FA0FE593B59E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

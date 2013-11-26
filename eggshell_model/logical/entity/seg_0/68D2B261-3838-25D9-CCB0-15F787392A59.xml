@@ -5,7 +5,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>4C9BDC9F-F9B0-9A05-0B1D-F8D1CA04BEBC</importedID>
 <engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
 </engineerTo>
 <pkName>Update PK</pkName>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -58,7 +58,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>B07178D1-A710-7A9F-2982-AA2E0E846A34</importedID>
 <engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -71,7 +71,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>918874AF-DAA8-B66E-A853-F61DAD5EB34C</importedID>
 <engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
 </engineerTo>
 <referedAttribute>A3C738F7-2309-F20A-79AA-D1D68552B320</referedAttribute>
 <use>0</use>
@@ -85,7 +85,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>12CF9B8D-FF18-243D-F3A3-7EA99F1778FF</importedID>
 <engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
 </engineerTo>
 <referedAttribute>A7CDEF2E-AE63-F12B-CFDD-421121F93CC3</referedAttribute>
 <use>0</use>
@@ -100,7 +100,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>554D1246-68A2-B94D-A535-B56F2EACC154</importedID>
 <engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
 </engineerTo>
 <referedAttribute>56867A57-20A4-4E27-5E29-10115BED861F</referedAttribute>
 <use>0</use>
@@ -113,7 +113,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>70560E35-93EC-4A0A-F4C9-EF06356D9844</importedID>
 <engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT008</logicalDatatype>
@@ -125,7 +125,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>1C58DE88-5A9A-B3BB-3ED4-3C51ED27B7C5</importedID>
 <engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -137,11 +137,23 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>FD0717F0-21E1-AC6C-36B2-70D6899C30DB</importedID>
 <engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</domain>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="photo" id="6D99F08F-BD88-5C4F-B7F2-828BD669E298">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 19:15:23 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<domain>697497C3-A2C9-C303-872C-7F8B4C52FAF1</domain>
 </Attribute>
 </attributes>
 <identifiers>
@@ -151,7 +163,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>A46FE0B2-52BF-E66C-2F97-D378FBB00FCD</importedID>
 <engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

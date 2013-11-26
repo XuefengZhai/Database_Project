@@ -1,0 +1,3 @@
+Floorplan_links under the style code table is denormalized because it contains many values in a single cell.
+
+Skills under construction worker is also denormalized because it contains many values in a single cell.

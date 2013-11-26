@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="4EDDCF1D-CB9A-7F20-D42E-633C6E3082A1" directorySegmentName="seg_0" name="Sale">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 19:22:20 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+</engineerTo>
+<pkName>Sale PK</pkName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Attribute</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="sale_id" id="0F06DE09-362B-B22C-8FC4-ECA4E42D8B5B">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 19:22:25 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="escrow_paid" id="407EEEBE-67EC-9D00-33C6-B65E0D1DE618">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 19:22:30 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+</engineerTo>
+<defaultValue>false</defaultValue>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>7A94C4D1-93DE-2737-27D5-94A7F3D7279B</domain>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="financing_option" id="E22611BA-F9AA-5BFD-4F40-415E26A616BA">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 19:23:02 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+</engineerTo>
+<defaultValue>unknown</defaultValue>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A7482B5B-B06B-6607-592E-F851550260D8</domain>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="sales agent id" id="B741ED0F-085F-2C18-8539-B7AF49753FF1">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 19:23:53 UTC</createdTime>
+<generatorID>D8A07152-2334-AA0D-B1C1-B64E9B65BD71</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+</engineerTo>
+<referedAttribute>A348347C-49F7-BD0B-F1CA-9A504EC09B35</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="house id" id="3BDE14D0-209A-FF1A-DC6B-055A3AF7BD77">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 19:24:24 UTC</createdTime>
+<generatorID>A33C48EE-3BE8-8497-B7BF-0A669A5F676A</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+</engineerTo>
+<referedAttribute>A88E0069-510D-5467-64A7-13C2859E2B7D</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
+</attributes>
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="A3686116-D2A3-5201-5131-E9C204B01539" name="Sale PK">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 19:25:33 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0F06DE09-362B-B22C-8FC4-ECA4E42D8B5B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

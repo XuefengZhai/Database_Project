@@ -1,13 +1,13 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8C049AA9-B21F-64DC-43C1-E3E09ED1B977" name="Room">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="8C049AA9-B21F-64DC-43C1-E3E09ED1B977" directorySegmentName="seg_0" name="Room">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>9BB51CE3-7307-1B2B-5FCC-EF80B6C0496C</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
 </engineerTo>
+<pkName>Room PK</pkName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,57 +16,130 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="room id" id="065B4C69-514D-1897-5B22-46D0A6DDC60E">
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Attribute</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="room id" id="065B4C69-514D-1897-5B22-46D0A6DDC60E">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>A3A2C16C-6583-E00C-1813-1DEE20AC0454</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 </Attribute>
-<Attribute name="room type" id="714C46AB-201A-570F-2B20-02952BF5DA4B">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="room type" id="714C46AB-201A-570F-2B20-02952BF5DA4B">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>86C9335B-1731-973A-5B17-CC394D5A44EC</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>ED0A9BA5-EBE8-699C-8E1F-3280E22180BA</domain>
 </Attribute>
-<Attribute name="description" id="580DB485-F45A-D748-B439-AE85850F8822">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="description" id="580DB485-F45A-D748-B439-AE85850F8822">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>E05FEFAB-15FC-533C-1A8D-F6E6325D4492</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</domain>
 </Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="size" id="F86D3D18-1A4A-03C3-EB91-3D8634AF3B2C">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:32:59 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</domain>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="num_windows" id="3C191AE0-1021-3BC4-0A94-4FE0B3A05352">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:55:49 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>7B49A09F-469C-976D-A2C3-80360DE26C9C</domain>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>99</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="ceiling_type" id="41B7097E-838E-4F93-9C40-C0CF04B579C9">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 18:56:51 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DF80E0FA-38E9-25E6-C1DE-B17E2FA05E3F</domain>
+</Attribute>
 </attributes>
-<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="12B91627-3210-F7AF-A1E6-D6E21641363E" name="Room PK">
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="12B91627-3210-F7AF-A1E6-D6E21641363E" name="Room PK">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>0C23B020-9A5C-A77F-7E6F-26CC6D090AC9</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -1,12 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="20824E67-988E-4D36-76C3-A0EFDB03FD10" directorySegmentName="seg_0" name="User">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="20824E67-988E-4D36-76C3-A0EFDB03FD10" directorySegmentName="seg_0" name="App_User">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>D314CC85-7BE1-32E1-69F0-240C475918C4</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="E14226B5-12E9-AB05-4E50-57F0703D40F4" value="true"/>
 </engineerTo>
 <pkName>User PK</pkName>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -53,14 +52,13 @@
 </FontObject>
 </fonts>
 <attributes>
-<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="user id" id="7A5E15CC-81E5-CE94-A7DF-8586DF105D0A">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="app_user_id" id="7A5E15CC-81E5-CE94-A7DF-8586DF105D0A">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>07DCBC4D-E6B5-F9ED-4EEF-6885B21A8565</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="E14226B5-12E9-AB05-4E50-57F0703D40F4" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -72,8 +70,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>AE8D00B5-0AAF-DE46-5FCB-F22E6734E6B8</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="E14226B5-12E9-AB05-4E50-57F0703D40F4" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -85,8 +82,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>9675EAD5-B695-F92D-2798-94F0BA75E449</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="E14226B5-12E9-AB05-4E50-57F0703D40F4" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -98,8 +94,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>6D09C94A-DE00-7EBD-EF72-6DD7F7DF4FF1</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="E14226B5-12E9-AB05-4E50-57F0703D40F4" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -111,8 +106,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>92990F17-2ECD-B5FF-2B09-87DDEFFC865F</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="E14226B5-12E9-AB05-4E50-57F0703D40F4" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -124,8 +118,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>A19D0347-6797-957F-CA68-1F0C8308CBBE</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="E14226B5-12E9-AB05-4E50-57F0703D40F4" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -137,8 +130,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>9BB6884F-F32B-FAC3-C7E3-157FA047350D</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="E14226B5-12E9-AB05-4E50-57F0703D40F4" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -150,8 +142,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>AB37AFBA-DC51-2F5E-1353-829A51EC0C98</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="E14226B5-12E9-AB05-4E50-57F0703D40F4" value="true"/>
 </engineerTo>
 <defaultValue>true</defaultValue>
 <use>0</use>
@@ -166,8 +157,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>D511C7A5-9A6E-26C3-E424-40174AAEBB80</importedID>
 <engineerTo>
-<item key="0671DAC9-CAE2-B0BB-8A1B-72A7DD56AB59" value="true"/>
-<item key="CF49DFBC-D2C8-B06C-2EF7-D4E83E7AE935" value="true"/>
+<item key="E14226B5-12E9-AB05-4E50-57F0703D40F4" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
