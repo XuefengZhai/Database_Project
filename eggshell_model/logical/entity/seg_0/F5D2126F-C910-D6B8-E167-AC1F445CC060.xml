@@ -66,7 +66,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 </Attribute>
-<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="number" id="0B489D81-E3C5-8D0E-EDA5-1982513E7354">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="stage_number" id="0B489D81-E3C5-8D0E-EDA5-1982513E7354">
 <createdBy>Gummoe</createdBy>
 <createdTime>2013-11-19 03:52:00 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
