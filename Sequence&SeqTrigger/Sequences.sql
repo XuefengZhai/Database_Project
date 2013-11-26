@@ -33,7 +33,6 @@ START WITH 1;
 CREATE SEQUENCE Update_seq INCREMENT BY 1
 START WITH 1;
 
---Do we need surrogate key for stage???????
 CREATE SEQUENCE Stage_code_table_seq INCREMENT BY 1
 START WITH 1;
 
