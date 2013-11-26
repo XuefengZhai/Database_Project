@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="2554A454-1DBB-3E48-719A-2009587A623B" directorySegmentName="seg_0" name="House_lot_rel">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-26 21:16:20 UTC</createdTime>
+<generatorID>D7D7D32B-FBE2-C34E-4AA6-2BB718755F16</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<containerWithKeyObject>FB7883CB-3384-B2BB-E141-200FFB9C91AB</containerWithKeyObject>
+<deleteRule>RESTRICT</deleteRule>
+<localFKIndex>29883917-B516-5374-DDDA-B300CAB7A882</localFKIndex>
+<keyObject>E77EBBCB-2BC5-B76C-21B9-634ACEF64EC1</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+</FKIndexAssociation>
