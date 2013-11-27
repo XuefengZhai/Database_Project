@@ -11,8 +11,10 @@ DECLARE
 		SELECT stage_id from option_for_stage 
 		WHERE option_for_stage_id = :new.option_for_stage_id;
 BEGIN
-	OPEN stageCursor INTO housestage;
-	OPEN optionCursor INTO optionstage;
+	OPEN stageCursor;
+	FETCH stageCursor INTO housestage;
+	OPEN optionCursor;
+	FETCH optionCursor INTO optionstage;
 	IF (housestage - 1) = optionstage THEN
 		UPDATE stage_selected_option
 		SET stage_selected_option.price = :NEW.price + (:NEW.price * 0.15)

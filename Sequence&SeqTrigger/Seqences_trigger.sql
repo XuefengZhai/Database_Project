@@ -1,7 +1,7 @@
 --Triggers to populate surrogate keys when inserting into tables
 
 CREATE OR REPLACE TRIGGER seq_t1 
-BEFORE INSERT ON Constryction_worker
+BEFORE INSERT ON Construction_worker
 FOR EACH ROW
 WHEN (NEW.construction_worker_id IS NULL) 
 BEGIN
@@ -9,12 +9,12 @@ BEGIN
 END;
 /
 
-CREATE OR REPLACE TRIGGER seq_t2 
-BEFORE INSERT ON Emplyee
+CREATE OR REPLACE TRIGGER seq_t2
+BEFORE INSERT ON Employee
 FOR EACH ROW
-WHEN (NEW.emplyee_id IS NULL) 
+WHEN (NEW.employee_id IS NULL) 
 BEGIN
-  :NEW.emplyee_id := Emloyee_seq.NEXTVAL;
+  :NEW.employee_id := Employee_seq.NEXTVAL;
 END;
 /
 
@@ -28,20 +28,20 @@ END;
 /
 
 CREATE OR REPLACE TRIGGER seq_t4 
-BEFORE INSERT ON Construction_worker_crew_assignment
+BEFORE INSERT ON Constr_worker_crew_assign
 FOR EACH ROW
-WHEN (NEW.Construction_worker_crew_assignment_id IS NULL) 
+WHEN (NEW.Constr_worker_crew_assign_id IS NULL) 
 BEGIN
-  :NEW.Construction_worker_crew_assignment_id := Construction_worker_crew_assignment_seq.NEXTVAL;
+  :NEW.Constr_worker_crew_assign_id := Constr_worker_crew_assign_seq.NEXTVAL;
 END;
 /
 
-CREATE OR REPLACE TRIGGER seq_t5 
-BEFORE INSERT ON User
+CREATE OR REPLACE TRIGGER seq_t5
+BEFORE INSERT ON Sale
 FOR EACH ROW
-WHEN (NEW.user_id IS NULL) 
+WHEN (NEW.Sale_id IS NULL) 
 BEGIN
-  :NEW.user_id := User_seq.NEXTVAL;
+  :NEW.sale_id := Sale_seq.NEXTVAL;
 END;
 /
 
@@ -57,9 +57,9 @@ END;
 CREATE OR REPLACE TRIGGER seq_t7 
 BEFORE INSERT ON Stage_selected_option
 FOR EACH ROW
-WHEN (NEW.Stage_selected_option IS NULL) 
+WHEN (NEW.Stage_selected_option_id IS NULL) 
 BEGIN
-  :NEW.Stage_selected_option := Stage_selected_option_seq.NEXTVAL;
+  :NEW.Stage_selected_option_id := Stage_selected_opt_seq.NEXTVAL;
 END;
 /
 
@@ -82,20 +82,20 @@ END;
 /
 
 CREATE OR REPLACE TRIGGER seq_t10 
-BEFORE INSERT ON Crew_project_assighment
+BEFORE INSERT ON Crew_project_assignment
 FOR EACH ROW
-WHEN (NEW.crew_project_assighment_id IS NULL) 
+WHEN (NEW.crew_project_assignment_id IS NULL) 
 BEGIN
-  :NEW.crew_project_assighment_id := Crew_project_assighment_seq.NEXTVAL;
+  :NEW.crew_project_assignment_id := Crew_project_assignment_seq.NEXTVAL;
 END;
 /
 
 CREATE OR REPLACE TRIGGER seq_t11 
-BEFORE INSERT ON Update
+BEFORE INSERT ON Task_update
 FOR EACH ROW
-WHEN (NEW.update_id IS NULL) 
+WHEN (NEW.task_update_id IS NULL) 
 BEGIN
-  :NEW.update_id := Update_seq.NEXTVAL;
+  :NEW.task_update_id := Task_update_seq.NEXTVAL;
 END;
 /
 
@@ -118,11 +118,11 @@ END;
 /
 
 CREATE OR REPLACE TRIGGER seq_t14 
-BEFORE INSERT ON Disclosure_form_assignment
+BEFORE INSERT ON App_user
 FOR EACH ROW
-WHEN (NEW.disclosure_form_assignment_id IS NULL) 
+WHEN (NEW.app_user_id IS NULL) 
 BEGIN
-  :NEW.disclosure_form_assignment_id := Disclosure_form_assignment_seq.NEXTVAL;
+  :NEW.app_user_id := App_user_seq.NEXTVAL;
 END;
 /
 
@@ -165,9 +165,9 @@ END;
 CREATE OR REPLACE TRIGGER seq_t19
 BEFORE INSERT ON Option_code_table
 FOR EACH ROW
-WHEN (NEW.option_code_table_id IS NULL) 
+WHEN (NEW.option_id IS NULL) 
 BEGIN
-  :NEW.option_code_table_id := Option_code_table_seq.NEXTVAL;
+  :NEW.option_id := Option_code_table_seq.NEXTVAL;
 END;
 /
 
@@ -200,11 +200,11 @@ END;
 /
 
 CREATE OR REPLACE TRIGGER seq_t23
-BEFORE INSERT ON Subdivision_agreement_assghment
+BEFORE INSERT ON Floor
 FOR EACH ROW
-WHEN (NEW.subdivision_agreement_assghment_id IS NULL) 
+WHEN (NEW.Floor_id IS NULL) 
 BEGIN
-  :NEW.subdivision_agreement_assghment_id := Subdivision_agreement_assghment_seq.NEXTVAL;
+  :NEW.Floor_id := Floor_seq.NEXTVAL;
 END;
 /
 
@@ -256,9 +256,9 @@ END;
 CREATE OR REPLACE TRIGGER seq_t29
 BEFORE INSERT ON School_district
 FOR EACH ROW
-WHEN (NEW.school_district_option_id IS NULL) 
+WHEN (NEW.school_district_id IS NULL) 
 BEGIN
-  :NEW.school_district_option_id := School_district_seq.NEXTVAL;
+  :NEW.school_district_id := School_district_seq.NEXTVAL;
 END;
 /
 
@@ -276,7 +276,7 @@ BEFORE INSERT ON Style_code_table
 FOR EACH ROW
 WHEN (NEW.style_id IS NULL) 
 BEGIN
-  :NEW.style_id := Style_code_tabl_seq.NEXTVAL;
+  :NEW.style_id := Style_code_table_seq.NEXTVAL;
 END;
 /
 
@@ -304,6 +304,15 @@ FOR EACH ROW
 WHEN (NEW.elevation_id IS NULL) 
 BEGIN
   :NEW.elevation_id := Elevation_code_table_seq.NEXTVAL;
+END;
+/
+
+CREATE OR REPLACE TRIGGER seq_t35
+BEFORE INSERT ON Customer_contract_assign
+FOR EACH ROW
+WHEN (NEW.Customer_contract_assign_id IS NULL) 
+BEGIN
+  :NEW.Customer_contract_assign_id := Customer_contract_assign_seq.NEXTVAL;
 END;
 /
 

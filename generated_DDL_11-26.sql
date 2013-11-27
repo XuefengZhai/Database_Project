@@ -353,11 +353,10 @@ CREATE TABLE Option_code_table
     ( 
      option_id NUMBER  NOT NULL , 
      last_possible_stage NUMBER  NOT NULL , 
-     option_category VARCHAR2  NOT NULL , 
+     option_category VARCHAR2 (25)  NOT NULL CHECK ( option_category IN ('decoration', 'electrical', 'exterior', 'interior', 'plumbing')), 
      description VARCHAR2 (250) 
     ) 
 ;
-
 
 
 ALTER TABLE Option_code_table 
