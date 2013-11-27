@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="847249D4-73CF-8DE8-8EF1-CEDC5BDE57C2" directorySegmentName="seg_0" name="School">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-27 02:18:07 UTC</createdTime>
+<generatorID>9A64A152-47D6-9F1F-F97A-8C769E73188C</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<pkName>School_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="school_id" id="D4073CBB-138C-4DBD-3CC3-15EE282FFDB7">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-27 02:18:07 UTC</createdTime>
+<generatorID>ED4CADFD-68CA-D44F-70B8-AADE1F2BA2DF</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="school_district_id" id="5C0C7744-9BCF-45AC-014E-CF5C67026240">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-27 02:18:16 UTC</createdTime>
+<generatorID>68FF6DFF-6D19-F4D7-0A84-26060FC702A1</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>C3338D31-9E57-44A4-CA57-96CCB8768FCB</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88BE8F95-5BC1-D3E5-6B2B-F51F61AA3107" referredColumn="C3338D31-9E57-44A4-CA57-96CCB8768FCB"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="name" id="646FDE5D-A718-1AB4-DA3B-952B2962153C">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-27 02:18:07 UTC</createdTime>
+<generatorID>0C90B90E-BBF9-4CD3-851A-0565BCE5FDB7</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>86AA045B-36F3-1583-4152-E165A08977B7</domain>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="068DD21D-9A91-0BDD-417F-67FC665367EE" name="School_PK">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-27 02:18:07 UTC</createdTime>
+<generatorID>497E2A01-DB4F-8F5B-2D71-718D778CA13C</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="D4073CBB-138C-4DBD-3CC3-15EE282FFDB7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="1859D8BF-0BF4-FC50-1E51-AAD330BCF34B" name="school_district_school_rel">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-27 02:18:07 UTC</createdTime>
+<generatorID>7B6C01B3-C74B-9817-179F-2D4353869CA3</generatorID>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="5C0C7744-9BCF-45AC-014E-CF5C67026240"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

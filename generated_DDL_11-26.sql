@@ -302,7 +302,6 @@ CREATE TABLE House
     ( 
      house_id NUMBER  NOT NULL , 
      house_style_id NUMBER , 
-     lot_id NUMBER  NOT NULL , 
      escrow_amount NUMBER (8,2) , 
      is_reversed CHAR (1) DEFAULT 'N' , 
      financing_info VARCHAR2 (250) 
@@ -313,6 +312,7 @@ CREATE TABLE House
 
 ALTER TABLE House 
     ADD CONSTRAINT House_PK PRIMARY KEY ( house_id ) ;
+
 
 
 
@@ -339,15 +339,14 @@ CREATE TABLE Lot
      longitude NUMBER , 
      street_address VARCHAR2 (40)  NOT NULL , 
      "size" VARCHAR2 (250) , 
-     premium NUMBER (9,2)  NOT NULL 
+     premium NUMBER (9,2)  NOT NULL , 
+     house_id NUMBER 
     ) 
 ;
 
 
-
 ALTER TABLE Lot 
     ADD CONSTRAINT Lot_PK PRIMARY KEY ( lot_id ) ;
-
 
 
 CREATE TABLE Option_code_table 
@@ -733,19 +732,6 @@ ALTER TABLE Construction_project
     ) 
 ;
 
-
-ALTER TABLE House 
-    ADD CONSTRAINT House_lot_rel FOREIGN KEY 
-    ( 
-     lot_id
-    ) 
-    REFERENCES Lot 
-    ( 
-     lot_id
-    ) 
-;
-
-
 ALTER TABLE Lot 
     ADD CONSTRAINT Lot_style_elevation FOREIGN KEY 
     ( 
@@ -972,7 +958,6 @@ ALTER TABLE House
      house_style_id
     ) 
 ;
-
 
 ALTER TABLE Sale 
     ADD CONSTRAINT house_sale FOREIGN KEY 
@@ -1213,3 +1198,13 @@ ALTER TABLE Task_update
     ) 
 ;
 
+ALTER TABLE Lot 
+    ADD CONSTRAINT House_lot_rel FOREIGN KEY 
+    ( 
+     house_id
+    ) 
+    REFERENCES House 
+    ( 
+     house_id
+    ) 
+;

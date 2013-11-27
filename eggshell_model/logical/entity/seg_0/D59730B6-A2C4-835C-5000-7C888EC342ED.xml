@@ -5,7 +5,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>116358B9-0DBA-D749-4F23-FFC5F1C55A02</importedID>
 <engineerTo>
-<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
+<item key="985DB692-DF35-846E-B60A-8458003B0777" value="true"/>
 </engineerTo>
 <pkName>House PK</pkName>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -58,7 +58,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>7613AA20-2F1B-3C5E-2694-190ED75BB9B1</importedID>
 <engineerTo>
-<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
+<item key="985DB692-DF35-846E-B60A-8458003B0777" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -71,24 +71,10 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>09B33473-70A0-A734-503D-C6CC1BCEE641</importedID>
 <engineerTo>
-<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
+<item key="985DB692-DF35-846E-B60A-8458003B0777" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>009EC4C0-27D0-AEB3-5354-0EFDF4D8D429</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
-</Attribute>
-<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="lot id" id="7DA55BBE-4F61-577F-5DB5-6E840D1B4778">
-<createdBy>Gummoe</createdBy>
-<createdTime>2013-11-19 03:52:00 UTC</createdTime>
-<generatorID>D7D7D32B-FBE2-C34E-4AA6-2BB718755F16</generatorID>
-<ownerDesignName>eggshell_model</ownerDesignName>
-<importedID>6C579D16-5331-2C70-126F-369493E45BCF</importedID>
-<engineerTo>
-<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
-</engineerTo>
-<referedAttribute>AB3FF01D-0AE3-0901-9869-470460DD3DA7</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
@@ -99,7 +85,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>F3FECDC2-D177-D64E-B4C6-3CCDEDBA0C1E</importedID>
 <engineerTo>
-<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
+<item key="985DB692-DF35-846E-B60A-8458003B0777" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -112,7 +98,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>0FA87DA7-79C9-D0B4-C907-7D8B04C5E897</importedID>
 <engineerTo>
-<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
+<item key="985DB692-DF35-846E-B60A-8458003B0777" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <defaultValue>N</defaultValue>
@@ -126,7 +112,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>D805F97F-EE81-54D5-0B1D-F40895D2F69C</importedID>
 <engineerTo>
-<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
+<item key="985DB692-DF35-846E-B60A-8458003B0777" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -141,7 +127,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>0702E52D-55EF-78B3-EC27-AD5A5235176A</importedID>
 <engineerTo>
-<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
+<item key="985DB692-DF35-846E-B60A-8458003B0777" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
