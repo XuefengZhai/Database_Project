@@ -1,3 +1,39 @@
+drop SEQUENCE App_user_seq;
+drop SEQUENCE Constr_worker_crew_assign_seq;
+drop SEQUENCE Construction_project_seq;
+drop SEQUENCE Construction_worker_seq;
+drop SEQUENCE Contract_seq;
+drop SEQUENCE Crew_seq;
+drop SEQUENCE Crew_project_assignment_seq;
+drop SEQUENCE Customer_seq;
+drop SEQUENCE Customer_contract_assign_seq;
+drop SEQUENCE Disclosure_form_seq;
+drop SEQUENCE Elevation_code_table_seq;
+drop SEQUENCE Employee_seq;
+drop SEQUENCE Floor_seq;
+drop SEQUENCE House_seq;
+drop SEQUENCE House_style_seq;
+drop SEQUENCE Lot_seq;
+drop SEQUENCE Option_code_table_seq;
+drop SEQUENCE Option_for_stage_seq;
+drop SEQUENCE Room_seq;
+drop SEQUENCE Room_assignment_seq;
+drop SEQUENCE Sale_seq;
+drop SEQUENCE Sales_agent_seq;
+drop SEQUENCE Sales_agent_assignment_seq;
+drop SEQUENCE School_seq;
+drop SEQUENCE School_district_seq;
+drop SEQUENCE Stage_assignment_seq;
+drop SEQUENCE Stage_code_table_seq;
+drop SEQUENCE Stage_selected_opt_seq;
+drop SEQUENCE Style_code_table_seq
+drop SEQUENCE Style_elevation_seq;
+drop SEQUENCE Subdivision_seq;
+drop SEQUENCE Subdivision_agreement_seq;
+drop SEQUENCE Subdivision_style_option_seq;
+drop SEQUENCE Task_seq;
+drop SEQUENCE Task_update_seq;
+
 --Sequences for surrogate keys.
 
 CREATE SEQUENCE App_user_seq INCREMENT BY 1

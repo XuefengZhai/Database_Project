@@ -315,22 +315,3 @@ BEGIN
   :NEW.Customer_contract_assign_id := Customer_contract_assign_seq.NEXTVAL;
 END;
 /
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

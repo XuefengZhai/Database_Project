@@ -1,6 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.logical.LogicalDesign>
-   <object objectType="Entity" objectID="20824E67-988E-4D36-76C3-A0EFDB03FD10" name="App_User" seqName="seg_0"/>
+   <object objectType="Entity" objectID="20824E67-988E-4D36-76C3-A0EFDB03FD10" name="App User" seqName="seg_0"/>
    <object objectType="Entity" objectID="6F5B6306-BFEC-5517-1BED-00562DDD0DE8" name="Constr worker crew assign" seqName="seg_0"/>
    <object objectType="Entity" objectID="992A5B1F-055C-9366-6DC9-F07C2186DF8F" name="Construction project" seqName="seg_0"/>
    <object objectType="Entity" objectID="3A63D5AF-55A3-E1B6-CD64-9E1C55902BA1" name="Construction worker" seqName="seg_0"/>
@@ -8,7 +8,7 @@
    <object objectType="Entity" objectID="0FEA02A8-21E4-1A4A-140D-D4831FC83A75" name="Crew" seqName="seg_0"/>
    <object objectType="Entity" objectID="3A3B2CA4-26F9-1DBD-6C5C-22A36D1E8AB3" name="Crew project assignment" seqName="seg_0"/>
    <object objectType="Entity" objectID="B1031CDF-D7FE-E9CE-710E-A7936B34421A" name="Customer" seqName="seg_0"/>
-   <object objectType="Entity" objectID="E76349A8-8542-B5C7-4214-038F45C122BC" name="Customer_contract_assign" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E76349A8-8542-B5C7-4214-038F45C122BC" name="Customer contract assign" seqName="seg_0"/>
    <object objectType="Entity" objectID="C2FB8747-4207-FA8A-80E9-D2C297BEC0B7" name="Disclosure form" seqName="seg_0"/>
    <object objectType="Entity" objectID="473F7A40-37C7-F1CC-A7FA-2532C8638658" name="Elevation code table" seqName="seg_0"/>
    <object objectType="Entity" objectID="9A6C5022-8988-C37B-27D9-9524689EEA8D" name="Employee" seqName="seg_0"/>

@@ -4,7 +4,7 @@
 <createdTime>2013-11-26 19:22:20 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <pkName>Sale PK</pkName>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -51,35 +51,35 @@
 </FontObject>
 </fonts>
 <attributes>
-<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="sale_id" id="0F06DE09-362B-B22C-8FC4-ECA4E42D8B5B">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="sale id" id="0F06DE09-362B-B22C-8FC4-ECA4E42D8B5B">
 <createdBy>Katarina</createdBy>
 <createdTime>2013-11-26 19:22:25 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 </Attribute>
-<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="escrow_paid" id="407EEEBE-67EC-9D00-33C6-B65E0D1DE618">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="escrow paid" id="407EEEBE-67EC-9D00-33C6-B65E0D1DE618">
 <createdBy>Katarina</createdBy>
 <createdTime>2013-11-26 19:22:30 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <defaultValue>false</defaultValue>
 <use>0</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
 <domain>7A94C4D1-93DE-2737-27D5-94A7F3D7279B</domain>
 </Attribute>
-<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="financing_option" id="E22611BA-F9AA-5BFD-4F40-415E26A616BA">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="financing option" id="E22611BA-F9AA-5BFD-4F40-415E26A616BA">
 <createdBy>Katarina</createdBy>
 <createdTime>2013-11-26 19:23:02 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <defaultValue>unknown</defaultValue>
 <use>0</use>
@@ -92,7 +92,7 @@
 <generatorID>D8A07152-2334-AA0D-B1C1-B64E9B65BD71</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <referedAttribute>A348347C-49F7-BD0B-F1CA-9A504EC09B35</referedAttribute>
 <use>0</use>
@@ -105,7 +105,7 @@
 <generatorID>A33C48EE-3BE8-8497-B7BF-0A669A5F676A</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <referedAttribute>A88E0069-510D-5467-64A7-13C2859E2B7D</referedAttribute>
 <use>0</use>
@@ -119,7 +119,7 @@
 <createdTime>2013-11-26 19:25:33 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

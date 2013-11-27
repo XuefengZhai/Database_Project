@@ -4,7 +4,7 @@
 <createdTime>2013-11-26 18:33:41 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <engineerTo>
-<item key="DD1A6AF4-BB68-DB1E-3C86-379B9B89FCF6" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <pkName>Floor PK</pkName>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -51,12 +51,12 @@
 </FontObject>
 </fonts>
 <attributes>
-<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="floor_id" id="0B4435AB-C7A5-C4F4-C363-06BC1ADD28F8">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="floor id" id="0B4435AB-C7A5-C4F4-C363-06BC1ADD28F8">
 <createdBy>Katarina</createdBy>
 <createdTime>2013-11-26 18:33:51 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <engineerTo>
-<item key="DD1A6AF4-BB68-DB1E-3C86-379B9B89FCF6" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -68,13 +68,25 @@
 <generatorID>72053AF9-E2A6-6355-C1C8-9F725647E16A</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <engineerTo>
-<item key="DD1A6AF4-BB68-DB1E-3C86-379B9B89FCF6" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>A88E0069-510D-5467-64A7-13C2859E2B7D</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="floor description" id="322CE845-9AB5-64A2-7B71-93613DB6A021">
+<createdBy>Katarina</createdBy>
+<createdTime>2013-11-27 01:00:23 UTC</createdTime>
+<ownerDesignName>eggshell_model</ownerDesignName>
+<engineerTo>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</domain>
 </Attribute>
 </attributes>
 <identifiers>
@@ -83,7 +95,7 @@
 <createdTime>2013-11-26 18:46:44 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <engineerTo>
-<item key="DD1A6AF4-BB68-DB1E-3C86-379B9B89FCF6" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -285,7 +285,8 @@ ALTER TABLE Employee
 
 CREATE TABLE Floor 
     ( 
-     floor_id NUMBER  NOT NULL , 
+     floor_id NUMBER  NOT NULL ,
+     floor_description VARCHAR2 (25); 
      house_id NUMBER 
     ) 
 ;
@@ -387,12 +388,9 @@ CREATE TABLE Room
      room_id NUMBER  NOT NULL , 
      room_type VARCHAR2 (25)  NOT NULL CHECK ( room_type IN ('Attic', 'Basement', 'Bath Room', 'Bed Room', 'Den', 'Dining Room', 'Foyer', 'Garage', 'Hall', 'Kitchen', 'Laundry Room', 'Living Room', 'Mud Room', 'Office', 'Study', 'Work Room')) , 
      description VARCHAR2 (250) , 
-     "size" VARCHAR2 (250) , 
-     num_windows NUMBER (2) CHECK ( num_windows BETWEEN 0 AND 99) , 
      ceiling_type VARCHAR2 (15) CHECK ( ceiling_type IN ('standard', 'tall cathedral', 'vaulted')) 
     ) 
 ;
-
 
 
 ALTER TABLE Room 
@@ -403,12 +401,12 @@ ALTER TABLE Room
 CREATE TABLE Room_assignment 
     ( 
      room_assignment_id NUMBER  NOT NULL , 
-     room_id NUMBER , 
-     floor_id NUMBER 
+     room_id NUMBER  NOT NULL , 
+     floor_id NUMBER  NOT NULL , 
+     "size" VARCHAR2 (250) , 
+     num_windows NUMBER (2) CHECK ( num_windows BETWEEN 0 AND 99) 
     ) 
 ;
-
-
 
 ALTER TABLE Room_assignment 
     ADD CONSTRAINT Room_assignment_PK PRIMARY KEY ( room_assignment_id ) ;

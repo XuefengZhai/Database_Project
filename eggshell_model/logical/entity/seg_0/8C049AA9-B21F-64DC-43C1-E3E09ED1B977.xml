@@ -5,7 +5,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>9BB51CE3-7307-1B2B-5FCC-EF80B6C0496C</importedID>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <pkName>Room PK</pkName>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -58,7 +58,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>A3A2C16C-6583-E00C-1813-1DEE20AC0454</importedID>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -70,7 +70,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>86C9335B-1731-973A-5B17-CC394D5A44EC</importedID>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -82,49 +82,19 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>E05FEFAB-15FC-533C-1A8D-F6E6325D4492</importedID>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</domain>
 </Attribute>
-<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="size" id="F86D3D18-1A4A-03C3-EB91-3D8634AF3B2C">
-<createdBy>Katarina</createdBy>
-<createdTime>2013-11-26 18:32:59 UTC</createdTime>
-<ownerDesignName>eggshell_model</ownerDesignName>
-<engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</domain>
-</Attribute>
-<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="num_windows" id="3C191AE0-1021-3BC4-0A94-4FE0B3A05352">
-<createdBy>Katarina</createdBy>
-<createdTime>2013-11-26 18:55:49 UTC</createdTime>
-<ownerDesignName>eggshell_model</ownerDesignName>
-<engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<domain>7B49A09F-469C-976D-A2C3-80360DE26C9C</domain>
-<listOfRanges>
-<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
-<beginValue>0</beginValue>
-<endValue>99</endValue>
-</rangeDef>
-</listOfRanges>
-</Attribute>
-<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="ceiling_type" id="41B7097E-838E-4F93-9C40-C0CF04B579C9">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="ceiling type" id="41B7097E-838E-4F93-9C40-C0CF04B579C9">
 <createdBy>Katarina</createdBy>
 <createdTime>2013-11-26 18:56:51 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -139,7 +109,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>0C23B020-9A5C-A77F-7E6F-26CC6D090AC9</importedID>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

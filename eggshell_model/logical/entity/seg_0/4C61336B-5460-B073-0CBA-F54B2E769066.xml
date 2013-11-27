@@ -5,7 +5,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>526F3FAB-E769-63CF-407B-8A78A73A9566</importedID>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <pkName>Sales_agent_PK</pkName>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -58,7 +58,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>5050B002-7D35-A8F5-D04D-669EB27D71C2</importedID>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -70,7 +70,7 @@
 <generatorID>4356FB80-E53C-4E4D-4D45-BC7865D7AAEF</generatorID>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>A7CDEF2E-AE63-F12B-CFDD-421121F93CC3</referedAttribute>
@@ -83,18 +83,18 @@
 <createdTime>2013-11-26 19:16:28 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</domain>
 </Attribute>
-<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="license_num" id="BA34C0F2-32DB-F31D-2FFB-A1E3BEE9B69A">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="license num" id="BA34C0F2-32DB-F31D-2FFB-A1E3BEE9B69A">
 <createdBy>Katarina</createdBy>
 <createdTime>2013-11-26 19:16:48 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -108,7 +108,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>AB43209B-4B9D-AC5B-8ACA-7A3EB88F6CAA</importedID>
 <engineerTo>
-<item key="500047BD-72F9-4B28-C7ED-5545E9C82BE2" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

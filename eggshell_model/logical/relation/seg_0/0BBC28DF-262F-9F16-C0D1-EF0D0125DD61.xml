@@ -4,12 +4,12 @@
 <createdTime>2013-11-26 17:46:37 UTC</createdTime>
 <ownerDesignName>eggshell_model</ownerDesignName>
 <engineerTo>
-<item key="5ECBA80B-915C-3EFC-8DA8-11632AC58DED" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
-<sourceCardinality>*</sourceCardinality>
+<sourceCardinality>1</sourceCardinality>
 <sourceEntity>E76349A8-8542-B5C7-4214-038F45C122BC</sourceEntity>
 <targetCardinalityString>1</targetCardinalityString>
 <targetEntity>C5007AC8-1B84-7753-DF23-F2E5CAB69276</targetEntity>

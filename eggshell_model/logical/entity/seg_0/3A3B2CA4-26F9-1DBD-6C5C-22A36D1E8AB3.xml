@@ -5,7 +5,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>CF602023-D22B-45A7-4FC5-D546AEAEE6FD</importedID>
 <engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <pkName>Crew_project_assignment_PK</pkName>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -58,7 +58,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>27B458E8-595C-E3BF-F550-4F663DFB40A4</importedID>
 <engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -71,7 +71,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>8F57AAC5-43F6-C03C-E6CE-68E25FCA703E</importedID>
 <engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <referedAttribute>F95C03CA-86DE-F67E-1A92-2B056DD1E264</referedAttribute>
 <use>0</use>
@@ -85,7 +85,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>69C6A8C4-7DCD-831D-C42F-BB5A9283A8A8</importedID>
 <engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <referedAttribute>56867A57-20A4-4E27-5E29-10115BED861F</referedAttribute>
 <use>0</use>
@@ -100,7 +100,7 @@
 <ownerDesignName>eggshell_model</ownerDesignName>
 <importedID>D09DB557-92FD-15FB-3917-11E3EAF87D32</importedID>
 <engineerTo>
-<item key="1C5A8785-CF54-C82D-3D0D-9F065ADCA0B6" value="true"/>
+<item key="20AE6DB7-E4D0-8B6D-2ABD-5F7668E54C8E" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
