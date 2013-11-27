@@ -26,12 +26,12 @@ BEGIN
 	WHERE Customer.customer_id = customer_no;
 	
 	IF ED = NULL THEN
-		 DBMS_OUTPUT.PUT('The building project of customer: '||FN||' '||LN|| 
+		 DBMS_OUTPUT.PUT('The construction project of customer: '||FN||' '||LN|| 
 		 											  'for house No.'||HN||' has not finished yet. '
 		 											  'It started on '||SD||'.'
 		 										    'The estimated finish date is: '||EsD||'.');
 	ELSE
-		DBMS_OUTPUT.PUT('The building project of customer: '||FN||' '||LN|| 
+		DBMS_OUTPUT.PUT('The construction project of customer: '||FN||' '||LN|| 
 		 											  'for house No.'||HN||' has finished! '
 		 											  'It started on '||SD||'.'
 		 											  'It finished on '||ED||'.');
@@ -40,7 +40,8 @@ BEGIN
 EXCEPTION
 --Need more exception
 	WHEN OTHERS THEN
-		DBMS_OUTPUT.PUT_LINE('There are some errors, please run the reports again.');
+		 DBMS_OUTPUT.PUT_LINE ('The PLSQL procedure executed by '||USER||
+		 	' returned and unhandled exception on '||SYSDATE||'.');
 
 END;
 /
