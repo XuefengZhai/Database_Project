@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="9B1C5CB0-689B-DB37-EA41-F715EF790EE3" directorySegmentName="seg_0" name="CONSTRUCTION_WORKER_CREW">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-28 07:00:08 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<pkName>Constr_worker_crew_assign_PK</pkName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Attribute</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="construction_worker_crew_id" id="1AD87FD4-7301-6118-938A-65E09D97057F">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-28 07:00:08 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="start_date" id="6E663179-4CCE-76E6-B427-4C8C710451C0">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-28 07:00:08 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>2FF7B1E7-B0D4-FE14-1A61-196E6487640C</domain>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="end_date" id="711F5671-BB84-610F-A9DD-D09AD53C551B">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-28 07:00:08 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>2FF7B1E7-B0D4-FE14-1A61-196E6487640C</domain>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="crew_id" id="E386A61B-F6CA-1499-7D40-E331F9711F19">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-28 08:28:45 UTC</createdTime>
+<generatorID>002E48AD-65C5-8699-31C0-4BE4FA1B9495</generatorID>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<referedAttribute>DF4BF454-1900-A0CC-5F1C-F14A09AB8AF6</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="contructor_worker_employee_id" id="CF868BD8-8E6A-32AD-E019-7AD6BB2D26A1">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-28 08:39:25 UTC</createdTime>
+<generatorID>BA2D31F9-C3E7-93A3-E839-82C57756A504</generatorID>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<referedAttribute>FCAF68A0-AA22-5410-5D34-FA1D92E70EF4</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
+</attributes>
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="6AEAE44A-8371-115F-BA1D-995C76A088C8" name="Construction_Worker_Crew_PK">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-28 07:00:08 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1AD87FD4-7301-6118-938A-65E09D97057F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

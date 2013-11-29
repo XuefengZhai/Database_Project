@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CC_customer_id_FK" id="65A56073-7079-9683-57E4-82866DC35CB5" directorySegmentName="seg_0">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-28 21:38:20 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>may enter into a</nameOnSource>
+<nameOnTarget>is for a</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E2BB6065-EB52-C5C8-5CEF-2D2FED458AA3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1AA282C1-A546-650F-3AF9-FB241065EF3B</targetEntity>
+<transferable>true</transferable>
+</Relation>

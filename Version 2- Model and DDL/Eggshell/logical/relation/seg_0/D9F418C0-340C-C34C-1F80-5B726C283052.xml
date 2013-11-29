@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SAS_style_id_FK" id="D9F418C0-340C-C34C-1F80-5B726C283052" directorySegmentName="seg_0">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-29 00:30:18 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>E4FA723E-224C-B14C-736E-62D7049A7BFC</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>F6C96DEC-72C1-7154-48C1-42804F398AC4</targetEntity>
+<transferable>true</transferable>
+</Relation>

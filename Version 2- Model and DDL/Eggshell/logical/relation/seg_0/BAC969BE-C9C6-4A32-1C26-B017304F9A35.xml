@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="C_subdivision_agreement_id_FK" id="BAC969BE-C9C6-4A32-1C26-B017304F9A35" directorySegmentName="seg_0">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-29 03:04:20 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>450C0DFC-401D-0230-4EEB-C9891087CA64</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>8B6D6AC8-EE6E-956F-3E9E-858C9CB1057F</targetEntity>
+<transferable>true</transferable>
+</Relation>

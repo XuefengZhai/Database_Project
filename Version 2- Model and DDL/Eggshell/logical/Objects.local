@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="F73EC11A-74EF-80BF-7BB1-FC5AACE503B9" name="APPLICATION_USER" seqName="seg_0"/>
+   <object objectType="Entity" objectID="84924513-57CF-0B97-BFD1-ECCEAE4ECE4B" name="CONSTRUCTION_PROJECT_STAGE" seqName="seg_0"/>
+   <object objectType="Entity" objectID="674A3D0D-EB90-CCA3-9255-526757E8F6B2" name="CONSTRUCTION_WORKER" seqName="seg_0"/>
+   <object objectType="Entity" objectID="9B1C5CB0-689B-DB37-EA41-F715EF790EE3" name="CONSTRUCTION_WORKER_CREW" seqName="seg_0"/>
+   <object objectType="Entity" objectID="450C0DFC-401D-0230-4EEB-C9891087CA64" name="CONTRACT" seqName="seg_0"/>
+   <object objectType="Entity" objectID="7786392B-18A5-BD71-4CB5-C8AEBCCE9E7C" name="CONTRUCTION_PROJECT" seqName="seg_0"/>
+   <object objectType="Entity" objectID="FBCE6187-47E8-F862-CE16-409B50F444B6" name="CREW" seqName="seg_0"/>
+   <object objectType="Entity" objectID="3FDC5FB9-47A0-E3BE-C1DD-ECF127039C9D" name="CREW_MANAGER" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E2BB6065-EB52-C5C8-5CEF-2D2FED458AA3" name="CUSTOMER" seqName="seg_0"/>
+   <object objectType="Entity" objectID="1AA282C1-A546-650F-3AF9-FB241065EF3B" name="CUSTOMER_CONTRACT" seqName="seg_0"/>
+   <object objectType="Entity" objectID="8D5C7038-F184-44DB-EF44-49A05EA91076" name="DISCLOSURE_FORM" seqName="seg_0"/>
+   <object objectType="Entity" objectID="34F13B9F-CCFA-4789-8346-205A2DDF0BD8" name="ELEVATION" seqName="seg_0"/>
+   <object objectType="Entity" objectID="9EBF4E9F-9EE8-20BA-F3CB-BA5A473926DC" name="EMPLOYEE" seqName="seg_0"/>
+   <object objectType="Entity" objectID="F6CE8F74-7F9D-2FD9-A475-027C18E71F57" name="FLOOR" seqName="seg_0"/>
+   <object objectType="Entity" objectID="4FE6E31F-6165-1A4F-2E22-8006FCEAF4EA" name="HOUSE" seqName="seg_0"/>
+   <object objectType="Entity" objectID="8B116505-CBAF-4657-4B47-AAC2CE5C86F1" name="HOUSE_LAYOUT" seqName="seg_0"/>
+   <object objectType="Entity" objectID="176737E2-4BAC-BC94-06B5-01F553965450" name="HOUSE_SALES_AGENT" seqName="seg_0"/>
+   <object objectType="Entity" objectID="7AB79173-42BF-A216-D888-7C20685220B1" name="LOT" seqName="seg_0"/>
+   <object objectType="Entity" objectID="1B7FBAE3-9D7A-F8F0-0F55-D1036569950B" name="OPTION_CHOICE" seqName="seg_0"/>
+   <object objectType="Entity" objectID="BC61E59C-93F9-8E07-0465-12703C507988" name="PROJECT_MANAGER" seqName="seg_0"/>
+   <object objectType="Entity" objectID="9C86C692-C29F-0438-D9BC-D33E85C828D1" name="ROOM" seqName="seg_0"/>
+   <object objectType="Entity" objectID="6EF0AB9B-AFFA-D551-627F-BAB5FDDAD01F" name="ROOM_ON_A_FLOOR" seqName="seg_0"/>
+   <object objectType="Entity" objectID="AE7297C7-B74A-E253-138E-3DE33619A1D0" name="SALE" seqName="seg_0"/>
+   <object objectType="Entity" objectID="8B49B51C-4EEE-655B-AFC0-BE97FD5F8178" name="SALES_AGENT" seqName="seg_0"/>
+   <object objectType="Entity" objectID="58B1A345-C59F-15E2-2155-08286B7C9602" name="SCHOOL" seqName="seg_0"/>
+   <object objectType="Entity" objectID="B8F2E4AF-CD64-624F-F949-CF9BC7E0CA7D" name="SCHOOL_DISTRICT" seqName="seg_0"/>
+   <object objectType="Entity" objectID="DC22E38F-2AA7-6C46-E85F-CE678C95C53B" name="SELECTED_STAGE_OPTION" seqName="seg_0"/>
+   <object objectType="Entity" objectID="B3AF472D-0E91-B759-27DC-FF7B04952101" name="STAGE" seqName="seg_0"/>
+   <object objectType="Entity" objectID="F6C96DEC-72C1-7154-48C1-42804F398AC4" name="STYLE" seqName="seg_0"/>
+   <object objectType="Entity" objectID="6BC2CE8B-5F0D-84BE-D456-41920B0D9D70" name="STYLE_ELEVATION" seqName="seg_0"/>
+   <object objectType="Entity" objectID="1271BFB2-3E7D-5C7B-A625-2825AA40FF61" name="SUBDIVISION" seqName="seg_0"/>
+   <object objectType="Entity" objectID="8B6D6AC8-EE6E-956F-3E9E-858C9CB1057F" name="SUBDIVISION_AGREEMENT" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E4FA723E-224C-B14C-736E-62D7049A7BFC" name="SUBDIVISION_ALLOWABLE_STYLE" seqName="seg_0"/>
+   <object objectType="Entity" objectID="8D23C1B5-9FE9-F693-1A7E-8B17C0D96337" name="TASK" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E432F8EC-1ACD-6AEA-2807-64700EA1B7FE" name="TASK_UPDATE" seqName="seg_0"/>
+   <object objectType="Relation" objectID="378B13F0-49A0-374F-E7E5-824960938CD7" name="CC_contract_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="65A56073-7079-9683-57E4-82866DC35CB5" name="CC_customer_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="1F0744E7-36A3-100A-086D-246821A7192D" name="CONTRACT_disclosure_form_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="BB62281C-E116-1A8A-DEAC-0C5793D7AE4A" name="CONTRUCTION_PROJECT_lot_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="4EDDA705-FC91-7972-B0F2-69D6D3C7F7CA" name="CPS_construction_project_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="93AE80A6-6AFB-FD9F-AC59-424B68490DDD" name="CPS_stage_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F9E93F14-9078-63C9-5607-82B9DA05A9DA" name="CP_crew_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="1EEB1F44-AFBC-DFC8-566E-06734B4E20A5" name="CP_employee_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="16CD1A31-7985-8991-8B7A-006655AE459E" name="CREW_employee_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="AAA0D133-F992-0833-D5E5-C98EB679AE50" name="CUSTOMER_app_user_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="002E48AD-65C5-8699-31C0-4BE4FA1B9495" name="CWC_crew_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="BA2D31F9-C3E7-93A3-E839-82C57756A504" name="CWC_employee_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="BAC969BE-C9C6-4A32-1C26-B017304F9A35" name="C_subdivision_agreement_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="433606E4-2F09-9565-0EAF-2EA0DA9D36A6" name="EMPLOYEE_app_user_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="CF1DE20F-7397-5478-0F55-709764E33CE8" name="FLOOR_house_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="53FC6774-CA99-02D5-525F-37E6049BEE00" name="HL_house_layout_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="73CE7ED8-134F-65F0-9C9F-8E5E4182ECD9" name="HOUSE_SALES_AGENT_house_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="1D469252-882B-8EA0-162F-ED9ADF758B35" name="HOUSE_house_layout_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="9D2CD2B1-6AAE-D85A-D19F-570263F6C2B2" name="HSA_employee_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="E5257325-4574-2DCB-9CF5-58E830BBF13F" name="LOT_house_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="5AA8D53C-607E-58B4-8A84-519CAF14661F" name="LOT_style_elevation_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="86DBACE8-A3DE-83B1-B78E-FB5501922C0F" name="LOT_subdivision_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="EEE3B71D-46FB-8EE7-1F6D-109087DA8A6A" name="OPTION_CHOICE_stage_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A1D7AD5A-C4C9-DE15-94FD-55C930CF0E75" name="ROOM_ON_A_FLOOR_floor_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A1AFDA0D-6C2E-4649-7637-5BE2B186E006" name="ROOM_ON_A_FLOOR_room_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="038C003A-EB4E-E668-4AAD-2B0FD05AD174" name="SALE_employee_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="65F04EC2-37D8-3F81-F532-C268AE2C85DC" name="SALE_house_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D9F418C0-340C-C34C-1F80-5B726C283052" name="SAS_style_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="B03BFB8F-B66D-DA4E-B944-9A734E342C4D" name="SAS_subdivision_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="DF8EC0BB-DFBB-D843-7891-C22559DB275C" name="SA_subdivision_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="ABEF9685-B18D-393E-380A-65266002B74B" name="SCHOOL_school_district_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="9AD850B4-D3C2-DBF9-DAF3-926C570ACE04" name="SE_elevation_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="7100E9DE-DE35-552F-D4D9-659F8A0B46C2" name="SSO_cnstr_project_stage_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="FBE8E29D-BFBF-89C8-3C41-67ED6D56C037" name="SSO_option_choice_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="98A2EC57-992F-6E88-9DD3-B42C88B712C5" name="STYLE_ELEVATION_style_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="8D704343-C26B-033D-4AD1-7CC90E59F0EA" name="S_school_district_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="CB950CEA-336A-DECB-C826-7EC76DE6BF41" name="TASK_UPDATE_employee_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="53373EED-DF5A-858B-42F7-46F10E87E48D" name="TASK_UPDATE_task_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="7F91572E-1DD8-768C-664B-51B53C478D8A" name="T_selected_stage_option_id_FK" seqName="seg_0"/>
+   <object objectType="Hierarchy relation" objectID="58881627-E975-1362-64A0-FDFAEFF9D91F" name="Hierarchy_1" seqName="seg_0"/>
+   <object objectType="Hierarchy relation" objectID="1E23879C-76DE-BFA7-6735-AE9DE4B30295" name="Hierarchy_2" seqName="seg_0"/>
+   <object objectType="Hierarchy relation" objectID="D292DC1A-EDED-8496-C614-B8C4DD3647BC" name="Hierarchy_3" seqName="seg_0"/>
+   <object objectType="Hierarchy relation" objectID="F9E924D4-1759-B3AF-0019-72DED14C3D8E" name="Hierarchy_4" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

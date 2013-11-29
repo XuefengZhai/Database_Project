@@ -1,0 +1,455 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="defaultdomains">
+   <domains>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="email" id="06246EB8-5867-28F6-D772-4765119B2DE8">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>06246EB8-5867-28F6-D772-4765119B2DE8</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>25</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="email LIKE &amp;apos;%@%&amp;apos;"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="yes_no_default_no" id="0F66DB35-3F78-F9FC-2F1B-80B5F99D4A3C">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-29 21:01:44 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>1</dataTypeSize>
+         <defaultValue>N</defaultValue>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="N" description="No"/>
+            <valueDef value="Y" description="Yes"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="percent" id="13B81282-A966-2A6C-1FA1-5D69B2E11F8D">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>13B81282-A966-2A6C-1FA1-5D69B2E11F8D</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>5</dataTypePrecision>
+         <dataTypeScale>2</dataTypeScale>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="numeric_id" id="1C83044F-F4AD-B495-5726-6FF2A6D331C5">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>1C83044F-F4AD-B495-5726-6FF2A6D331C5</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>100000</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="date" id="2FF7B1E7-B0D4-FE14-1A61-196E6487640C">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>2FF7B1E7-B0D4-FE14-1A61-196E6487640C</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="type" id="3295C118-96D2-925D-C8AD-6EF54944255A">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>3295C118-96D2-925D-C8AD-6EF54944255A</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>25</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="street" id="36D2249F-8453-1EF4-FE68-9EC84FC541BF">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>36D2249F-8453-1EF4-FE68-9EC84FC541BF</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>40</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="zipcode" id="3F78F865-5F81-7CD9-3E48-851757EE5DEA">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>3F78F865-5F81-7CD9-3E48-851757EE5DEA</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>10</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="phone" id="40E07E34-97A2-BAF2-36CF-C6FC09EE1E1E">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>40E07E34-97A2-BAF2-36CF-C6FC09EE1E1E</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>14</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="escrow_amount" id="42CFCA16-5DF7-76B8-C211-FEDB73AE3C57">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>42CFCA16-5DF7-76B8-C211-FEDB73AE3C57</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>8</dataTypePrecision>
+         <dataTypeScale>2</dataTypeScale>
+         <dataTypeSize>8</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="price" id="45E88AC4-E9B6-166A-D114-E2A0D4BE2282">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>45E88AC4-E9B6-166A-D114-E2A0D4BE2282</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>9</dataTypePrecision>
+         <dataTypeScale>2</dataTypeScale>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="latitude_longitude" id="4BCCE704-B58C-501E-940C-C630A7B16250">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>4BCCE704-B58C-501E-940C-C630A7B16250</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT026</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="password_recovery_q_a" id="5A92A68D-FEA6-3147-D88F-944C0B9FD1D0">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>5A92A68D-FEA6-3147-D88F-944C0B9FD1D0</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>50</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="photo_update" id="697497C3-A2C9-C303-872C-7F8B4C52FAF1">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>697497C3-A2C9-C303-872C-7F8B4C52FAF1</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT010</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="map" id="7215B1A5-BC3B-7FBD-DD04-378B227A4FCD">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>7215B1A5-BC3B-7FBD-DD04-378B227A4FCD</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT010</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="escrow_paid" id="7A94C4D1-93DE-2737-27D5-94A7F3D7279B">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>7A94C4D1-93DE-2737-27D5-94A7F3D7279B</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT006</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="num_windows" id="7B49A09F-469C-976D-A2C3-80360DE26C9C">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>7B49A09F-469C-976D-A2C3-80360DE26C9C</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>2</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>2</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+         <listOfRanges>
+            <rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+               <beginValue>0</beginValue>
+               <endValue>99</endValue>
+            </rangeDef>
+         </listOfRanges>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="description" id="7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>250</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="name" id="86AA045B-36F3-1583-4152-E165A08977B7">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>86AA045B-36F3-1583-4152-E165A08977B7</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>25</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="elevation_type" id="948E5135-EA97-9199-0FF4-ED1B498702FD">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>948E5135-EA97-9199-0FF4-ED1B498702FD</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>1</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="A" description=""/>
+            <valueDef value="B" description=""/>
+            <valueDef value="C" description=""/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="skill" id="A33E92D5-CC2F-68DD-A72F-1D7F7B7B1845">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:42:52 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>25</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="sales_agent_license" id="A5E91B7A-03AB-5C1E-7E50-D0620F53E0A8">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>A5E91B7A-03AB-5C1E-7E50-D0620F53E0A8</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>15</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="financing_option" id="A7482B5B-B06B-6607-592E-F851550260D8">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>A7482B5B-B06B-6607-592E-F851550260D8</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>15</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="cash" description=""/>
+            <valueDef value="mortgage" description=""/>
+            <valueDef value="unknown" description=""/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="integer" id="B14E95A0-A9EE-186A-1FAA-220A57BC1F34">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>B14E95A0-A9EE-186A-1FAA-220A57BC1F34</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="state" id="B26A9CB8-8453-6ACF-5F8B-0F2552EDFCF3">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>B26A9CB8-8453-6ACF-5F8B-0F2552EDFCF3</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>2</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="AK" description="ALASKA"/>
+            <valueDef value="AL" description="ALABAMA"/>
+            <valueDef value="AR" description="ARKANSAS"/>
+            <valueDef value="AZ" description="ARIZONA"/>
+            <valueDef value="CA" description="CALIFORNIA"/>
+            <valueDef value="CO" description="COLORADO"/>
+            <valueDef value="CT" description="CONNECTICUT"/>
+            <valueDef value="DE" description="DELEWARE"/>
+            <valueDef value="FL" description="FLORIDA"/>
+            <valueDef value="GA" description="GEORGIA"/>
+            <valueDef value="HI" description="HAWAII"/>
+            <valueDef value="IA" description="IOWA"/>
+            <valueDef value="ID" description="IDAHO"/>
+            <valueDef value="IL" description="ILLINOIS"/>
+            <valueDef value="IN" description="INDIANA"/>
+            <valueDef value="KS" description="KANSAS"/>
+            <valueDef value="KY" description="KENTUCKY"/>
+            <valueDef value="LA" description="LOUISIANA"/>
+            <valueDef value="MA" description="MASSACHUSETTS"/>
+            <valueDef value="MD" description="MARYLAND"/>
+            <valueDef value="ME" description="MAINE"/>
+            <valueDef value="MI" description="MICHIGAN"/>
+            <valueDef value="MN" description="MINNESTOA"/>
+            <valueDef value="MO" description="MISSOURI"/>
+            <valueDef value="MS" description="MISSISSIPPI"/>
+            <valueDef value="MT" description="MONTANA"/>
+            <valueDef value="NC" description="NORTH CAROLINA"/>
+            <valueDef value="ND" description="NORTH DAKOTA"/>
+            <valueDef value="NE" description="NEBRASKA"/>
+            <valueDef value="NH" description="NEW HAMPSHIRE"/>
+            <valueDef value="NJ" description="NEW JERSEY"/>
+            <valueDef value="NM" description="NEW MEXICO"/>
+            <valueDef value="NV" description="NEVADA"/>
+            <valueDef value="NY" description="NEW YORK"/>
+            <valueDef value="OH" description="OHIO"/>
+            <valueDef value="OK" description="OKLAHOMA"/>
+            <valueDef value="OR" description="OREGON"/>
+            <valueDef value="PA" description="PENNSYLVANIA"/>
+            <valueDef value="RI" description="RHODE ISLAND"/>
+            <valueDef value="SC" description="SOUTH CAROLINA"/>
+            <valueDef value="SD" description="SOUTH DAKOTA"/>
+            <valueDef value="TN" description="TENNESSEE"/>
+            <valueDef value="TX" description="TEXAS"/>
+            <valueDef value="UT" description="UTAH"/>
+            <valueDef value="VA" description="VIRGINIA"/>
+            <valueDef value="VT" description="VERMONT"/>
+            <valueDef value="WA" description="WASHINGTON"/>
+            <valueDef value="WI" description="WISCONSIN"/>
+            <valueDef value="WV" description="WEST VIRGINIA"/>
+            <valueDef value="WY" description="WYOMING"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="password" id="C3BC60B5-E4AC-9E2D-8E44-A9A3EDE1F49F">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>C3BC60B5-E4AC-9E2D-8E44-A9A3EDE1F49F</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>16</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="option_type" id="CFE589A4-C8F9-1DE2-BCBC-C7C1F1FD842B">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>CFE589A4-C8F9-1DE2-BCBC-C7C1F1FD842B</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>25</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="Decoration" description="Decoration"/>
+            <valueDef value="Electrical" description="Electrical"/>
+            <valueDef value="Exterior" description="Exterior"/>
+            <valueDef value="Interior" description="Interior"/>
+            <valueDef value="Plumbing" description="Plumbing"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="stage_number" id="D2545A4D-3262-B77A-2A7C-63A345F86857">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>D2545A4D-3262-B77A-2A7C-63A345F86857</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>1</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="stage_number &amp;lt;= 7"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="city" id="DE67D666-AFD5-D16C-A705-637A4530F164">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>DE67D666-AFD5-D16C-A705-637A4530F164</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>25</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="ceiling_type" id="DF80E0FA-38E9-25E6-C1DE-B17E2FA05E3F">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>DF80E0FA-38E9-25E6-C1DE-B17E2FA05E3F</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>15</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="standard" description=""/>
+            <valueDef value="tall cathedral" description=""/>
+            <valueDef value="vaulted" description=""/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Unknown" id="DOM3000004">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-10-28 12:42:31 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>DOM3000004</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT017</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="yes_no_default_yes" id="E297FB73-C853-A94B-67C2-5594DE20D2F0">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-29 20:59:19 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>1</dataTypeSize>
+         <defaultValue>Y</defaultValue>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="N" description="No"/>
+            <valueDef value="Y" description="Yes"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="room_type" id="ED0A9BA5-EBE8-699C-8E1F-3280E22180BA">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>ED0A9BA5-EBE8-699C-8E1F-3280E22180BA</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>25</dataTypeSize>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <listOfValues>
+            <valueDef value="Attic" description="Attic"/>
+            <valueDef value="Basement" description="Basement"/>
+            <valueDef value="Bath Room" description="Bath Room"/>
+            <valueDef value="Bed Room" description="Bed Room"/>
+            <valueDef value="Den" description="Den"/>
+            <valueDef value="Dining Room" description="Dining Room"/>
+            <valueDef value="Foyer" description="Foyer"/>
+            <valueDef value="Garage" description="Garage"/>
+            <valueDef value="Hall" description="Hall"/>
+            <valueDef value="Kitchen" description="Kitchen"/>
+            <valueDef value="Laundry Room" description="Laundry Room"/>
+            <valueDef value="Living Room" description="Living Room"/>
+            <valueDef value="Mud Room" description="Mud Room"/>
+            <valueDef value="Office" description="Office"/>
+            <valueDef value="Study" description="Study"/>
+            <valueDef value="Work Room" description="Work Room"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="document" id="EE30804D-DECE-2382-CA51-7E87EA989C3F">
+         <createdBy>Sonal</createdBy>
+         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <importedID>EE30804D-DECE-2382-CA51-7E87EA989C3F</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>defaultdomains</fileName>
+         <logicalDatatype>LOGDT010</logicalDatatype>
+      </Domain>
+   </domains>
+</DomainFile>

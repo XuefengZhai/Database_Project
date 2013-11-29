@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="LOT_style_elevation_id_FK" id="5AA8D53C-607E-58B4-8A84-519CAF14661F" directorySegmentName="seg_0">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-29 02:37:20 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>7AB79173-42BF-A216-D888-7C20685220B1</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>6BC2CE8B-5F0D-84BE-D456-41920B0D9D70</targetEntity>
+<transferable>true</transferable>
+</Relation>

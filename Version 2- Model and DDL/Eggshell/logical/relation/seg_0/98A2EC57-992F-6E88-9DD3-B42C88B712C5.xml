@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="STYLE_ELEVATION_style_id_FK" id="98A2EC57-992F-6E88-9DD3-B42C88B712C5" directorySegmentName="seg_0">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-29 02:35:53 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F6C96DEC-72C1-7154-48C1-42804F398AC4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6BC2CE8B-5F0D-84BE-D456-41920B0D9D70</targetEntity>
+<transferable>true</transferable>
+</Relation>

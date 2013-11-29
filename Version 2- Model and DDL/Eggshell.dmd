@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Eggshell" id="045DF519-6DAE-A8A8-1056-EE7C62DC4F81" version="3.5">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-28 02:33:40 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>045DF519-6DAE-A8A8-1056-EE7C62DC4F81</designId>
+</OSDM_Design>

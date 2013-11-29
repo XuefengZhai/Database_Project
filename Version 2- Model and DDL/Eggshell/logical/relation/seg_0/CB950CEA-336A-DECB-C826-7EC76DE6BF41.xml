@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TASK_UPDATE_employee_id_FK" id="CB950CEA-336A-DECB-C826-7EC76DE6BF41" directorySegmentName="seg_0">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-28 09:14:45 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>updates</nameOnSource>
+<nameOnTarget>is entered by</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BC61E59C-93F9-8E07-0465-12703C507988</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E432F8EC-1ACD-6AEA-2807-64700EA1B7FE</targetEntity>
+<transferable>true</transferable>
+</Relation>

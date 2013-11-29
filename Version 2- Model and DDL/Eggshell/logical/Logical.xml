@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="5A00AA0D-5390-14E6-466E-2A93A9014967" mainViewID="4EE67BF6-AF13-50E8-29BF-26395A01581D">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-28 02:33:40 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="HOUSE_SALES_AGENT_house_id_FK" id="73CE7ED8-134F-65F0-9C9F-8E5E4182ECD9" directorySegmentName="seg_0">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-29 00:14:17 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>is sold by</nameOnSource>
+<nameOnTarget>sells</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4FE6E31F-6165-1A4F-2E22-8006FCEAF4EA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>176737E2-4BAC-BC94-06B5-01F553965450</targetEntity>
+<transferable>true</transferable>
+</Relation>

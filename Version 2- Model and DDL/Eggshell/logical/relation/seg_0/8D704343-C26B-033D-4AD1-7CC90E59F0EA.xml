@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="S_school_district_id_FK" id="8D704343-C26B-033D-4AD1-7CC90E59F0EA" directorySegmentName="seg_0">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-29 00:24:17 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>is in</nameOnSource>
+<nameOnTarget>has</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>1271BFB2-3E7D-5C7B-A625-2825AA40FF61</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>B8F2E4AF-CD64-624F-F949-CF9BC7E0CA7D</targetEntity>
+<transferable>true</transferable>
+</Relation>

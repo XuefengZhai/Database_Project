@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SSO_cnstr_project_stage_id_FK" id="7100E9DE-DE35-552F-D4D9-659F8A0B46C2" directorySegmentName="seg_0">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-28 09:02:39 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>contains</nameOnSource>
+<nameOnTarget>is selected for</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>84924513-57CF-0B97-BFD1-ECCEAE4ECE4B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DC22E38F-2AA7-6C46-E85F-CE678C95C53B</targetEntity>
+<transferable>true</transferable>
+</Relation>

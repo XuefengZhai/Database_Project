@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="LOT_house_id_FK" id="E5257325-4574-2DCB-9CF5-58E830BBF13F" directorySegmentName="seg_0">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-29 03:24:14 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<dominantRole>4FE6E31F-6165-1A4F-2E22-8006FCEAF4EA</dominantRole>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7AB79173-42BF-A216-D888-7C20685220B1</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>4FE6E31F-6165-1A4F-2E22-8006FCEAF4EA</targetEntity>
+<transferable>true</transferable>
+</Relation>

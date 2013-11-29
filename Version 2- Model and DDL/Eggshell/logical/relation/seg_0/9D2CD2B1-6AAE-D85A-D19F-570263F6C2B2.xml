@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="HSA_employee_id_FK" id="9D2CD2B1-6AAE-D85A-D19F-570263F6C2B2" directorySegmentName="seg_0">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-29 00:11:35 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>is assigned as</nameOnSource>
+<nameOnTarget>has</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8B49B51C-4EEE-655B-AFC0-BE97FD5F8178</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>176737E2-4BAC-BC94-06B5-01F553965450</targetEntity>
+<transferable>true</transferable>
+</Relation>

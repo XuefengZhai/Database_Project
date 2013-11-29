@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="907B2D45-0500-98C5-CFE6-49E5316B4406" mainViewID="27E76314-0F94-1D4F-65E7-880CF1444504">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-28 02:33:40 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

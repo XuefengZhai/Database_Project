@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="T_selected_stage_option_id_FK" id="7F91572E-1DD8-768C-664B-51B53C478D8A" directorySegmentName="seg_0">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-28 09:05:02 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>consists of</nameOnSource>
+<nameOnTarget>belongs to</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DC22E38F-2AA7-6C46-E85F-CE678C95C53B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8D23C1B5-9FE9-F693-1A7E-8B17C0D96337</targetEntity>
+<transferable>true</transferable>
+</Relation>

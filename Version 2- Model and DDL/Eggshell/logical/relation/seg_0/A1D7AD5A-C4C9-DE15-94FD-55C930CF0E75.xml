@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ROOM_ON_A_FLOOR_floor_id_FK" id="A1D7AD5A-C4C9-DE15-94FD-55C930CF0E75" directorySegmentName="seg_0">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-29 02:39:43 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F6CE8F74-7F9D-2FD9-A475-027C18E71F57</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6EF0AB9B-AFFA-D551-627F-BAB5FDDAD01F</targetEntity>
+<transferable>true</transferable>
+</Relation>

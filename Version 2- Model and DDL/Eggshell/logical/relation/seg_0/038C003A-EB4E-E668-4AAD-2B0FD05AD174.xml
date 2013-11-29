@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SALE_employee_id_FK" id="038C003A-EB4E-E668-4AAD-2B0FD05AD174" directorySegmentName="seg_0">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-11-29 00:21:00 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>conducts</nameOnSource>
+<nameOnTarget>is done by</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8B49B51C-4EEE-655B-AFC0-BE97FD5F8178</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AE7297C7-B74A-E253-138E-3DE33619A1D0</targetEntity>
+<transferable>true</transferable>
+</Relation>
