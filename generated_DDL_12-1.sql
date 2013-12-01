@@ -15,7 +15,7 @@ DROP TABLE CONSTRUCTION_WORKER_CREW CASCADE CONSTRAINTS
 ;
 DROP TABLE CONTRACT CASCADE CONSTRAINTS 
 ;
-DROP TABLE CONTRUCTION_PROJECT CASCADE CONSTRAINTS 
+DROP TABLE CONSTRUCTION_PROJECT CASCADE CONSTRAINTS 
 ;
 DROP TABLE CREW CASCADE CONSTRAINTS 
 ;
@@ -84,7 +84,7 @@ CREATE TABLE APPLICATION_USER
      password_recovery_question VARCHAR2 (50)  NOT NULL , 
      password_recovery_answer VARCHAR2 (50)  NOT NULL , 
      email VARCHAR2 (25)  NOT NULL CHECK ( email LIKE '%@%') , 
-     is_active CHAR(1) DEFAULT 'Y' CHECK ( is_active IN ('N', 'Y')),
+     is_active CHAR(1) DEFAULT 'Y' CHECK ( is_active IN ('N', 'Y'))
     ) 
 ;
 
@@ -134,7 +134,7 @@ CREATE TABLE CONSTRUCTION_WORKER_CREW
      start_date DATE  NOT NULL , 
      end_date DATE , 
      crew_id NUMBER  NOT NULL , 
-     contructor_worker_employee_id NUMBER  NOT NULL 
+     constructor_worker_employee_id NUMBER  NOT NULL 
     ) 
 ;
 
@@ -175,7 +175,7 @@ ALTER TABLE CONTRACT
 
 
 
-CREATE TABLE CONTRUCTION_PROJECT 
+CREATE TABLE CONSTRUCTION_PROJECT 
     ( 
      construction_project_id NUMBER  NOT NULL , 
      state_date DATE  NOT NULL , 
@@ -189,7 +189,7 @@ CREATE TABLE CONTRUCTION_PROJECT
 
 
 
-ALTER TABLE CONTRUCTION_PROJECT 
+ALTER TABLE CONSTRUCTION_PROJECT 
     ADD CONSTRAINT Construction_Project_PK PRIMARY KEY ( construction_project_id ) ;
 
 
@@ -630,7 +630,7 @@ ALTER TABLE SUBDIVISION
 
 CREATE TABLE SUBDIVISION_AGREEMENT 
     ( 
-     subdivion_agreement_id NUMBER  NOT NULL , 
+     subdivision_agreement_id NUMBER  NOT NULL , 
      description VARCHAR2 (250) , 
      start_date DATE  NOT NULL , 
      end_date DATE , 
@@ -749,7 +749,7 @@ ALTER TABLE CONSTRUCTION_PROJECT_STAGE
     ( 
      construction_project_id
     ) 
-    REFERENCES CONTRUCTION_PROJECT 
+    REFERENCES CONSTRUCTION_PROJECT 
     ( 
      construction_project_id
     ) 
@@ -768,7 +768,7 @@ ALTER TABLE CONSTRUCTION_PROJECT_STAGE
 ;
 
 
-ALTER TABLE CONTRUCTION_PROJECT 
+ALTER TABLE CONSTRUCTION_PROJECT 
     ADD CONSTRAINT CP_crew_id_FK FOREIGN KEY 
     ( 
      crew_id
@@ -780,7 +780,7 @@ ALTER TABLE CONTRUCTION_PROJECT
 ;
 
 
-ALTER TABLE CONTRUCTION_PROJECT 
+ALTER TABLE CONSTRUCTION_PROJECT 
     ADD CONSTRAINT CP_employee_id_FK FOREIGN KEY 
     ( 
      project_manager_employee_id
@@ -792,7 +792,7 @@ ALTER TABLE CONTRUCTION_PROJECT
 ;
 
 
-ALTER TABLE CONTRUCTION_PROJECT 
+ALTER TABLE CONSTRUCTION_PROJECT 
     ADD CONSTRAINT CP_house_id_FK FOREIGN KEY 
     ( 
      house_id
@@ -844,7 +844,7 @@ ALTER TABLE CONSTRUCTION_WORKER_CREW
 ALTER TABLE CONSTRUCTION_WORKER_CREW 
     ADD CONSTRAINT CWC_employee_id_FK FOREIGN KEY 
     ( 
-     contructor_worker_employee_id
+     constructor_worker_employee_id
     ) 
     REFERENCES CONSTRUCTION_WORKER 
     ( 
