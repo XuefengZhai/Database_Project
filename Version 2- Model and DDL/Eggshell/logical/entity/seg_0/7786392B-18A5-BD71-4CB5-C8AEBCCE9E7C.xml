@@ -117,20 +117,21 @@
 <engineerTo>
 <item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <referedAttribute>DF4BF454-1900-A0CC-5F1C-F14A09AB8AF6</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 </Attribute>
-<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="lot_id" id="1C1B516C-D70A-173F-31CF-C7B9588A8332">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="house_id" id="5E851A0E-0433-DB09-E1BE-9C8215B02D17">
 <createdBy>Sonal</createdBy>
-<createdTime>2013-11-29 03:54:10 UTC</createdTime>
-<generatorID>BB62281C-E116-1A8A-DEAC-0C5793D7AE4A</generatorID>
+<createdTime>2013-12-01 18:26:10 UTC</createdTime>
+<generatorID>C87911BF-7CE9-3DF6-04DC-4D3807F56FEA</generatorID>
 <ownerDesignName>Eggshell</ownerDesignName>
 <engineerTo>
 <item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
 </engineerTo>
-<referedAttribute>CECE02F7-46A5-1BB0-7003-0CEB3DA64C21</referedAttribute>
+<referedAttribute>D20FA5DB-2ABF-717A-D376-0F8E0AE8CE3F</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>

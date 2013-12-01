@@ -128,6 +128,7 @@
 <engineerTo>
 <item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <referedAttribute>D9FDACDC-E7B2-EA7C-A277-04B0EF3CB2BC</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -154,6 +155,7 @@
 <engineerTo>
 <item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <referedAttribute>D20FA5DB-2ABF-717A-D376-0F8E0AE8CE3F</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>

@@ -8,7 +8,7 @@
 </engineerTo>
 <identifying>false</identifying>
 <nameOnSource>has</nameOnSource>
-<optionalSource>false</optionalSource>
+<optionalSource>true</optionalSource>
 <optionalTarget>true</optionalTarget>
 <sourceCardinality>*</sourceCardinality>
 <sourceEntity>7786392B-18A5-BD71-4CB5-C8AEBCCE9E7C</sourceEntity>

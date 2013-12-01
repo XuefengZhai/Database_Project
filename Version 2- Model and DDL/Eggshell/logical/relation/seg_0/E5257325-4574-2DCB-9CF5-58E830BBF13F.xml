@@ -8,8 +8,8 @@
 </engineerTo>
 <dominantRole>4FE6E31F-6165-1A4F-2E22-8006FCEAF4EA</dominantRole>
 <identifying>false</identifying>
-<optionalSource>false</optionalSource>
-<optionalTarget>false</optionalTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>7AB79173-42BF-A216-D888-7C20685220B1</sourceEntity>
 <targetCardinalityString>1</targetCardinalityString>

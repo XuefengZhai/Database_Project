@@ -38,11 +38,12 @@
    <object objectType="Relation" objectID="378B13F0-49A0-374F-E7E5-824960938CD7" name="CC_contract_id_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="65A56073-7079-9683-57E4-82866DC35CB5" name="CC_customer_id_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="1F0744E7-36A3-100A-086D-246821A7192D" name="CONTRACT_disclosure_form_id_FK" seqName="seg_0"/>
-   <object objectType="Relation" objectID="BB62281C-E116-1A8A-DEAC-0C5793D7AE4A" name="CONTRUCTION_PROJECT_lot_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="ACB3A4B7-8E23-18D9-D8A8-42B8A2073D6D" name="CONTRACT_house_id_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="4EDDA705-FC91-7972-B0F2-69D6D3C7F7CA" name="CPS_construction_project_id_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="93AE80A6-6AFB-FD9F-AC59-424B68490DDD" name="CPS_stage_id_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="F9E93F14-9078-63C9-5607-82B9DA05A9DA" name="CP_crew_id_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="1EEB1F44-AFBC-DFC8-566E-06734B4E20A5" name="CP_employee_id_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="C87911BF-7CE9-3DF6-04DC-4D3807F56FEA" name="CP_house_id_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="16CD1A31-7985-8991-8B7A-006655AE459E" name="CREW_employee_id_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="AAA0D133-F992-0833-D5E5-C98EB679AE50" name="CUSTOMER_app_user_id_FK" seqName="seg_0"/>
    <object objectType="Relation" objectID="002E48AD-65C5-8699-31C0-4BE4FA1B9495" name="CWC_crew_id_FK" seqName="seg_0"/>

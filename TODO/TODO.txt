@@ -1,0 +1,5 @@
+1. Create class hierarchy for employee
+2. Remove the School Information
+3. Change of names for tables and columns
+4. Add relationships - verbs
+

@@ -69,7 +69,6 @@
 <engineerTo>
 <item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT008</logicalDatatype>
 <domain>2FF7B1E7-B0D4-FE14-1A61-196E6487640C</domain>

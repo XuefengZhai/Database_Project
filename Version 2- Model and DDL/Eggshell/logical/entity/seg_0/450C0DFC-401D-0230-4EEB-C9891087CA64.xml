@@ -137,6 +137,19 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 </Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="house_id" id="A5821903-4DA5-6886-7886-9DE454A96A16">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-12-01 18:23:08 UTC</createdTime>
+<generatorID>ACB3A4B7-8E23-18D9-D8A8-42B8A2073D6D</generatorID>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<referedAttribute>D20FA5DB-2ABF-717A-D376-0F8E0AE8CE3F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+</Attribute>
 </attributes>
 <identifiers>
 <identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="3C46FBEF-5F7D-4481-1EBF-42A9E79F4AA8" name="Contract_PK">
