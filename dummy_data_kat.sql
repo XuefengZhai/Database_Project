@@ -26,3 +26,6 @@ insert into elevation_code_table(name, description, additional_cost) values ('A'
 insert into elevation_code_table(name, description, additional_cost) values ('B', 'Silver elevation with upgrade from siding to stone.', 6735.50);
 insert into elevation_code_table(name, description, additional_cost) values ('C', 'Gold elevation with upgrade from siding to store with premium windows and finishes.', 12056.00);
 
+insert into employee(first_name, last_name, home_phone_number, street_address, city, state, zip_code, start_date) 
+	values ('Katarina', 'Shaw', '414-324-3815', '5626 Wilkins Avenue', 'Pittsburgh', 'PA', '15217', sysdate);
+

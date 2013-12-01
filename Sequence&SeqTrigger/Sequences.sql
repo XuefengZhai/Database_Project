@@ -26,7 +26,7 @@ drop SEQUENCE School_district_seq;
 drop SEQUENCE Stage_assignment_seq;
 drop SEQUENCE Stage_code_table_seq;
 drop SEQUENCE Stage_selected_opt_seq;
-drop SEQUENCE Style_code_table_seq
+drop SEQUENCE Style_code_table_seq;
 drop SEQUENCE Style_elevation_seq;
 drop SEQUENCE Subdivision_seq;
 drop SEQUENCE Subdivision_agreement_seq;
