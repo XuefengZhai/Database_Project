@@ -24,7 +24,7 @@ BEGIN
 		FROM employee e
 		WHERE e.employee_id = CP.employee_id;
 		
-		DBMS_OUTPUT.PUT('The employee No.'||CP.emplyee_id||
+		DBMS_OUTPUT.PUT_LINE('The employee No.'||CP.emplyee_id||
 										' Name:'||FN||' '||LN
 										' is working on project No.'||CP.construction_project_id||
 										'.');
@@ -33,6 +33,8 @@ BEGIN
 	Close c1;
 
 EXCEPTION
+	WHEN NO_DATA_FOUND THEN
+			DBMS_OUTPUT.PUT_LINE ('No such employee.');
 	WHEN INVALID_CURSOR THEN
 		DBMS_OUTPUT.PUT_LINE ('The cursor is invalid.');
 	WHEN CURSOR_ALREADY_OPEN THEN
