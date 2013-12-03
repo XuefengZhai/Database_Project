@@ -1,6 +1,6 @@
 --Reports
 
---1.Status of a given customer's home
+--1.Construction satus of a given customer's home
 
 CREATE OR REPLACE PROCEDURE display_home_status
 	( customer_no IN customer.customer_id%TYPE
@@ -19,10 +19,11 @@ BEGIN
 				 Construction_project.estimated_completion_date
   INTO FN, LN, HN, SD, ED, EsD
 	FROM Customer LEFT JOIN
-	Contract on Customer.customer_id = Contract.contract_id LEFT JOIN
+	Customer_contract on Customer.customer_id = Customer_contract.customer_id LEFT JOIN
+	Contract on Customer_contract.contract_id = Contract.contract_id LEFT JOIN
 	House on Contract.house_id = House.house_id LEFT JOIN
-	Construction_project on House.construction_project_id =
-													Construction_project.construction_project_id
+	Construction_project on House.house_id =
+													Construction_project.house_id
 	WHERE Customer.customer_id = customer_no;
 	
 	IF ED = NULL THEN
