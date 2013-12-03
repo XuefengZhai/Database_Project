@@ -1,29 +1,33 @@
 --Reports
---2.Status of all employees (Where are they assigned)
+--2.Which project manager works on which construction project. (Assignment)
 
-CREATE OR REPLACE PROCEDURE emplyees_status
+
+--question: why construction_project has a P_M_E_id as well as a employee_id???
+
+CREATE OR REPLACE PROCEDURE PM_Assignment
 AS
-EM Emplyee%ROWTYPE
-HID	House.house_id%TYPE
+CP construction_project%ROWTYPE
+FN employee.first_name%TYPE
+LN employee.last_name%TYPE
 
 CURSOR c1 is
-	SELECT * FROM Emplyee;
+	SELECT * FROM CONSTRUCTION_PROJECT;
 
 BEGIN
 	OPEN c1;
 	LOOP
-		FETCH c1 INTO EM;
+		FETCH c1 INTO CP;
 		EXIT WHEN c1%NOTFOUND;
 		
-		SELECT house_id
-		INTO HID
-		FROM Construction_project con
-		WHERE con.construction_project_id = EM.construction_project_id;
+		SELECT employee.first_name, employee.last_name
+		INTO FN,LN
+		FROM employee e
+		WHERE e.employee_id = CP.employee_id;
 		
-		DBMS_OUTPUT.PUT('The employee No.'||EM.emplyee_id||
-										' Name:'||EM.first_name||' '||EM.last_name
-										' is working on project '||EM.construction_project_id||
-										' of the house '||HID||'.');
+		DBMS_OUTPUT.PUT('The employee No.'||CP.emplyee_id||
+										' Name:'||FN||' '||LN
+										' is working on project No.'||CP.construction_project_id||
+										'.');
 		DBMS_OUTPUT.NEW_LINE;
 	END LOOP;
 	Close c1;
@@ -38,3 +42,5 @@ EXCEPTION
 		 	' returned and unhandled exception on '||SYSDATE||'.');
 
 
+END;
+/
