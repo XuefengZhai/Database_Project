@@ -280,7 +280,7 @@ ALTER TABLE DISCLOSURE_FORM
 CREATE TABLE ELEVATION 
     ( 
      elevation_id NUMBER  NOT NULL , 
-     type VARCHAR2 (1)  NOT NULL CHECK ( type IN ('A', 'B', 'C')) , 
+     type VARCHAR2 (1)  NOT NULL UNIQUE CHECK ( type IN ('A', 'B', 'C')) , 
      description VARCHAR2 (250) , 
      additional_cost NUMBER (9,2) 
     ) 
@@ -533,7 +533,7 @@ ALTER TABLE SCHOOL
 CREATE TABLE SCHOOL_DISTRICT 
     ( 
      school_district_id NUMBER  NOT NULL , 
-     name VARCHAR2 (25)  NOT NULL 
+     name VARCHAR2 (25)  NOT NULL UNIQUE 
     ) 
 ;
 
