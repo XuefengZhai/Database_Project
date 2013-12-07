@@ -78,7 +78,6 @@ DROP TABLE TASK_UPDATE CASCADE CONSTRAINTS
 CREATE TABLE APPLICATION_USER 
     ( 
      app_user_id NUMBER  NOT NULL , 
-     user_type VARCHAR2 (25)  NOT NULL CHECK (user_type IN ('Customer', 'Sales Agent', 'Construction Worker')), 
      username VARCHAR2 (25)  NOT NULL , 
      password VARCHAR2 (16)  NOT NULL , 
      password_recovery_question VARCHAR2 (50)  NOT NULL , 
@@ -168,7 +167,7 @@ ALTER TABLE CONTRACT
 CREATE TABLE CONSTRUCTION_PROJECT 
     ( 
      construction_project_id NUMBER  NOT NULL , 
-     state_date DATE  NOT NULL , 
+     start_date DATE  NOT NULL , 
      estimated_end_date DATE  NOT NULL , 
      end_date DATE , 
      project_manager_employee_id NUMBER  NOT NULL , 

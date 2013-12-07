@@ -28,18 +28,18 @@ insert into elevation(type, description, additional_cost) values ('B', 'Silver e
 insert into elevation(type, description, additional_cost) values ('C', 'Gold elevation with upgrade from siding to store with premium windows and finishes.', 12056.00);
 
 delete from application_user;
-insert into application_user(user_type, username, password, password_recovery_question, password_recovery_answer, email)
-	values ('Sales Agent', 'Katarina Shaw', 'password123', 'What is the name of your pet?', 'Charlie', 'katarina@email.com');
-insert into application_user(user_type, username, password, password_recovery_question, password_recovery_answer, email)
-	values ('Sales Agent', 'Lyz Knight', 'Sparkles!?!', 'What is your best friends name from high school?', 'Betsey', 'lyz@email.com');
-insert into application_user(user_type, username, password, password_recovery_question, password_recovery_answer, email)
-	values ('Construction Worker', 'Larry Parker', '00muscles!&', 'What city were you born in?', 'Kansas City', 'larry@email.com');
-insert into application_user(user_type, username, password, password_recovery_question, password_recovery_answer, email)
-	values ('Construction Worker', 'John Thompson', 'trtetegr', 'What city were you born in?', 'Milwaukee', 'john@email.com');
-insert into application_user(user_type, username, password, password_recovery_question, password_recovery_answer, email)
-	values ('Customer', 'Lea Ligon', 'fyf76vjhh', 'What is the name of your pet?', 'Jingles', 'lea@email.com');
-insert into application_user(user_type, username, password, password_recovery_question, password_recovery_answer, email)
-	values ('Customer', 'Elisa Applegate', 'kljlj865', 'What city were you born in?', 'Houston', 'elisa@email.com');
+insert into application_user(username, password, password_recovery_question, password_recovery_answer, email)
+	values ('Katarina Shaw', 'password123', 'What is the name of your pet?', 'Charlie', 'katarina@email.com');
+insert into application_user(username, password, password_recovery_question, password_recovery_answer, email)
+	values ('Lyz Knight', 'Sparkles!?!', 'What is your best friends name from high school?', 'Betsey', 'lyz@email.com');
+insert into application_user(username, password, password_recovery_question, password_recovery_answer, email)
+	values ('Larry Parker', '00muscles!&', 'What city were you born in?', 'Kansas City', 'larry@email.com');
+insert into application_user(username, password, password_recovery_question, password_recovery_answer, email)
+	values ('John Thompson', 'trtetegr', 'What city were you born in?', 'Milwaukee', 'john@email.com');
+insert into application_user(username, password, password_recovery_question, password_recovery_answer, email)
+	values ('Lea Ligon', 'fyf76vjhh', 'What is the name of your pet?', 'Jingles', 'lea@email.com');
+insert into application_user(username, password, password_recovery_question, password_recovery_answer, email)
+	values ('Elisa Applegate', 'kljlj865', 'What city were you born in?', 'Houston', 'elisa@email.com');
 
 delete from employee;
 insert into employee(first_name, last_name, home_phone, street, city, state, zipcode, start_date)
@@ -174,9 +174,8 @@ insert into lot(premium, street, subdivision_id)
 insert into lot(premium, street, subdivision_id)
 	values (12350.00, '4551 Charleston Street', (select subdivision_id from subdivision where name like 'The Bluffs'));
 
-insert into lot(premium, street, subdivision_id, house_id)
-	values (13000.00, '121 W. North Street', (select subdivision_id from subdivision where name like 'Riverview'),
-		(select house_id from house where financing_info like 'Financing from US Bank'));
+insert into lot(premium, street, subdivision_id)
+	values (13000.00, '121 W. North Street', (select subdivision_id from subdivision where name like 'Riverview'));
 insert into lot(premium, street, subdivision_id)
 	values (12000.00, '122 W. North Street', (select subdivision_id from subdivision where name like 'Riverview'));
 insert into lot(premium, street, subdivision_id)
@@ -270,6 +269,10 @@ insert into house(escrow_amount, is_reversed, financing_info, house_layout_id)
 insert into house(house_layout_id)
 	values ((select house_layout_id from house_layout where name like 'Three bedroom upstairs'));
 
+update lot
+	set house_id = (select house_id from house where financing_info like 'Financing from US Bank')
+	where street like '121 W. North Street';
+
 delete from room;
 insert into room(room_type, ceiling_type, description)
 	values ('Foyer', 'tall cathedral', 'An option for a tall entranceway.'); 
@@ -303,7 +306,7 @@ insert into disclosure_form(start_date, end_date, description)
 insert into disclosure_form(start_date, description)
 	values (TO_DATE('15-JUN-13'), 'Disclosure form updated with construction liability');
 
---issues
+
 delete from contract;
 insert into contract(submitted_date, time_limit_date, is_terminated, disclosure_form_id, subdivision_agreement_id, house_id)
 	values (TO_DATE('05-JUN-12'), TO_DATE('05-JUN-13'), 'N',
@@ -312,17 +315,17 @@ insert into contract(submitted_date, time_limit_date, is_terminated, disclosure_
 	(select house_id from lot where street like '121 W. North Street'));
 insert into contract(submitted_date, time_limit_date, is_terminated, disclosure_form_id, subdivision_agreement_id, house_id)
 	values (TO_DATE('05-FEB-11'), TO_DATE('05-FEB-12'), 'Y',
-	(select disclosure_form_id from disclosure_form where start_date = TO_DATE('01-JAN-11'),
-	(select subdivision_agreement_id from subdivision_agreement sa where sa.subdivision_id = (select subdivision_id from subdivision where name like 'Riverview') and end_date is null)),
+	(select disclosure_form_id from disclosure_form where start_date = TO_DATE('01-JAN-11')),
+	(select subdivision_agreement_id from subdivision_agreement sa where sa.subdivision_id = (select subdivision_id from subdivision where name like 'Riverview') and end_date is null),
 	(select house_id from lot where street like '121 W. North Street'));
 
 delete from customer_contract;
 insert into customer_contract(customer_id, contract_id)
 	values ((select customer_id from customer where first_name like 'Elisa' and last_name like 'Applegate'),
-	(select contract_id from contract where submitted_date = TO_DATE('05-JUN-12'));
+	(select contract_id from contract where submitted_date = TO_DATE('05-JUN-12')));
 insert into customer_contract(customer_id, contract_id)
 	values ((select customer_id from customer where first_name like 'Lea' and last_name like 'Ligon'),
-	(select contract_id from contract where submitted_date = TO_DATE('05-FEB-11'));
+	(select contract_id from contract where submitted_date = TO_DATE('05-FEB-11')));
 
 delete from floor;
 insert into floor(description, house_id)
@@ -332,36 +335,35 @@ insert into floor(description, house_id)
 insert into floor(description, house_id)
 	values ('second floor', (select house_id from lot where street like '121 W. North Street'));
 
-
 delete from room_on_a_floor;
 insert into room_on_a_floor(floor_id, room_id, room_size, num_windows)
-	values(select floor_id from floor where house_id = (select house_id from lot where street like '121 W. North Street') and description = 'first floor'), 
-	(select room_id from room where room_type like 'kitchen'), '20X14', 3);
+	values((select floor_id from floor where house_id = (select house_id from lot where street like '121 W. North Street') and description = 'first floor'), 
+	(select room_id from room where room_type like 'Kitchen'), '20X14', 3);
 insert into room_on_a_floor(floor_id, room_id, room_size, num_windows)
-	values(select floor_id from floor where house_id = (select house_id from lot where street like '121 W. North Street') and description = 'first floor'), 
+	values((select floor_id from floor where house_id = (select house_id from lot where street like '121 W. North Street') and description = 'first floor'), 
 	(select room_id from room where room_type like 'Bathroom'), '20X14', 1);
 insert into room_on_a_floor(floor_id, room_id, room_size, num_windows)
-	values(select floor_id from floor where house_id = (select house_id from lot where street like '121 W. North Street') and description = 'second floor'), 
+	values((select floor_id from floor where house_id = (select house_id from lot where street like '121 W. North Street') and description = 'second floor'), 
 	(select room_id from room where room_type like 'Bedroom'), '12X12', 2); 
 insert into room_on_a_floor(floor_id, room_id, room_size, num_windows)
-	values(select floor_id from floor where house_id = (select house_id from lot where street like '121 W. North Street') and description = 'second floor'), 
+	values((select floor_id from floor where house_id = (select house_id from lot where street like '121 W. North Street') and description = 'second floor'), 
 	(select room_id from room where room_type like 'Bedroom'), '14X12', 3);
 insert into room_on_a_floor(floor_id, room_id, room_size, num_windows)
-	values(select floor_id from floor where house_id = (select house_id from lot where street like '121 W. North Street') and description = 'second floor'), 
+	values((select floor_id from floor where house_id = (select house_id from lot where street like '121 W. North Street') and description = 'second floor'), 
 	(select room_id from room where room_type like 'Bedroom'), '16X16', 5); 
 insert into room_on_a_floor(floor_id, room_id)
-	values (select floor_id from floor where house_id = (select house_id from lot where street like '121 W. North Street') and description = 'second floor'),
+	values ((select floor_id from floor where house_id = (select house_id from lot where street like '121 W. North Street') and description = 'second floor'),
 	(select room_id from room where room_type like 'Bathroom'));
 
 
 delete from house_sales_agent;
 insert into house_sales_agent(start_date, end_date, is_main_sales_agent, sales_agent_employee_id, house_id)
 	values (TO_DATE('01-JAN-11'), TO_DATE('05-MAR-11'), 'N', 
-		(select sales_agent_id from sales_agent where license_number like '897859'),
+		(select employee_id from sales_agent where license_number like '897859'),
 		(select house_id from lot where street like '121 W. North Street'));
 insert into house_sales_agent(start_date, is_main_sales_agent, sales_agent_employee_id, house_id)
 	values (TO_DATE('01-DEC-10'), 'Y', 
-		(select sales_agent_id from sales_agent where license_number like '545354'),
+		(select employee_id from sales_agent where license_number like '545354'),
 		(select house_id from lot where street like '121 W. North Street'));
 
 
@@ -372,14 +374,16 @@ insert into project_manager(employee_id, start_date)
 
 delete from sale;
 insert into sale(escrow_paid, financing_option, house_id, employee_id)
-	values ('Y', 'Mortgage', (select house_id from lot where street like '121 W. North Street'), 
-		(select sales_agent_id from sales_agent where license_number like '897859'));
+	values ('Y', 'mortgage', (select house_id from lot where street like '121 W. North Street'), 
+		(select employee_id from sales_agent where license_number like '897859'));
 
 
 delete from construction_project;
 insert into construction_project(start_date, estimated_end_date, project_manager_employee_id, crew_id, house_id)
 	values (TO_DATE('05-FEB-11'), TO_DATE('05-OCT-12'), 
-		(select employee_id from project_manager pm, employee e where first_name like 'Jim' and last_name like 'Roberts'));
+		(select e.employee_id from project_manager pm, employee e where first_name like 'Jim' and last_name like 'Roberts'),
+		(select crew_id from crew where crew_manager_employee_id = (select employee_id from employee where first_name like 'James' and last_name like 'Smiley')),
+		(select house_id from lot where street like '121 W. North Street'));
 
 
 delete from stage;
@@ -412,31 +416,31 @@ insert into option_choice(option_category, description, price, last_allowed_stag
 delete from construction_project_stage;
 insert into construction_project_stage(start_date, estimated_end_date, construction_project_id, stage_id)
 	values (TO_DATE('05-FEB-11'), TO_DATE('15-FEB-11'),
-	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')
+	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
 	(select stage_id from stage where stage_number = '1'));
 insert into construction_project_stage(start_date, estimated_end_date, construction_project_id, stage_id)
 	values (TO_DATE('16-FEB-11'), TO_DATE('25-JUL-11'),
-	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')
+	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
 	(select stage_id from stage where stage_number like '2'));
 insert into construction_project_stage(start_date, estimated_end_date, construction_project_id, stage_id)
 	values (TO_DATE('26-JUL-11'), TO_DATE('11-DEC-11'),
-	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')
+	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
 	(select stage_id from stage where stage_number like '3'));
 insert into construction_project_stage(start_date, estimated_end_date, construction_project_id, stage_id)
 	values (TO_DATE('12-DEC-11'), TO_DATE('04-FEB-12'),
-	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')
+	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
 	(select stage_id from stage where stage_number like '4'));
 insert into construction_project_stage(start_date, estimated_end_date, construction_project_id, stage_id)
 	values (TO_DATE('05-FEB-12'), TO_DATE('04-JUN-12'),
-	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')
+	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
 	(select stage_id from stage where stage_number like '5'));
 insert into construction_project_stage(start_date, estimated_end_date, construction_project_id, stage_id)
 	values (TO_DATE('05-JUN-12'), TO_DATE('20-JUL-12'),
-	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')
+	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
 	(select stage_id from stage where stage_number like '6'));
 insert into construction_project_stage(start_date, estimated_end_date, construction_project_id, stage_id)
 	values (TO_DATE('21-JUL-12'), TO_DATE('05-AUG-12'),
-	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')
+	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
 	(select stage_id from stage where stage_number like '7'));
 
 delete from selected_stage_option;
@@ -455,11 +459,10 @@ insert into selected_stage_option(selected_date, option_choice_id, construction_
 			where cs.stage_id = s.stage_id and s.stage_number like '2')
 		);
 
-
 delete from task;
 insert into task(name, selected_stage_option_id)
 	values ('install fixture', 
-		(select selected_stage_option_id from selected_stage_option where selected_date = TO_DATE('19-FEB-12')));
+		(select selected_stage_option_id from selected_stage_option where selected_date = TO_DATE('15-FEB-12')));
 insert into task(name, selected_stage_option_id)
 	values ('plaster art installation', 
 		(select selected_stage_option_id from selected_stage_option where selected_date = TO_DATE('16-FEB-11')));
@@ -467,9 +470,9 @@ insert into task(name, selected_stage_option_id)
 delete from task_update;
 insert into task_update(update_date, percent_complete, comments, employee_id, task_id)
 	values(TO_DATE('19-FEB-12'), 100, 'Installed the fixture.', 
-		(select employee_id from project_manager pm, employee e where e.first_name like 'Jim' and e.last_name like 'Roberts'),
+		(select e.employee_id from project_manager pm, employee e where e.first_name like 'Jim' and e.last_name like 'Roberts'),
 		(select task_id from task where name like 'install fixture'));
 insert into task_update(update_date, percent_complete, comments, employee_id, task_id)
 	values(TO_DATE('16-FEB-12'), 50, 'Purchase the fixture.', 
-		(select employee_id from project_manager pm, employee e where e.first_name like 'Jim' and e.last_name like 'Roberts'),
+		(select e.employee_id from project_manager pm, employee e where e.first_name like 'Jim' and e.last_name like 'Roberts'),
 		(select task_id from task where name like 'install fixture'));
