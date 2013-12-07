@@ -1244,3 +1244,16 @@ ALTER TABLE TASK
 -- 
 -- ERRORS                                   0
 -- WARNINGS                                 0
+
+/*Table created for JOB*/
+DROP TABLE CONSTRUCTION_END_TODAY ;
+CREATE TABLE CONSTRUCTION_END_TODAY 
+( 
+  construction_project_id NUMBER  NOT NULL , 
+  state_date DATE  NOT NULL , 
+  end_date DATE , 
+  project_manager_employee_id NUMBER  NOT NULL , 
+  crew_id NUMBER , 
+  house_id NUMBER  NOT NULL 
+);
+
