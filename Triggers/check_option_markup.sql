@@ -1,5 +1,5 @@
 CREATE OR REPLACE TRIGGER stage_selected_option_markup
-BEFORE INSERT OR UPDATE ON stage_selected_option
+BEFORE INSERT OR UPDATE ON selected_stage_option
 FOR EACH ROW
 DECLARE
 	constructionstage construction_project_stage.stage_id%TYPE;
@@ -17,9 +17,9 @@ BEGIN
 		WHERE option_choice_id = :NEW.option_choice_id;
 
 	IF (constructionstage - 1) = lastallowed THEN
-		:NEW.customer_price = optionprice + (optionprice * 0.15);
+		:NEW.customer_price := optionprice + (optionprice * 0.15);
 	ELSE
-		:NEW.customer_price = optionprice;	
+		:NEW.customer_price := optionprice;	
 	END IF;
 EXCEPTION
 	WHEN NO_DATA_FOUND THEN
