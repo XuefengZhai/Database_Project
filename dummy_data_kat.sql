@@ -55,7 +55,7 @@ insert into employee(first_name, last_name, home_phone, cell_phone, street, city
 insert into employee(first_name, last_name, home_phone, cell_phone, street, city, state, zipcode, start_date) 
 	values ('James', 'Smiley', '412-345-6572', '412-243-3664', '402 Lincoln Dr.', 'Pittsburgh', 'PA', '15214', TO_DATE('14-OCT-03'));
 insert into employee(first_name, last_name, home_phone, cell_phone, street, city, state, zipcode, start_date) 
-	values ('Eliot', 'Vinn', '412-450-4325', '412-375-6544', '2400 Main St.', 'Pittsburgh', 'PA', '15214', TO_DATE('06-JUN-10'));
+	values ('Elliot', 'Vinn', '412-450-4325', '412-375-6544', '2400 Main St.', 'Pittsburgh', 'PA', '15214', TO_DATE('06-JUN-10'));
 insert into employee(first_name, last_name, home_phone, cell_phone, street, city, state, zipcode, start_date, app_user_id) 
 	values ('John', 'Thompson', '413-233-5362', '412-341-5434', '600 Capitol Dr.', 'Cranberry', 'PA', '15214', TO_DATE('06-JAN-11'), (select app_user_id from application_user where username like 'John Thompson'));
 insert into employee(first_name, last_name, home_phone, cell_phone, street, city, state, zipcode, start_date) 
@@ -95,33 +95,28 @@ insert into crew(crew_manager_employee_id)
 insert into crew(crew_manager_employee_id)
 	values ((select employee_id from employee where first_name like 'Jim' and last_name like 'Roberts'));
 
--- start here
 delete from construction_worker_crew;
 insert into construction_worker_crew(start_date, crew_id, constr_worker_employee_id)
-	values (TO_DATE('27-OCT-13'), (select crew_id from crew c, construction_worker cw, employee e where c.crew_manager_employee_id = cw.employee_id and cw.employee_id = e.employee and e.first_name like 'Jim' and e.last_name like 'Roberts'),
-	(select employee_id from construction_worker where first_name like 'Carson' and last_name like 'Peterson' ));
+	values (TO_DATE('27-OCT-13'), (select c.crew_id from crew c, construction_worker cw, employee e where c.crew_manager_employee_id = cw.employee_id and cw.employee_id = e.employee_id and e.first_name like 'Jim' and e.last_name like 'Roberts'),
+	(select e.employee_id from employee e where e.first_name like 'Carson' and e.last_name like 'Peterson' ));
 insert into construction_worker_crew(start_date, crew_id, constr_worker_employee_id)
-	values (TO_DATE('02-JAN-13'), (select crew_id from crew c, construction_worker cw, employee e where c.crew_manager_employee_id = cw.employee_id and cw.employee_id = e.employee and e.first_name like 'Jim' and e.last_name like 'Roberts'),
-	(select employee_id from construction_worker where first_name like 'Jim' and last_name like 'Roberts' ));
+	values (TO_DATE('02-JAN-13'), (select c.crew_id from crew c, construction_worker cw, employee e where c.crew_manager_employee_id = cw.employee_id and cw.employee_id = e.employee_id and e.first_name like 'Jim' and e.last_name like 'Roberts'),
+	(select e.employee_id from employee e where e.first_name like 'Jim' and e.last_name like 'Roberts' ));
 insert into construction_worker_crew(start_date, crew_id, constr_worker_employee_id)
-	values (TO_DATE('12-NOV-12'), (select crew_id from crew c, construction_worker cw, employee e where c.crew_manager_employee_id = cw.employee_id and cw.employee_id = e.employee and e.first_name like 'James' and e.last_name like 'Smiley'),
-	(select employee_id from construction_worker where first_name like 'Larry' and last_name like 'Parker' ));
+	values (TO_DATE('12-NOV-12'), (select c.crew_id from crew c, construction_worker cw, employee e where c.crew_manager_employee_id = cw.employee_id and cw.employee_id = e.employee_id and e.first_name like 'James' and e.last_name like 'Smiley'),
+	(select e.employee_id from employee e where e.first_name like 'Larry' and e.last_name like 'Parker' ));
 insert into construction_worker_crew(start_date, crew_id, constr_worker_employee_id)
-	values (TO_DATE('12-NOV-12'), (select crew_id from crew c, construction_worker cw, employee e where c.crew_manager_employee_id = cw.employee_id and cw.employee_id = e.employee and e.first_name like 'James' and e.last_name like 'Smiley'),
-	(select employee_id from construction_worker where first_name like 'Tom' and last_name like 'Patterson' ));
+	values (TO_DATE('12-NOV-12'), (select c.crew_id from crew c, construction_worker cw, employee e where c.crew_manager_employee_id = cw.employee_id and cw.employee_id = e.employee_id and e.first_name like 'James' and e.last_name like 'Smiley'),
+	(select e.employee_id from employee e where e.first_name like 'Tom' and e.last_name like 'Patterson' ));
 insert into construction_worker_crew(start_date, crew_id, constr_worker_employee_id)
-	values (TO_DATE('12-NOV-12'), (select crew_id from crew c, construction_worker cw, employee e where c.crew_manager_employee_id = cw.employee_id and cw.employee_id = e.employee and e.first_name like 'James' and e.last_name like 'Smiley'),
-	(select employee_id from construction_worker where first_name like 'James' and last_name like 'Smiley' ));
+	values (TO_DATE('12-NOV-12'), (select c.crew_id from crew c, construction_worker cw, employee e where c.crew_manager_employee_id = cw.employee_id and cw.employee_id = e.employee_id and e.first_name like 'James' and e.last_name like 'Smiley'),
+	(select e.employee_id from employee e where e.first_name like 'James' and e.last_name like 'Smiley' ));
 insert into construction_worker_crew(start_date, crew_id, constr_worker_employee_id)
-	values (TO_DATE('12-NOV-12'), (select crew_id from crew c, construction_worker cw, employee e where c.crew_manager_employee_id = cw.employee_id and cw.employee_id = e.employee and e.first_name like 'James' and e.last_name like 'Smiley'),
-	(select employee_id from construction_worker where first_name like 'Elliot' and last_name like 'Vinn' ));
+	values (TO_DATE('12-NOV-12'), (select c.crew_id from crew c, construction_worker cw, employee e where c.crew_manager_employee_id = cw.employee_id and cw.employee_id = e.employee_id and e.first_name like 'James' and e.last_name like 'Smiley'),
+	(select e.employee_id from employee e where e.first_name like 'Elliot' and e.last_name like 'Vinn' ));
 insert into construction_worker_crew(start_date, crew_id, constr_worker_employee_id)
-	values (TO_DATE('12-NOV-12'), (select crew_id from crew c, construction_worker cw, employee e where c.crew_manager_employee_id = cw.employee_id and cw.employee_id = e.employee and e.first_name like 'James' and e.last_name like 'Smiley'),
-	(select employee_id from construction_worker where first_name like 'John' and last_name like 'Thompson' ));
-
-
-
-
+	values (TO_DATE('12-NOV-12'), (select c.crew_id from crew c, construction_worker cw, employee e where c.crew_manager_employee_id = cw.employee_id and cw.employee_id = e.employee_id and e.first_name like 'James' and e.last_name like 'Smiley'),
+	(select e.employee_id from employee e where e.first_name like 'John' and e.last_name like 'Thompson' ));
 
 delete from subdivision_agreement;
 insert into subdivision_agreement(start_date, description, subdivision_id)
@@ -177,7 +172,7 @@ insert into lot(premium, street, subdivision_id)
 insert into lot(premium, street, subdivision_id)
 	values (11500.00, '4552 Charleston Street', (select subdivision_id from subdivision where name like 'The Bluffs'));
 insert into lot(premium, street, subdivision_id)
-	values (12350.00 '4551 Charleston Street', (select subdivision_id from subdivision where name like 'The Bluffs'));
+	values (12350.00, '4551 Charleston Street', (select subdivision_id from subdivision where name like 'The Bluffs'));
 
 insert into lot(premium, street, subdivision_id, house_id)
 	values (13000.00, '121 W. North Street', (select subdivision_id from subdivision where name like 'Riverview'),
@@ -280,13 +275,13 @@ insert into room(room_type, ceiling_type, description)
 	values ('Foyer', 'tall cathedral', 'An option for a tall entranceway.'); 
 insert into room(room_type, ceiling_type, description)
 	values ('Living Room', 'vaulted', 'An option for a vaulted livingroom.'); 
-insert into room(room_type, ceiling_type, description)
+insert into room(room_type, description)
 	values ('Living Room', 'A standard livingroom.'); 
 insert into room(room_type)
 	values ('Kitchen');
 insert into room(room_type)
 	values ('Bathroom');
-insert into room(room_type)
+insert into room(room_type, ceiling_type)
 	values ('Attic', 'vaulted');
 insert into room(room_type)
 	values ('Bedroom');
@@ -308,17 +303,17 @@ insert into disclosure_form(start_date, end_date, description)
 insert into disclosure_form(start_date, description)
 	values (TO_DATE('15-JUN-13'), 'Disclosure form updated with construction liability');
 
-
+--issues
 delete from contract;
 insert into contract(submitted_date, time_limit_date, is_terminated, disclosure_form_id, subdivision_agreement_id, house_id)
 	values (TO_DATE('05-JUN-12'), TO_DATE('05-JUN-13'), 'N',
-	(select disclosure_form_id from disclosure_form where start_date = TO_DATE('12-NOV-12'),
-	(select subdivision_agreement_id from subdivision_agreement sa where sa.subdivision_id = (select subdivision_id from subdivision where name like 'Riverview') and end_date is null);
-	(select house_id from lot where street like '121 W. North Street');
+	(select disclosure_form_id from disclosure_form where start_date = TO_DATE('12-NOV-12')),
+	(select subdivision_agreement_id from subdivision_agreement sa where sa.subdivision_id = (select subdivision_id from subdivision where name like 'Riverview') and end_date is null),
+	(select house_id from lot where street like '121 W. North Street'));
 insert into contract(submitted_date, time_limit_date, is_terminated, disclosure_form_id, subdivision_agreement_id, house_id)
 	values (TO_DATE('05-FEB-11'), TO_DATE('05-FEB-12'), 'Y',
 	(select disclosure_form_id from disclosure_form where start_date = TO_DATE('01-JAN-11'),
-	(select subdivision_agreement_id from subdivision_agreement sa where sa.subdivision_id = (select subdivision_id from subdivision where name like 'Riverview') and end_date is null);
+	(select subdivision_agreement_id from subdivision_agreement sa where sa.subdivision_id = (select subdivision_id from subdivision where name like 'Riverview') and end_date is null)),
 	(select house_id from lot where street like '121 W. North Street'));
 
 delete from customer_contract;
@@ -328,8 +323,6 @@ insert into customer_contract(customer_id, contract_id)
 insert into customer_contract(customer_id, contract_id)
 	values ((select customer_id from customer where first_name like 'Lea' and last_name like 'Ligon'),
 	(select contract_id from contract where submitted_date = TO_DATE('05-FEB-11'));
-
-
 
 delete from floor;
 insert into floor(description, house_id)

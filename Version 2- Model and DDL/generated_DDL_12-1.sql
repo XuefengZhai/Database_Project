@@ -153,7 +153,7 @@ CREATE TABLE CONTRACT
      scanned_image BLOB , 
      is_terminated CHAR(1) DEFAULT 'N' CHECK ( is_terminated IN ('N', 'Y')), 
      disclosure_form_id NUMBER  NOT NULL , 
-     subdivion_agreement_id NUMBER  NOT NULL , 
+     subdivision_agreement_id NUMBER  NOT NULL , 
      house_id NUMBER  NOT NULL 
     ) 
 ;
@@ -609,7 +609,7 @@ CREATE TABLE SUBDIVISION_AGREEMENT
 
 
 ALTER TABLE SUBDIVISION_AGREEMENT 
-    ADD CONSTRAINT Subdivision_Agreement_PK PRIMARY KEY ( subdivion_agreement_id ) ;
+    ADD CONSTRAINT Subdivision_Agreement_PK PRIMARY KEY ( subdivision_agreement_id ) ;
 
 
 
@@ -812,7 +812,7 @@ ALTER TABLE CONSTRUCTION_WORKER_CREW
 ALTER TABLE CONSTRUCTION_WORKER_CREW 
     ADD CONSTRAINT CWC_employee_id_FK FOREIGN KEY 
     ( 
-     constructor_worker_employee_id
+     construction_worker_employee_id
     ) 
     REFERENCES CONSTRUCTION_WORKER 
     ( 
