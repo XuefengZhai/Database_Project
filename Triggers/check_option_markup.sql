@@ -1,28 +1,26 @@
 CREATE OR REPLACE TRIGGER stage_selected_option_markup
-AFTER INSERT OR UPDATE ON selected_stage_option
+AFTER INSERT OR UPDATE ON stage_selected_option
 FOR EACH ROW
 DECLARE
-	housestage construction_project_stage.stage_id%TYPE;
-	optionstage option_choice.last_allowed_stage_id%TYPE;
+	housestage stage_assignment.stage_id%TYPE;
+	optionstage option_for_stage.option_id%TYPE;
 	CURSOR stageCursor IS
-		SELECT MAX(stage_number) FROM construction_project_stage
-		JOIN stage USING (stage_id)
-		WHERE construction_project_id = :NEW.construction_project_id;
+		SELECT MAX(stage_id) FROM stage_assignment
+		WHERE construction_project_id = :new.construction_project_id;
 	CURSON optionCursor IS
-		SELECT last_allowed_stage_id FROM selected_stage_option
-		JOIN option_choice USING (option_choice_id)
-		WHERE selected_stage_option_id = :NEW.selected_stage_option_id;
+		SELECT stage_id from option_for_stage 
+		WHERE option_for_stage_id = :new.option_for_stage_id;
 BEGIN
 	OPEN stageCursor;
 	FETCH stageCursor INTO housestage;
 	OPEN optionCursor;
 	FETCH optionCursor INTO optionstage;
 	IF (housestage - 1) = optionstage THEN
-		UPDATE selected_stage_option
-		SET selected_stage_option.customer_price = :NEW.customer_price + (:NEW.customer_price * 0.15)
-		WHERE selected_stage_option.selected_stage_option_id = :NEW.selected_stage_option_id;
+		UPDATE stage_selected_option
+		SET stage_selected_option.price = :NEW.price + (:NEW.price * 0.15)
+		WHERE stage_selected_option.stage_selected_option = :NEW.stage_selected_option_id;
 	ELSE
-		SET selected_stage_option.customer_price = :NEW.customer_price;
+		NULL;
 	END IF;
 EXCEPTION
 	WHEN NO_DATA_FOUND THEN

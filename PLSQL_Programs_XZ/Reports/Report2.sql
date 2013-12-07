@@ -5,9 +5,9 @@
 
 CREATE OR REPLACE PROCEDURE PM_Assignment
 AS
-CP construction_project%ROWTYPE
-FN employee.first_name%TYPE
-LN employee.last_name%TYPE
+CP construction_project%ROWTYPE;
+FN employee.first_name%TYPE;
+LN employee.last_name%TYPE;
 
 CURSOR c1 is
 	SELECT * FROM CONSTRUCTION_PROJECT;
@@ -18,13 +18,13 @@ BEGIN
 		FETCH c1 INTO CP;
 		EXIT WHEN c1%NOTFOUND;
 		
-		SELECT employee.first_name, employee.last_name
+		SELECT e.first_name, e.last_name
 		INTO FN,LN
 		FROM employee e
 		WHERE e.employee_id = CP.project_manager_employee_id;
 		
-		DBMS_OUTPUT.PUT_LINE('The employee No.'||CP.emplyee_id||
-										' Name:'||FN||' '||LN
+		DBMS_OUTPUT.PUT_LINE('The employee No.'||CP.project_manager_employee_id||
+										' Name:'||FN||' '||LN||
 										' is working on project No.'||CP.construction_project_id||
 										'.');
 		DBMS_OUTPUT.NEW_LINE;
