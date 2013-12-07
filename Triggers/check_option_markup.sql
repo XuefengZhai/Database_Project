@@ -5,8 +5,6 @@ DECLARE
 	constructionstage construction_project_stage.stage_id%TYPE;
 	lastallowed option_choice.last_allowed_stage_id%TYPE;
 	optionprice option_choice.price%TYPE;
-	construction_project_stage_num:= :NEW.construction_project_stage_id;
-	selected_option_num:= :NEW.option_choice_id;
 	e_optionstage_beyond_threshold EXCEPTION;
 BEGIN
 	SELECT stage_id INTO constructionstage FROM construction_project_stage
