@@ -268,8 +268,6 @@ insert into house_layout(name, description)
 delete from house;
 insert into house(escrow_amount, is_reversed, financing_info, house_layout_id)
 	values (67885.60, 'N', 'Financing from US Bank', (select house_layout_id from house_layout where name like 'Five bedroom, Garage'));
-insert into house(house_layout_id)
-	values ((select house_layout_id from house_layout where name like 'Three bedroom upstairs'));
 
 update lot
 	set house_id = (select house_id from house where financing_info like 'Financing from US Bank')
@@ -434,19 +432,21 @@ insert into construction_project_stage(start_date, estimated_end_date, construct
 	(select stage_id from stage where stage_number like '4'));
 
 delete from selected_stage_option;
-insert into selected_stage_option(selected_date, option_choice_id, construction_project_stage_id)
+insert into selected_stage_option(selected_date, option_choice_id, construction_project_stage_id, customer_price)
 	values (TO_DATE('15-FEB-12'),
 		(select option_choice_id from option_choice where option_category like 'Fixture' and description like 
 			'Nickel-finish bathroom fixtures'),
 		(select construction_project_stage_id from construction_project_stage cs
-			where cs.start_date = TO_DATE('12-DEC-13'))
+			where cs.start_date = TO_DATE('12-DEC-13')),
+		545.34
 		);
-insert into selected_stage_option(selected_date, option_choice_id, construction_project_stage_id)
+insert into selected_stage_option(selected_date, option_choice_id, construction_project_stage_id, customer_price)
 	values (TO_DATE('16-FEB-12'),
 		(select option_choice_id from option_choice where option_category like 'Wall Texture' and description like 
 			'Plaster art'),
 		(select construction_project_stage_id from construction_project_stage cs
-			where cs.start_date = TO_DATE('12-DEC-13'))
+			where cs.start_date = TO_DATE('12-DEC-13')),
+		53.53
 		);
 
 delete from task;
@@ -472,8 +472,6 @@ insert into task_update(update_date, percent_complete, comments, employee_id, ta
 
 insert into house(escrow_amount, is_reversed, financing_info, house_layout_id)
 	values (89885.60, 'N', 'Financing from PNC Bank', (select house_layout_id from house_layout where name like 'Five bedroom, Garage'));
-insert into house(house_layout_id)
-	values ((select house_layout_id from house_layout where name like 'Five bedroom, Garage'));
 
 update lot
 	set house_id = (select house_id from house where financing_info like 'Financing from PNC Bank')
@@ -577,13 +575,13 @@ insert into construction_project_stage(start_date, estimated_end_date, end_date,
 	(select construction_project_id from construction_project where start_date = TO_DATE('15-JUN-12')),
 	(select stage_id from stage where stage_number like '7'));
 
-insert into selected_stage_option(selected_date, option_choice_id, construction_project_stage_id)
+insert into selected_stage_option(selected_date, option_choice_id, construction_project_stage_id, customer_price)
 	values (TO_DATE('17-JUL-12'),
 		(select option_choice_id from option_choice where description like 
 			'Nickel-finish kitchen fixtures'),
 		(select construction_project_stage_id from construction_project_stage cs
-			where cs.start_date = TO_DATE('10-JUN-12'))
-		);
+			where cs.start_date = TO_DATE('10-JUN-12')),
+		898.34);
 
 insert into task(name, selected_stage_option_id)
 	values ('install kitchen fixture', 

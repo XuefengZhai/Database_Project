@@ -1,9 +1,9 @@
 --Reports
 
---1.Construction satus of a given customer's house
+--1.Construction status of a given house
 
 CREATE OR REPLACE PROCEDURE display_home_status
-	( customer_no IN customer.customer_id%TYPE
+	( house_no IN house.house_id%TYPE
 	)
 AS
 
@@ -25,7 +25,7 @@ BEGIN
 	House on Contract.house_id = House.house_id LEFT JOIN
 	Construction_project on House.house_id =
 											Construction_project.house_id
-	WHERE Customer.customer_id = customer_no;
+	WHERE House.house_id = house_no;
 	
 	IF ED is NULL THEN
 		 DBMS_OUTPUT.PUT_LINE('The construction project of customer: '||FN||' '||LN|| 
@@ -41,7 +41,7 @@ BEGIN
 	END IF;
 EXCEPTION
 	WHEN NO_DATA_FOUND THEN
-			DBMS_OUTPUT.PUT_LINE ('No such customer.');
+			DBMS_OUTPUT.PUT_LINE ('No such house.');
 	WHEN OTHERS THEN
 		 DBMS_OUTPUT.PUT_LINE ('The PLSQL procedure executed by '||USER||
 		 	' returned and unhandled exception on '||SYSDATE||'.');
