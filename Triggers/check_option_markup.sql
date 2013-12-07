@@ -18,11 +18,12 @@ BEGIN
 
 	IF (constructionstage - 1) = lastallowed THEN
 		UPDATE selected_stage_option SET
-		customer_price:= optionprice + (optionprice * 0.15)
+		customer_price = optionprice + (optionprice * 0.15)
 		WHERE selected_stage_option_id = :NEW.selected_stage_option_id;
 	ELSE
 		UPDATE selected_stage_option SET
-		customer_price:= optionprice;
+		customer_price = optionprice
+		WHERE selected_stage_option_id = :NEW.selected_stage_option_id;
 	END IF;
 EXCEPTION
 	WHEN NO_DATA_FOUND THEN
