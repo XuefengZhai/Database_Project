@@ -9,13 +9,13 @@ AS
 FN Customer.first_name%TYPE
 LN Customer.last_name%TYPE
 HN Contract.house_id%TYPE
-SD Construction_project.state_date%TYPE
+SD Construction_project.start_date%TYPE
 ED Construction_project.end_date%TYPE
 EsD Construction_project.estimated_completion_date%TYPE
 
 BEGIN
 	SELECT Customer.first_name, Customer.last_name, Contract.house_id, 
-				 Construction_project.state_date, Construction_project.end_date,
+				 Construction_project.start_date, Construction_project.end_date,
 				 Construction_project.estimated_completion_date
   INTO FN, LN, HN, SD, ED, EsD
 	FROM Customer LEFT JOIN
