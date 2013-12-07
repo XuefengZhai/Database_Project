@@ -70,9 +70,10 @@
 <item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
+<defaultValue>N</defaultValue>
 <use>0</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<domain>7A94C4D1-93DE-2737-27D5-94A7F3D7279B</domain>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>0F66DB35-3F78-F9FC-2F1B-80B5F99D4A3C</domain>
 </Attribute>
 <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="financing_option" id="A1AE6108-F03E-7750-8777-9C8D184527CA">
 <createdBy>Sonal</createdBy>

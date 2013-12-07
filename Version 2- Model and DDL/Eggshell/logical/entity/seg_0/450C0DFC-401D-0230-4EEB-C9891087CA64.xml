@@ -108,7 +108,7 @@
 <nullsAllowed>true</nullsAllowed>
 <defaultValue>N</defaultValue>
 <use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT025</logicalDatatype>
 <domain>0F66DB35-3F78-F9FC-2F1B-80B5F99D4A3C</domain>
 </Attribute>
 <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="disclosure_form_id" id="B730CF9F-420A-E2D0-838A-9797FD0CB405">
@@ -124,7 +124,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 </Attribute>
-<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="subdivion_agreement_id" id="065A2CF1-D7A3-AE01-DC59-A6B09F4CA1F2">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="subdivision_agreement_id" id="065A2CF1-D7A3-AE01-DC59-A6B09F4CA1F2">
 <createdBy>Sonal</createdBy>
 <createdTime>2013-11-29 03:04:45 UTC</createdTime>
 <generatorID>BAC969BE-C9C6-4A32-1C26-B017304F9A35</generatorID>

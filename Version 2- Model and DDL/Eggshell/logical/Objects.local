@@ -1,11 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.logical.LogicalDesign>
    <object objectType="Entity" objectID="F73EC11A-74EF-80BF-7BB1-FC5AACE503B9" name="APPLICATION_USER" seqName="seg_0"/>
+   <object objectType="Entity" objectID="7786392B-18A5-BD71-4CB5-C8AEBCCE9E7C" name="CONSTRUCTION_PROJECT" seqName="seg_0"/>
    <object objectType="Entity" objectID="84924513-57CF-0B97-BFD1-ECCEAE4ECE4B" name="CONSTRUCTION_PROJECT_STAGE" seqName="seg_0"/>
    <object objectType="Entity" objectID="674A3D0D-EB90-CCA3-9255-526757E8F6B2" name="CONSTRUCTION_WORKER" seqName="seg_0"/>
    <object objectType="Entity" objectID="9B1C5CB0-689B-DB37-EA41-F715EF790EE3" name="CONSTRUCTION_WORKER_CREW" seqName="seg_0"/>
    <object objectType="Entity" objectID="450C0DFC-401D-0230-4EEB-C9891087CA64" name="CONTRACT" seqName="seg_0"/>
-   <object objectType="Entity" objectID="7786392B-18A5-BD71-4CB5-C8AEBCCE9E7C" name="CONTRUCTION_PROJECT" seqName="seg_0"/>
    <object objectType="Entity" objectID="FBCE6187-47E8-F862-CE16-409B50F444B6" name="CREW" seqName="seg_0"/>
    <object objectType="Entity" objectID="3FDC5FB9-47A0-E3BE-C1DD-ECF127039C9D" name="CREW_MANAGER" seqName="seg_0"/>
    <object objectType="Entity" objectID="E2BB6065-EB52-C5C8-5CEF-2D2FED458AA3" name="CUSTOMER" seqName="seg_0"/>

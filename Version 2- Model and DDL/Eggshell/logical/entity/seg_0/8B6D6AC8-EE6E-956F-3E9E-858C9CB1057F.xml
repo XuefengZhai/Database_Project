@@ -51,7 +51,7 @@
 </FontObject>
 </fonts>
 <attributes>
-<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="subdivion_agreement_id" id="E0FBAA09-BDDF-CBB7-B2DF-8313BD625803">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="subdivision_agreement_id" id="E0FBAA09-BDDF-CBB7-B2DF-8313BD625803">
 <createdBy>Sonal</createdBy>
 <createdTime>2013-11-28 21:12:57 UTC</createdTime>
 <ownerDesignName>Eggshell</ownerDesignName>

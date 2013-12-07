@@ -62,17 +62,6 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 </Attribute>
-<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="user_type" id="AACCFB5D-E099-E8C0-626D-6A8EECD469AA">
-<createdBy>Sonal</createdBy>
-<createdTime>2013-11-28 07:00:08 UTC</createdTime>
-<ownerDesignName>Eggshell</ownerDesignName>
-<engineerTo>
-<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
-</engineerTo>
-<use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>3295C118-96D2-925D-C8AD-6EF54944255A</domain>
-</Attribute>
 <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="username" id="C5B9367C-037C-54A4-3CE0-9F9ED20330FD">
 <createdBy>Sonal</createdBy>
 <createdTime>2013-11-28 07:00:08 UTC</createdTime>
@@ -135,9 +124,9 @@
 <engineerTo>
 <item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
 </engineerTo>
-<defaultValue>true</defaultValue>
+<defaultValue>Y</defaultValue>
 <use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT025</logicalDatatype>
 <domain>E297FB73-C853-A94B-67C2-5594DE20D2F0</domain>
 </Attribute>
 </attributes>

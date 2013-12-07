@@ -98,7 +98,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 </Attribute>
-<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="contructor_worker_employee_id" id="CF868BD8-8E6A-32AD-E019-7AD6BB2D26A1">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="constr_worker_employee_id" id="CF868BD8-8E6A-32AD-E019-7AD6BB2D26A1">
 <createdBy>Sonal</createdBy>
 <createdTime>2013-11-28 08:39:25 UTC</createdTime>
 <generatorID>BA2D31F9-C3E7-93A3-E839-82C57756A504</generatorID>

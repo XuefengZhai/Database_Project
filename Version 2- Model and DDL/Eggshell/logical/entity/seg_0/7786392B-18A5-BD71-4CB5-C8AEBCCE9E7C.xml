@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="7786392B-18A5-BD71-4CB5-C8AEBCCE9E7C" directorySegmentName="seg_0" name="CONTRUCTION_PROJECT">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="7786392B-18A5-BD71-4CB5-C8AEBCCE9E7C" directorySegmentName="seg_0" name="CONSTRUCTION_PROJECT">
 <createdBy>Sonal</createdBy>
 <createdTime>2013-11-28 07:00:08 UTC</createdTime>
 <ownerDesignName>Eggshell</ownerDesignName>
@@ -62,7 +62,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 </Attribute>
-<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="state_date" id="98BA7ACB-C11E-6D3A-E13B-941663F45157">
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="start_date" id="98BA7ACB-C11E-6D3A-E13B-941663F45157">
 <createdBy>Sonal</createdBy>
 <createdTime>2013-11-28 07:00:08 UTC</createdTime>
 <ownerDesignName>Eggshell</ownerDesignName>

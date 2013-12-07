@@ -84,7 +84,7 @@
 <nullsAllowed>true</nullsAllowed>
 <defaultValue>N</defaultValue>
 <use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT025</logicalDatatype>
 <domain>0F66DB35-3F78-F9FC-2F1B-80B5F99D4A3C</domain>
 </Attribute>
 <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="financing_info" id="6FF20F35-962A-17C0-56AE-19183E04321A">

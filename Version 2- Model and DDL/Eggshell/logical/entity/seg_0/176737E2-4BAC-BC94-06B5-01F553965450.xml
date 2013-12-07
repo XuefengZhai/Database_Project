@@ -94,7 +94,7 @@
 </engineerTo>
 <defaultValue>false</defaultValue>
 <use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT025</logicalDatatype>
 <domain>E297FB73-C853-A94B-67C2-5594DE20D2F0</domain>
 </Attribute>
 <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="sales_agent_employee_id" id="7E829319-9FB7-E061-3285-F497CEFA3AE3">

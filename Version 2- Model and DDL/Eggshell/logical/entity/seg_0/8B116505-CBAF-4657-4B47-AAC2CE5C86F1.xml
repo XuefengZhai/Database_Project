@@ -77,9 +77,31 @@
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 <comment>reversed_syle_id</comment>
 </Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="name" id="3891319E-37FA-09B7-8009-CBBDDA0D72CA">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-12-07 17:13:01 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>86AA045B-36F3-1583-4152-E165A08977B7</domain>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="description" id="6AF94315-6DE9-6F89-3C91-F196EFCB8D0D">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-12-07 17:13:10 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</domain>
+</Attribute>
 </attributes>
 <identifiers>
-<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="04E47150-8B64-4028-3738-C89397BEF2CC" name="HOUSE_STYLE_PK">
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="04E47150-8B64-4028-3738-C89397BEF2CC" name="HOUSE_LAYOUT_PK">
 <createdBy>Sonal</createdBy>
 <createdTime>2013-11-29 18:28:31 UTC</createdTime>
 <ownerDesignName>Eggshell</ownerDesignName>
