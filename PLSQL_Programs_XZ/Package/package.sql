@@ -13,7 +13,7 @@ create or replace package body list_sales
 AS
 
   procedure sales (em_id IN employee.employee_id%TYPE)
-  IS
+  AS
   	FN employee.first_name%TYPE;
   	LN employee.last_name%TYPE;
   	SR sale%ROWTYPE;
@@ -25,7 +25,7 @@ AS
   BEGIN
   	select employee.first_name, employee.last_name
   	into FN, LN
-  	from emloyee
+  	from employee
   	where employee.employee_id = em_id;
   	DBMS_OUTPUT.PUT_LINE('The employee No.' ||em_id||' '||FN||' '||LN||
   										 'has the following sales:' );
