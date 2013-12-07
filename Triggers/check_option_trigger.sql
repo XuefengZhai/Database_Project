@@ -1,17 +1,20 @@
 set serveroutput on;
-CREATE OR REPLACE TRIGGER SELECTED_STAGE_OPTION_check
+CREATE OR REPLACE TRIGGER selected_stage_option_check
 BEFORE INSERT OR UPDATE ON SELECTED_STAGE_OPTION
 FOR EACH ROW
 DECLARE
-	housestage CONSTRUCTION_PROJECT_STAGE.stage_id%TYPE;
-	optionstage STAGE_SELECTED_OPTION.option_id%TYPE;
+	housestage construction_project_stage.stage_id%TYPE;
+	optionstage option_choice.last_allowed_stage_id%TYPE;
 	e_optionstage_beyond_threshold EXCEPTION;
 	CURSOR stageCursor IS
-		SELECT MAX(stage_id) FROM CONSTRUCTION_PROJECT_STAGE
+		SELECT MAX(stage_number) FROM construction_project_stage
+		JOIN stage USING (stage_id)
 		WHERE construction_project_id = :new.construction_project_id;
-	CURSOR optionCursor IS
-		SELECT stage_id from STAGE_SELECTED_OPTION 
-		WHERE STAGE_SELECTED_OPTION_id = :new.STAGE_SELECTED_OPTION_id;
+	CURSON optionCursor IS
+		SELECT last_allowed_stage_id FROM selected_stage_option
+		JOIN option_choice USING (option_choice_id)
+		WHERE selected_stage_option_id = :new.selected_stage_option_id;
+BEGIN
 BEGIN
 	OPEN stageCursor;
 	FETCH stageCursor INTO housestage;
