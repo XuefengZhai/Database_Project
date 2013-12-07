@@ -5,15 +5,17 @@ FOR EACH ROW
 DECLARE
 	housestage construction_project_stage.stage_id%TYPE;
 	optionstage option_choice.last_allowed_stage_id%TYPE;
+	construction_project_num:= :NEW.construction_project_id;
+	option_stage:= :NEW.selected_stage_option_id;
 	e_optionstage_beyond_threshold EXCEPTION;
 	CURSOR stageCursor IS
 		SELECT MAX(stage_number) FROM construction_project_stage
 		JOIN stage USING (stage_id)
-		WHERE construction_project_id = :NEW.construction_project_id;
+		WHERE construction_project_id = construction_project_num;
 	CURSON optionCursor IS
 		SELECT last_allowed_stage_id FROM selected_stage_option
 		JOIN option_choice USING (option_choice_id)
-		WHERE selected_stage_option_id = :NEW.selected_stage_option_id;
+		WHERE selected_stage_option_id = option_stage;
 BEGIN
 BEGIN
 	OPEN stageCursor;

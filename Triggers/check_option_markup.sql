@@ -7,11 +7,11 @@ DECLARE
 	CURSOR stageCursor IS
 		SELECT MAX(stage_number) FROM construction_project_stage
 		JOIN stage USING (stage_id)
-		WHERE construction_project_id = :new.construction_project_id;
+		WHERE construction_project_id = :NEW.construction_project_id;
 	CURSON optionCursor IS
 		SELECT last_allowed_stage_id FROM selected_stage_option
 		JOIN option_choice USING (option_choice_id)
-		WHERE selected_stage_option_id = :new.selected_stage_option_id;
+		WHERE selected_stage_option_id = :NEW.selected_stage_option_id;
 BEGIN
 	OPEN stageCursor;
 	FETCH stageCursor INTO housestage;
