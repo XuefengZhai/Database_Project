@@ -2,23 +2,23 @@ CREATE OR REPLACE TRIGGER stage_selected_option_markup
 AFTER INSERT OR UPDATE ON stage_selected_option
 FOR EACH ROW
 DECLARE
-	housestage stage_assignment.stage_id%TYPE;
-	optionstage option_for_stage.option_id%TYPE;
-	CURSOR stageCursor IS
-		SELECT MAX(stage_id) FROM stage_assignment
-		WHERE construction_project_id = :new.construction_project_id;
-	CURSON optionCursor IS
-		SELECT stage_id from option_for_stage 
-		WHERE option_for_stage_id = :new.option_for_stage_id;
+	constructionstage construction_project_stage.stage_id%TYPE;
+	lastallowed option_choice.last_allowed_stage_id%TYPE;
+	optionprice option_choice.price%TYPE;
+	construction_project_stage_num:= :NEW.construction_project_stage_id;
+	selected_option_num:= :NEW.option_choice_id;
+	e_optionstage_beyond_threshold EXCEPTION;
 BEGIN
-	OPEN stageCursor;
-	FETCH stageCursor INTO housestage;
-	OPEN optionCursor;
-	FETCH optionCursor INTO optionstage;
-	IF (housestage - 1) = optionstage THEN
-		UPDATE stage_selected_option
-		SET stage_selected_option.price = :NEW.price + (:NEW.price * 0.15)
-		WHERE stage_selected_option.stage_selected_option = :NEW.stage_selected_option_id;
+	constructionstage:= SELECT stage_id FROM construction_project_stage
+		WHERE construction_project_stage_id = construction_project_stage_num;
+
+	optionstage:= SELECT last_allowed_stage_id FROM option_choice
+		WHERE option_choice_id = selected_option_num;
+		
+	optinoprice
+
+	IF (constructionstage - 1) = lastallowed THEN
+		customer_price:= 
 	ELSE
 		NULL;
 	END IF;
