@@ -1,4 +1,3 @@
-set serveroutput on;
 CREATE OR REPLACE TRIGGER selected_stage_option_check
 BEFORE INSERT OR UPDATE ON SELECTED_STAGE_OPTION
 FOR EACH ROW
