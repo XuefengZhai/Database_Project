@@ -40,6 +40,8 @@ insert into application_user(username, password, password_recovery_question, pas
 	values ('Lea Ligon', 'fyf76vjhh', 'What is the name of your pet?', 'Jingles', 'lea@email.com');
 insert into application_user(username, password, password_recovery_question, password_recovery_answer, email)
 	values ('Elisa Applegate', 'kljlj865', 'What city were you born in?', 'Houston', 'elisa@email.com');
+insert into application_user(username, password, password_recovery_question, password_recovery_answer, email)
+	values ('Molly North', 'fedsgds', 'What city were you born in?', 'Portland', 'molly@email.com');
 
 delete from employee;
 insert into employee(first_name, last_name, home_phone, street, city, state, zipcode, start_date)
@@ -414,32 +416,32 @@ insert into option_choice(option_category, description, price, last_allowed_stag
 
 
 delete from construction_project_stage;
-insert into construction_project_stage(start_date, estimated_end_date, construction_project_id, stage_id)
-	values (TO_DATE('05-FEB-11'), TO_DATE('15-FEB-11'),
+insert into construction_project_stage(start_date, estimated_end_date, end_date, construction_project_id, stage_id)
+	values (TO_DATE('05-FEB-11'), TO_DATE('15-FEB-11'), TO_DATE('15-FEB-11'),
 	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
 	(select stage_id from stage where stage_number = '1'));
-insert into construction_project_stage(start_date, estimated_end_date, construction_project_id, stage_id)
-	values (TO_DATE('16-FEB-11'), TO_DATE('25-JUL-11'),
+insert into construction_project_stage(start_date, estimated_end_date, end_date, construction_project_id, stage_id)
+	values (TO_DATE('16-FEB-11'), TO_DATE('25-JUL-11'), TO_DATE('26-JUL-11'),
 	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
 	(select stage_id from stage where stage_number like '2'));
-insert into construction_project_stage(start_date, estimated_end_date, construction_project_id, stage_id)
-	values (TO_DATE('26-JUL-11'), TO_DATE('11-DEC-11'),
+insert into construction_project_stage(start_date, estimated_end_date, end_date, construction_project_id, stage_id)
+	values (TO_DATE('26-JUL-11'), TO_DATE('11-DEC-11'), TO_DATE('12-DEC-11'),
 	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
 	(select stage_id from stage where stage_number like '3'));
-insert into construction_project_stage(start_date, estimated_end_date, construction_project_id, stage_id)
-	values (TO_DATE('12-DEC-11'), TO_DATE('04-FEB-12'),
+insert into construction_project_stage(start_date, estimated_end_date, end_date, construction_project_id, stage_id)
+	values (TO_DATE('12-DEC-11'), TO_DATE('04-FEB-12'), TO_DATE('04-FEB-12'),
 	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
 	(select stage_id from stage where stage_number like '4'));
-insert into construction_project_stage(start_date, estimated_end_date, construction_project_id, stage_id)
-	values (TO_DATE('05-FEB-12'), TO_DATE('04-JUN-12'),
+insert into construction_project_stage(start_date, estimated_end_date, end_date, construction_project_id, stage_id)
+	values (TO_DATE('05-FEB-12'), TO_DATE('04-JUN-12'), TO_DATE('05-JUN-12'),
 	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
 	(select stage_id from stage where stage_number like '5'));
-insert into construction_project_stage(start_date, estimated_end_date, construction_project_id, stage_id)
-	values (TO_DATE('05-JUN-12'), TO_DATE('20-JUL-12'),
+insert into construction_project_stage(start_date, estimated_end_date, end_date, construction_project_id, stage_id)
+	values (TO_DATE('05-JUN-12'), TO_DATE('20-JUL-12'), TO_DATE('21-JUL-12'),
 	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
 	(select stage_id from stage where stage_number like '6'));
-insert into construction_project_stage(start_date, estimated_end_date, construction_project_id, stage_id)
-	values (TO_DATE('21-JUL-12'), TO_DATE('05-AUG-12'),
+insert into construction_project_stage(start_date, estimated_end_date, end_date, construction_project_id, stage_id)
+	values (TO_DATE('21-JUL-12'), TO_DATE('05-AUG-12'), TO_DATE('05-AUG-12'),
 	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
 	(select stage_id from stage where stage_number like '7'));
 
@@ -448,8 +450,8 @@ insert into selected_stage_option(selected_date, option_choice_id, construction_
 	values (TO_DATE('15-FEB-12'),
 		(select option_choice_id from option_choice where option_category like 'Fixture' and description like 
 			'Nickel-finish bathroom fixtures'),
-		(select construction_project_stage_id from construction_project_stage cs, stage s
-			where cs.stage_id = s.stage_id and s.stage_number like '6')
+		(select construction_project_stage_id from construction_project_stage cs
+			where cs.start_date = TO_DATE('05-JUN-12'))
 		);
 insert into selected_stage_option(selected_date, option_choice_id, construction_project_stage_id)
 	values (TO_DATE('16-FEB-11'),
@@ -476,3 +478,135 @@ insert into task_update(update_date, percent_complete, comments, employee_id, ta
 	values(TO_DATE('16-FEB-12'), 50, 'Purchase the fixture.', 
 		(select e.employee_id from project_manager pm, employee e where e.first_name like 'Jim' and e.last_name like 'Roberts'),
 		(select task_id from task where name like 'install fixture'));
+
+
+
+--house 2, completed today
+
+insert into house(escrow_amount, is_reversed, financing_info, house_layout_id)
+	values (89885.60, 'N', 'Financing from PNC Bank', (select house_layout_id from house_layout where name like 'Five bedroom, Garage'));
+insert into house(house_layout_id)
+	values ((select house_layout_id from house_layout where name like 'Five bedroom, Garage'));
+
+update lot
+	set house_id = (select house_id from house where financing_info like 'Financing from PNC Bank')
+	where street like '122 W. North Street';
+
+insert into customer(first_name, last_name, phone_number, mortgage_info, app_user_id)
+	values ('Molly', 'North', '412-137-9809', 'American Bank owns this mortgage', 
+		(select app_user_id from application_user where username like 'Molly North'));
+
+insert into contract(submitted_date, time_limit_date, is_terminated, disclosure_form_id, subdivision_agreement_id, house_id)
+	values (TO_DATE('06-JUN-12'), TO_DATE('15-JAN-14'), 'N',
+	(select disclosure_form_id from disclosure_form where start_date = TO_DATE('12-NOV-12')),
+	(select subdivision_agreement_id from subdivision_agreement sa where sa.subdivision_id = (select subdivision_id from subdivision where name like 'Riverview') and end_date is null),
+	(select house_id from lot where street like '122 W. North Street'));
+
+insert into customer_contract(customer_id, contract_id)
+	values ((select customer_id from customer where first_name like 'Molly' and last_name like 'North'),
+	(select contract_id from contract where submitted_date = TO_DATE('05-JUN-12')));
+
+insert into floor(description, house_id)
+	values ('first floor', (select house_id from lot where street like '122 W. North Street'));
+insert into floor(description, house_id)
+	values ('basement', (select house_id from lot where street like '122 W. North Street'));
+insert into floor(description, house_id)
+	values ('second floor', (select house_id from lot where street like '122 W. North Street'));
+
+insert into room_on_a_floor(floor_id, room_id, room_size, num_windows)
+	values((select floor_id from floor where house_id = (select house_id from lot where street like '122 W. North Street') and description = 'first floor'), 
+	(select room_id from room where room_type like 'Kitchen'), '20X14', 3);
+insert into room_on_a_floor(floor_id, room_id, room_size, num_windows)
+	values((select floor_id from floor where house_id = (select house_id from lot where street like '122 W. North Street') and description = 'first floor'), 
+	(select room_id from room where room_type like 'Bathroom'), '20X14', 1);
+insert into room_on_a_floor(floor_id, room_id, room_size, num_windows)
+	values((select floor_id from floor where house_id = (select house_id from lot where street like '122 W. North Street') and description = 'second floor'), 
+	(select room_id from room where room_type like 'Bedroom'), '12X12', 2); 
+insert into room_on_a_floor(floor_id, room_id, room_size, num_windows)
+	values((select floor_id from floor where house_id = (select house_id from lot where street like '122 W. North Street') and description = 'second floor'), 
+	(select room_id from room where room_type like 'Bedroom'), '14X12', 3);
+insert into room_on_a_floor(floor_id, room_id, room_size, num_windows)
+	values((select floor_id from floor where house_id = (select house_id from lot where street like '122 W. North Street') and description = 'second floor'), 
+	(select room_id from room where room_type like 'Bedroom'), '14X12', 3);
+insert into room_on_a_floor(floor_id, room_id, room_size, num_windows)
+	values((select floor_id from floor where house_id = (select house_id from lot where street like '122 W. North Street') and description = 'second floor'), 
+	(select room_id from room where room_type like 'Bedroom'), '14X12', 3);
+insert into room_on_a_floor(floor_id, room_id, room_size, num_windows)
+	values((select floor_id from floor where house_id = (select house_id from lot where street like '122 W. North Street') and description = 'second floor'), 
+	(select room_id from room where room_type like 'Bedroom'), '16X16', 5); 
+insert into room_on_a_floor(floor_id, room_id)
+	values ((select floor_id from floor where house_id = (select house_id from lot where street like '122 W. North Street') and description = 'second floor'),
+	(select room_id from room where room_type like 'Bathroom'));
+
+
+insert into house_sales_agent(start_date, is_main_sales_agent, sales_agent_employee_id, house_id)
+	values (TO_DATE('05-JUN-12'), 'Y', 
+		(select employee_id from sales_agent where license_number like '545354'),
+		(select house_id from lot where street like '122 W. North Street'));
+
+
+insert into sale(escrow_paid, financing_option, house_id, employee_id)
+	values ('Y', 'mortgage', (select house_id from lot where street like '122 W. North Street'), 
+		(select employee_id from sales_agent where license_number like '897859'));
+
+
+insert into construction_project(start_date, estimated_end_date, end_date, project_manager_employee_id, crew_id, house_id)
+	values (TO_DATE('15-JUN-12'), TO_DATE('31-DEC-13'), Sysdate,
+		(select e.employee_id from project_manager pm, employee e where first_name like 'Jim' and last_name like 'Roberts'),
+		(select crew_id from crew where crew_manager_employee_id = (select employee_id from employee where first_name like 'James' and last_name like 'Smiley')),
+		(select house_id from lot where street like '122 W. North Street'));
+
+insert into option_choice(option_category, description, price, last_allowed_stage_id)
+	values ('Fixture', 'Nickel-finish kitchen fixtures', 356.67,
+	(select stage_id from stage where stage_number = '7'));
+
+insert into construction_project_stage(start_date, estimated_end_date, end_date, construction_project_id, stage_id)
+	values (TO_DATE('05-FEB-11'), TO_DATE('15-FEB-11'), TO_DATE('15-FEB-11'),
+	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
+	(select stage_id from stage where stage_number = '1'));
+insert into construction_project_stage(start_date, estimated_end_date, end_date, construction_project_id, stage_id)
+	values (TO_DATE('16-FEB-11'), TO_DATE('25-JUL-11'), TO_DATE('26-JUL-11'),
+	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
+	(select stage_id from stage where stage_number like '2'));
+insert into construction_project_stage(start_date, estimated_end_date, end_date, construction_project_id, stage_id)
+	values (TO_DATE('26-JUL-11'), TO_DATE('11-DEC-11'), TO_DATE('12-DEC-11'),
+	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
+	(select stage_id from stage where stage_number like '3'));
+insert into construction_project_stage(start_date, estimated_end_date, end_date, construction_project_id, stage_id)
+	values (TO_DATE('12-DEC-11'), TO_DATE('04-FEB-12'), TO_DATE('04-FEB-12'),
+	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
+	(select stage_id from stage where stage_number like '4'));
+insert into construction_project_stage(start_date, estimated_end_date, end_date, construction_project_id, stage_id)
+	values (TO_DATE('05-FEB-12'), TO_DATE('04-JUN-12'), TO_DATE('10-JUN-12'),
+	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
+	(select stage_id from stage where stage_number like '5'));
+insert into construction_project_stage(start_date, estimated_end_date, end_date, construction_project_id, stage_id)
+	values (TO_DATE('10-JUN-12'), TO_DATE('20-JUL-12'), TO_DATE('21-JUL-12'),
+	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
+	(select stage_id from stage where stage_number like '6'));
+insert into construction_project_stage(start_date, estimated_end_date, end_date, construction_project_id, stage_id)
+	values (TO_DATE('21-JUL-12'), TO_DATE('05-AUG-12'), sysdate,
+	(select construction_project_id from construction_project where start_date = TO_DATE('05-FEB-11')),
+	(select stage_id from stage where stage_number like '7'));
+
+insert into selected_stage_option(selected_date, option_choice_id, construction_project_stage_id)
+	values (TO_DATE('17-JUL-12'),
+		(select option_choice_id from option_choice where option_category like 'Fixture' and description like 
+			'Nickel-finish kitchen fixtures'),
+		(select construction_project_stage_id from construction_project_stage cs
+			where cs.start_date = TO_DATE('10-JUN-12'))
+		);
+
+insert into task(name, selected_stage_option_id)
+	values ('install kitchen fixture', 
+		(select selected_stage_option_id from selected_stage_option where selected_date = TO_DATE('17-JUL-12')));
+
+insert into task_update(update_date, percent_complete, comments, employee_id, task_id)
+	values(TO_DATE('15-JUL-12'), 100, 'Installed the fixture.', 
+		(select e.employee_id from project_manager pm, employee e where e.first_name like 'Jim' and e.last_name like 'Roberts'),
+		(select task_id from task where name like 'install kitchen fixture'));
+	
+insert into task_update(update_date, percent_complete, comments, employee_id, task_id)
+	values(TO_DATE('14-JUL-12'), 50, 'Purchase the fixture.', 
+		(select e.employee_id from project_manager pm, employee e where e.first_name like 'Jim' and e.last_name like 'Roberts'),
+		(select task_id from task where name like 'install kitchen fixture'));
