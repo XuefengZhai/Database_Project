@@ -78,7 +78,7 @@ DROP TABLE TASK_UPDATE CASCADE CONSTRAINTS
 CREATE TABLE APPLICATION_USER 
     ( 
      app_user_id NUMBER  NOT NULL , 
-     user_type VARCHAR2 (25)  NOT NULL , 
+     user_type VARCHAR2 (25)  NOT NULL CHECK (user_type IN ('Customer', 'Sales Agent', 'Construction Worker')), 
      username VARCHAR2 (25)  NOT NULL , 
      password VARCHAR2 (16)  NOT NULL , 
      password_recovery_question VARCHAR2 (50)  NOT NULL , 
@@ -117,7 +117,7 @@ CREATE TABLE CONSTRUCTION_WORKER
      skill_one VARCHAR2(25)  NOT NULL, 
      skill_two VARCHAR2(25), 
      skill_three VARCHAR2(25), 
-     EMPLOYEE_employee_id NUMBER  NOT NULL 
+     employee_id NUMBER  NOT NULL 
     ) 
 ;
 
@@ -134,7 +134,7 @@ CREATE TABLE CONSTRUCTION_WORKER_CREW
      start_date DATE  NOT NULL , 
      end_date DATE , 
      crew_id NUMBER  NOT NULL , 
-     constructor_worker_employee_id NUMBER  NOT NULL 
+     constr_worker_employee_id NUMBER  NOT NULL 
     ) 
 ;
 
@@ -159,16 +159,6 @@ CREATE TABLE CONTRACT
 ;
 
 
-CREATE UNIQUE INDEX CONTRACT__IDX ON CONTRACT 
-    ( 
-     disclosure_form_id ASC 
-    ) 
-;
-CREATE UNIQUE INDEX CONTRACT__IDXv1 ON CONTRACT 
-    ( 
-     subdivion_agreement_id ASC 
-    ) 
-;
 
 ALTER TABLE CONTRACT 
     ADD CONSTRAINT Contract_PK PRIMARY KEY ( contract_id ) ;
@@ -235,11 +225,6 @@ CREATE TABLE CUSTOMER
 ;
 
 
-CREATE UNIQUE INDEX CUSTOMER__IDX ON CUSTOMER 
-    ( 
-     app_user_id ASC 
-    ) 
-;
 
 ALTER TABLE CUSTOMER 
     ADD CONSTRAINT Customer_PK PRIMARY KEY ( customer_id ) ;
@@ -311,13 +296,6 @@ CREATE TABLE EMPLOYEE
     ) 
 ;
 
-
-CREATE UNIQUE INDEX EMPLOYEE__IDX ON EMPLOYEE 
-    ( 
-     app_user_id ASC 
-    ) 
-;
-
 ALTER TABLE EMPLOYEE 
     ADD CONSTRAINT Employee_PK PRIMARY KEY ( employee_id ) ;
 
@@ -326,7 +304,7 @@ ALTER TABLE EMPLOYEE
 CREATE TABLE FLOOR 
     ( 
      floor_id NUMBER  NOT NULL , 
-     description VARCHAR2 (250) , 
+     description VARCHAR2 (250) NOT NULL, 
      house_id NUMBER  NOT NULL 
     ) 
 ;
@@ -358,16 +336,13 @@ ALTER TABLE HOUSE
 CREATE TABLE HOUSE_LAYOUT 
     ( 
      house_layout_id NUMBER  NOT NULL , 
-     house_reverse_layout_id NUMBER 
+     house_reverse_layout_id NUMBER,
+     name VARCHAR2(25) NOT NULL,
+     description VARCHAR2(75) NOT NULL
     ) 
 ;
 
 
-CREATE UNIQUE INDEX HOUSE_LAYOUT__IDX ON HOUSE_LAYOUT 
-    ( 
-     house_reverse_layout_id ASC 
-    ) 
-;
 
 ALTER TABLE HOUSE_LAYOUT 
     ADD CONSTRAINT HOUSE_STYLE_PK PRIMARY KEY ( house_layout_id ) ;
@@ -406,13 +381,6 @@ CREATE TABLE LOT
     ) 
 ;
 
-
-CREATE UNIQUE INDEX LOT__IDX ON LOT 
-    ( 
-     house_id ASC 
-    ) 
-;
-
 ALTER TABLE LOT 
     ADD CONSTRAINT Lot_PK PRIMARY KEY ( lot_id ) ;
 
@@ -421,9 +389,9 @@ ALTER TABLE LOT
 CREATE TABLE OPTION_CHOICE 
     ( 
      option_choice_id NUMBER  NOT NULL , 
-     option_category VARCHAR2 (25)  NOT NULL , 
-     description VARCHAR2 (250) , 
-     price NUMBER (9,2) , 
+     option_category VARCHAR2 (25)  NOT NULL CHECK ( option_category IN ('Fixture', 'Flooring', 'Wall Texture')), 
+     description VARCHAR2 (250) NOT NULL, 
+     price NUMBER (9,2) NOT NULL, 
      last_allowed_stage_id NUMBER  NOT NULL 
     ) 
 ;
@@ -453,8 +421,8 @@ ALTER TABLE PROJECT_MANAGER
 CREATE TABLE ROOM 
     ( 
      room_id NUMBER  NOT NULL , 
-     room_type VARCHAR2 (25)  NOT NULL CHECK ( room_type IN ('Attic', 'Basement', 'Bath Room', 'Bed Room', 'Den', 'Dining Room', 'Foyer', 'Garage', 'Hall', 'Kitchen', 'Laundry Room', 'Living Room', 'Mud Room', 'Office', 'Study', 'Work Room')) , 
-     ceiling_type VARCHAR2 (15) CHECK ( ceiling_type IN ('standard', 'tall cathedral', 'vaulted')) , 
+     room_type VARCHAR2 (25)  NOT NULL CHECK ( room_type IN ('Attic', 'Basement', 'Bathroom', 'Bedroom', 'Den', 'Dining Room', 'Foyer', 'Garage', 'Hall', 'Kitchen', 'Laundry Room', 'Living Room', 'Mud Room', 'Office', 'Study', 'Work Room')) , 
+     ceiling_type VARCHAR2 (15) DEFAULT 'standard' CHECK ( ceiling_type IN ('standard', 'tall cathedral', 'vaulted')) , 
      description VARCHAR2 (250) 
     ) 
 ;
@@ -518,7 +486,7 @@ ALTER TABLE SALES_AGENT
 CREATE TABLE SCHOOL 
     ( 
      school_id NUMBER  NOT NULL , 
-     name VARCHAR2 (25)  NOT NULL , 
+     name VARCHAR2 (50)  NOT NULL , 
      school_district_id NUMBER  NOT NULL 
     ) 
 ;
@@ -578,7 +546,7 @@ ALTER TABLE STAGE
 CREATE TABLE STYLE 
     ( 
      style_id NUMBER  NOT NULL , 
-     name VARCHAR2 (25)  NOT NULL , 
+     name VARCHAR2 (25)  NOT NULL UNIQUE, 
      description VARCHAR2 (250) , 
      base_price NUMBER (9,2)  NOT NULL , 
      floorplan_link_one VARCHAR2 (250) , 
