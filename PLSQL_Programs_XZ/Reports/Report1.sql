@@ -23,9 +23,9 @@ BEGIN
 	Customer_contract on Customer.customer_id = Customer_contract.customer_id LEFT JOIN
 	Contract on Customer_contract.contract_id = Contract.contract_id LEFT JOIN
 	House on Contract.house_id = House.house_id LEFT JOIN
-	Construction_project on House.house_id =
-											Construction_project.house_id
-	WHERE House.house_id = house_no;
+	Construction_project on House.house_id = Construction_project.house_id
+	WHERE House.house_id = house_no
+	and contract.is_terminated = 'N';
 	
 	IF ED is NULL THEN
 		 DBMS_OUTPUT.PUT_LINE('The construction project of customer: '||FN||' '||LN|| 
