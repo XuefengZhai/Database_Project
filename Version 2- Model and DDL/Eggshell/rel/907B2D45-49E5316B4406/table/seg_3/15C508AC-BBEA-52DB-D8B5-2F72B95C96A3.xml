@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="15C508AC-BBEA-52DB-D8B5-2F72B95C96A3" directorySegmentName="seg_3" name="ROOM_ON_A_FLOOR">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-12-07 20:57:38 UTC</createdTime>
+<generatorID>6EF0AB9B-AFFA-D551-627F-BAB5FDDAD01F</generatorID>
+<ownerDesignName>Eggshell</ownerDesignName>
+<pkName>Room_On_A_Floor_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="room_on_a_floor_id" id="2071B712-2164-7167-7AE1-77DCEA91ABFD">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-12-07 20:57:38 UTC</createdTime>
+<generatorID>063C0AAD-33B0-994F-F657-EC398BF409B8</generatorID>
+<ownerDesignName>Eggshell</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="room_size" id="E2254279-539F-019F-A777-0A9C57982647">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-12-07 20:57:38 UTC</createdTime>
+<generatorID>532844EC-75D7-7559-6D99-D55E1B125C73</generatorID>
+<ownerDesignName>Eggshell</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>7F21DD7B-81C0-047F-A0FF-9FAFE18CB78F</domain>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="num_windows" id="471087D3-AAB4-EBD3-A331-05442DB8973F">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-12-07 20:57:38 UTC</createdTime>
+<generatorID>ECDA3FA0-0DA0-5F39-B709-B01D42C93110</generatorID>
+<ownerDesignName>Eggshell</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>7B49A09F-469C-976D-A2C3-80360DE26C9C</domain>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>99</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="floor_id" id="F814BF64-0B65-A0CC-22C6-3B4344414E39">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-12-07 20:57:38 UTC</createdTime>
+<generatorID>7FF70835-D1EB-AFBD-92EC-78A6A115BA70</generatorID>
+<ownerDesignName>Eggshell</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>E0B2DE17-C9E0-BED1-2FD3-44036B177FEE</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2D5B2008-662A-90DA-88CF-E2845D417112" referredColumn="E0B2DE17-C9E0-BED1-2FD3-44036B177FEE"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="room_id" id="798972B7-C308-C4B7-90AA-0CBB01CDD391">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-12-07 20:57:38 UTC</createdTime>
+<generatorID>3BF8E212-CAB9-2C42-DE4F-ED71CE0E3067</generatorID>
+<ownerDesignName>Eggshell</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
+<delegate>E08C644E-50A1-53B7-935C-2DA3EE7911A1</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="60BB846C-972A-C00B-02FB-94BA595A4905" referredColumn="E08C644E-50A1-53B7-935C-2DA3EE7911A1"/>
+</associations>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="F8B77B05-961C-008B-F6E1-1A551CDD2779" name="Room_On_A_Floor_PK">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-12-07 20:57:38 UTC</createdTime>
+<generatorID>9EC355AC-4077-5C70-13CD-B2D475C90CBD</generatorID>
+<ownerDesignName>Eggshell</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="2071B712-2164-7167-7AE1-77DCEA91ABFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="6F481143-AC09-B3DA-55D2-C2ACF7285E52" name="ROOM_ON_A_FLOOR_floor_id_FK">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-12-07 20:57:38 UTC</createdTime>
+<generatorID>A1D7AD5A-C4C9-DE15-94FD-55C930CF0E75</generatorID>
+<ownerDesignName>Eggshell</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="F814BF64-0B65-A0CC-22C6-3B4344414E39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="31E0F41D-8A74-45DB-5618-CB430F3688ED" name="ROOM_ON_A_FLOOR_room_id_FK">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-12-07 20:57:38 UTC</createdTime>
+<generatorID>A1AFDA0D-6C2E-4649-7637-5BE2B186E006</generatorID>
+<ownerDesignName>Eggshell</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="798972B7-C308-C4B7-90AA-0CBB01CDD391"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

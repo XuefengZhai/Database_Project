@@ -99,6 +99,17 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>1C83044F-F4AD-B495-5726-6FF2A6D331C5</domain>
 </Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="customer_price" id="B60F4E7C-F89B-580D-CBC2-01794D3EAB49">
+<createdBy>Sonal</createdBy>
+<createdTime>2013-12-07 20:57:01 UTC</createdTime>
+<ownerDesignName>Eggshell</ownerDesignName>
+<engineerTo>
+<item key="907B2D45-0500-98C5-CFE6-49E5316B4406" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>45E88AC4-E9B6-166A-D114-E2A0D4BE2282</domain>
+</Attribute>
 </attributes>
 <identifiers>
 <identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="31C4356A-0810-15F8-173F-C35FED293F59" name="Selected_Stage_Option">
