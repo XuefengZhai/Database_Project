@@ -2,7 +2,6 @@
 --2.Which project manager works on which construction project. (Assignment)
 
 
---question: why construction_project has a P_M_E_id as well as a employee_id???
 
 CREATE OR REPLACE PROCEDURE PM_Assignment
 AS
@@ -22,7 +21,7 @@ BEGIN
 		SELECT employee.first_name, employee.last_name
 		INTO FN,LN
 		FROM employee e
-		WHERE e.employee_id = CP.employee_id;
+		WHERE e.employee_id = CP.project_manager_employee_id;
 		
 		DBMS_OUTPUT.PUT_LINE('The employee No.'||CP.emplyee_id||
 										' Name:'||FN||' '||LN
