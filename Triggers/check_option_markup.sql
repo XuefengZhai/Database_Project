@@ -9,18 +9,22 @@ DECLARE
 	selected_option_num:= :NEW.option_choice_id;
 	e_optionstage_beyond_threshold EXCEPTION;
 BEGIN
-	constructionstage:= SELECT stage_id FROM construction_project_stage
-		WHERE construction_project_stage_id = construction_project_stage_num;
+	SELECT stage_id INTO constructionstage FROM construction_project_stage
+		WHERE construction_project_stage_id = :NEW.construction_project_stage_id;
 
-	optionstage:= SELECT last_allowed_stage_id FROM option_choice
-		WHERE option_choice_id = selected_option_num;
+	SELECT last_allowed_stage_id INTO lastallowed FROM option_choice
+		WHERE option_choice_id = :NEW.option_choice_id;
 		
-	optinoprice
+	SELECT price INTO optionprice FROM option_choice
+		WHERE option_choice_id = :NEW.option_choice_id;
 
 	IF (constructionstage - 1) = lastallowed THEN
-		customer_price:= 
+		UPDATE selected_stage_option SET
+		customer_price:= optionprice + (optionprice * 0.15)
+		WHERE selected_stage_option_id = :NEW.selected_stage_option_id;
 	ELSE
-		NULL;
+		UPDATE selected_stage_option SET
+		customer_price:= optionprice;
 	END IF;
 EXCEPTION
 	WHEN NO_DATA_FOUND THEN
