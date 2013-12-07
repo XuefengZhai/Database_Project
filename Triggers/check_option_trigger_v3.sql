@@ -5,18 +5,16 @@ FOR EACH ROW
 DECLARE
 	constructionstage construction_project_stage.stage_id%TYPE;
 	lastallowed option_choice.last_allowed_stage_id%TYPE;
-	construction_project_stage_num:= :NEW.construction_project_stage_id;
-	selected_option_num:= :NEW.option_choice_id;
 	e_optionstage_beyond_threshold EXCEPTION;
 BEGIN
-	constructionstage:= SELECT stage_id FROM construction_project_stage
-		WHERE construction_project_stage_id = construction_project_stage_num;
+	SELECT stage_id INTO constructionstage FROM construction_project_stage
+		WHERE construction_project_stage_id = :NEW.construction_project_stage_id;
 
-	optionstage:= SELECT last_allowed_stage_id FROM option_choice
-		WHERE option_choice_id = selected_option_num;
+	SELECT last_allowed_stage_id INTO lastallowed FROM option_choice
+		WHERE option_choice_id = :NEW.option_choice_id;
 
 	IF (constructionstage = lastallowed) THEN NULL; --Valid. Ignore. 
-	ELSIF (constructionstage < lastallowed THEN	
+	ELSIF (constructionstage < lastallowed) THEN	
 		RAISE e_optionstage_beyond_threshold;
 	ELSIF (constructionstage - 1) = lastallowed THEN NULL; -- Valid. Ignore. 
 	ELSIF (constructionstage - 1) > lastallowed THEN
