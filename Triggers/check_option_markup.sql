@@ -1,6 +1,7 @@
 CREATE OR REPLACE TRIGGER stage_selected_option_markup
 BEFORE INSERT OR UPDATE ON selected_stage_option
 FOR EACH ROW
+FOLLOWS selected_stage_option_check
 DECLARE
 	constructionstage construction_project_stage.stage_id%TYPE;
 	lastallowed option_choice.last_allowed_stage_id%TYPE;
