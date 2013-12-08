@@ -1,11 +1,9 @@
-set serveroutput on;
 CREATE OR REPLACE TRIGGER selected_stage_option_check
 BEFORE INSERT OR UPDATE ON SELECTED_STAGE_OPTION
 FOR EACH ROW
 DECLARE
 	constructionstage construction_project_stage.stage_id%TYPE;
 	lastallowed option_choice.last_allowed_stage_id%TYPE;
-	e_optionstage_beyond_threshold EXCEPTION;
 BEGIN
 	SELECT stage_id INTO constructionstage FROM construction_project_stage
 		WHERE construction_project_stage_id = :NEW.construction_project_stage_id;
@@ -15,10 +13,10 @@ BEGIN
 
 	IF (constructionstage = lastallowed) THEN NULL; --Valid. Ignore. 
 	ELSIF (constructionstage < lastallowed) THEN	
-		RAISE e_optionstage_beyond_threshold;
+		raise_application_error(-20001, 'Option is beyond current construction project stage.');
 	ELSIF (constructionstage - 1) = lastallowed THEN NULL; -- Valid. Ignore. 
 	ELSIF (constructionstage - 1) > lastallowed THEN
-		RAISE e_optionstage_beyond_threshold;
+		raise_application_error(-20001, 'Option is too far behind current construction project stage.');
 	ELSE
 		NULL;
 	END IF;
