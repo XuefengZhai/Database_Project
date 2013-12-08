@@ -1213,41 +1213,6 @@ ALTER TABLE TASK
 ;
 
 
-
--- Oracle SQL Developer Data Modeler Summary Report: 
--- 
--- CREATE TABLE                            35
--- CREATE INDEX                             0
--- ALTER TABLE                             82
--- CREATE VIEW                              0
--- CREATE PACKAGE                           0
--- CREATE PACKAGE BODY                      0
--- CREATE PROCEDURE                         0
--- CREATE FUNCTION                          0
--- CREATE TRIGGER                           0
--- ALTER TRIGGER                            0
--- CREATE STRUCTURED TYPE                   0
--- CREATE COLLECTION TYPE                   0
--- CREATE CLUSTER                           0
--- CREATE CONTEXT                           0
--- CREATE DATABASE                          0
--- CREATE DIMENSION                         0
--- CREATE DIRECTORY                         0
--- CREATE DISK GROUP                        0
--- CREATE ROLE                              0
--- CREATE ROLLBACK SEGMENT                  0
--- CREATE SEQUENCE                          0
--- CREATE MATERIALIZED VIEW                 0
--- CREATE SYNONYM                           0
--- CREATE TABLESPACE                        0
--- CREATE USER                              0
--- 
--- DROP TABLESPACE                          0
--- DROP DATABASE                            0
--- 
--- ERRORS                                   0
--- WARNINGS                                 0
-
 /*Table created for JOB*/
 CREATE TABLE CONSTRUCTION_END_TODAY 
 ( 
@@ -1260,11 +1225,10 @@ CREATE TABLE CONSTRUCTION_END_TODAY
 );
 
 --Views
+DROP VIEW view_unfinishing;
+DROP VIEW view_emptylot;
 
 --1. Customer information of all the unfinished houses
-
-
---set the format??
 --Assume that if the construction is not finished, the end_date is NULL.
 CREATE OR REPLACE VIEW view_unfinishing AS
 	SELECT h.house_id, con.contract_id, c.customer_id, 
@@ -1279,8 +1243,6 @@ CREATE OR REPLACE VIEW view_unfinishing AS
 	AND con.is_terminated like 'N';
 
 --2. All empty lot
-
---set the format?!
 --Assume that if a lot is empty then there is no house_id assigned to the lot.
 CREATE OR REPLACE VIEW view_emptylot AS
 	SELECT l.lot_id, l.latitude, l.longitude, l.subdivision_id, s.name
@@ -1760,3 +1722,73 @@ BEGIN
 END;
 /
 
+CREATE OR REPLACE TRIGGER selected_stage_option_check
+BEFORE INSERT OR UPDATE ON selected_stage_option
+FOR EACH ROW
+DECLARE
+	constructionstage construction_project_stage.stage_id%TYPE;
+	lastallowed option_choice.last_allowed_stage_id%TYPE;
+	e_optionstage_above_threshold EXCEPTION;
+	e_optionstage_below_threshold EXCEPTION;
+BEGIN
+	SELECT stage_id INTO constructionstage FROM construction_project_stage
+		WHERE construction_project_stage_id = :NEW.construction_project_stage_id;
+
+	SELECT last_allowed_stage_id INTO lastallowed FROM option_choice
+		WHERE option_choice_id = :NEW.option_choice_id;
+
+	IF (constructionstage = lastallowed) THEN NULL; --Valid. Ignore. 
+	ELSIF (constructionstage < lastallowed) THEN	
+		RAISE e_optionstage_above_threshold;
+	ELSIF (constructionstage - 1) = lastallowed THEN NULL; -- Valid. Ignore. 
+	ELSIF (constructionstage - 1) > lastallowed THEN
+		RAISE e_optionstage_below_threshold;
+	ELSE
+		NULL;
+	END IF;
+EXCEPTION
+	WHEN e_optionstage_above_threshold THEN
+		raise_application_error(-20000, 'Option is beyond current construction project stage.');
+	WHEN e_optionstage_below_threshold THEN
+		raise_application_error(-20000, 'Option is too far below current construction project stage.');
+	WHEN NO_DATA_FOUND THEN
+		DBMS_OUTPUT.PUT_LINE('No house exists for this selection.');
+	WHEN OTHERS THEN
+		DBMS_OUTPUT.PUT_LINE('The PLSQL procedure executed by ' || USER || ' returned an unhandled exception on ' 
+		|| SYSDATE || '.');
+		DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM || '.');
+END;
+/
+
+CREATE OR REPLACE TRIGGER stage_selected_option_markup
+BEFORE INSERT OR UPDATE ON selected_stage_option
+FOR EACH ROW
+FOLLOWS selected_stage_option_check
+DECLARE
+	constructionstage construction_project_stage.stage_id%TYPE;
+	lastallowed option_choice.last_allowed_stage_id%TYPE;
+	optionprice option_choice.price%TYPE;
+BEGIN
+	SELECT stage_id INTO constructionstage FROM construction_project_stage
+		WHERE construction_project_stage_id = :NEW.construction_project_stage_id;
+
+	SELECT last_allowed_stage_id INTO lastallowed FROM option_choice
+		WHERE option_choice_id = :NEW.option_choice_id;
+		
+	SELECT price INTO optionprice FROM option_choice
+		WHERE option_choice_id = :NEW.option_choice_id;
+
+	IF (constructionstage - 1) = lastallowed THEN
+		:NEW.customer_price := optionprice + (optionprice * 0.15);
+	ELSE
+		:NEW.customer_price := optionprice;	
+	END IF;
+EXCEPTION
+	WHEN NO_DATA_FOUND THEN
+		DBMS_OUTPUT.PUT_LINE('No house exists for this selection.');
+	WHEN OTHERS THEN
+		DBMS_OUTPUT.PUT_LINE('The PLSQL procedure executed by ' || USER || ' returned an unhandled exception on ' 
+		|| SYSDATE || '.');
+		DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM || '.');
+END;
+/

@@ -406,11 +406,19 @@ insert into stage(stage_number, description)
 delete from option_choice;
 insert into option_choice(option_category, description, price, last_allowed_stage_id)
 	values ('Fixture', 'Nickel-finish bathroom fixtures', 456.67,
-	(select stage_id from stage where stage_number = '7'));
+	(select stage_id from stage where stage_number = '4'));
 
 insert into option_choice(option_category, description, price, last_allowed_stage_id)
 	values ('Wall Texture', 'Plaster art', 4356.43, 
 	(select stage_id from stage where stage_number = '3'));
+	
+insert into option_choice(option_category, description, price, last_allowed_stage_id)
+	values ('Fixture', 'Nickel-finish kitchen fixtures', 356.67,
+	(select stage_id from stage where stage_number = '5'));
+	
+insert into option_choice(option_category, description, price, last_allowed_stage_id)
+	values ('Wall Texture', 'Stucco', 25000.00, 
+	(select stage_id from stage where stage_number = '7'));
 
 
 delete from construction_project_stage;
@@ -541,10 +549,6 @@ insert into construction_project(start_date, estimated_end_date, end_date, proje
 		(select e.employee_id from project_manager pm, employee e where first_name like 'Jim' and last_name like 'Roberts'),
 		(select crew_id from crew where crew_manager_employee_id = (select employee_id from employee where first_name like 'James' and last_name like 'Smiley')),
 		(select house_id from lot where street like '122 W. North Street'));
-
-insert into option_choice(option_category, description, price, last_allowed_stage_id)
-	values ('Fixture', 'Nickel-finish kitchen fixtures', 356.67,
-	(select stage_id from stage where stage_number = '7'));
 
 insert into construction_project_stage(start_date, estimated_end_date, end_date, construction_project_id, stage_id)
 	values (TO_DATE('05-FEB-11'), TO_DATE('15-FEB-11'), TO_DATE('15-FEB-11'),
