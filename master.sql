@@ -1259,6 +1259,36 @@ CREATE TABLE CONSTRUCTION_END_TODAY
   house_id NUMBER  NOT NULL 
 );
 
+--Views
+
+--1. Customer information of all the unfinished houses
+
+
+--set the format??
+--Assume that if the construction is not finished, the end_date is NULL.
+CREATE OR REPLACE VIEW view_unfinishing AS
+	SELECT h.house_id, con.contract_id, c.customer_id, 
+				 c.first_name AS FN, c.last_name AS LN, c.phone_number AS PhoneNo,
+				 cp.estimated_end_date AS Estimated_End_Date
+	FROM construction_project cp
+	LEFT JOIN house h on h.house_id = cp.house_id
+	LEFT JOIN contract con on cp.house_id = con.house_id
+	LEFT JOIN customer_contract cc on con.contract_id = cc.contract_id
+	LEFT JOIN Customer c on cc.customer_id = c.customer_id
+	WHERE cp.end_date is NULL
+	AND con.is_terminated like 'N';
+
+--2. All empty lot
+
+--set the format?!
+--Assume that if a lot is empty then there is no house_id assigned to the lot.
+CREATE OR REPLACE VIEW view_emptylot AS
+	SELECT l.lot_id, l.latitude, l.longitude, l.subdivision_id, s.name
+	FROM Lot l
+	LEFT JOIN Subdivision s on l.subdivision_id = s.subdivision_id
+	WHERE house_id is NULL;
+
+
 --Add the Sequences
 --Drop the Sequences
 drop SEQUENCE APPLICATION_USER_seq;
