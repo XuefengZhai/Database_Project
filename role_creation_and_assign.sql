@@ -24,7 +24,7 @@ GRANT select on subdivision_allowable_style to sales_agent;
 GRANT select on style to sales_agent;
 GRANT select on style_elevation to sales_agent;
 GRANT select on elevation to sales_agent;
-GRANT execute on list_sales; to sales_agent;
+GRANT execute on list_sales to sales_agent;
 
 DROP ROLE project_manager;
 CREATE ROLE project_manager;
