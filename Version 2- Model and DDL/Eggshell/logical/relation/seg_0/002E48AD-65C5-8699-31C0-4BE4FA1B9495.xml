@@ -8,6 +8,7 @@
 </engineerTo>
 <identifying>false</identifying>
 <nameOnSource>consists of</nameOnSource>
+<nameOnTarget>belongs to</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
