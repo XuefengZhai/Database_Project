@@ -24,6 +24,7 @@ GRANT select on subdivision_allowable_style to sales_agent;
 GRANT select on style to sales_agent;
 GRANT select on style_elevation to sales_agent;
 GRANT select on elevation to sales_agent;
+GRANT execute on list_sales; to sales_agent;
 
 DROP ROLE project_manager;
 CREATE ROLE project_manager;
@@ -45,6 +46,7 @@ GRANT select on option_choice to project_manager;
 GRANT select on floor to project_manager;
 GRANT select on room_on_a_floor to project_manager;
 GRANT select on room to project_manager;
+GRANT execute on display_home_status to project_manager;
 
 DROP USER sa_example;
 CREATE USER sa_example IDENTIFIED BY sa_example_pw
