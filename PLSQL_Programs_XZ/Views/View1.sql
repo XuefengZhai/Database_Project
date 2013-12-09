@@ -5,7 +5,7 @@
 
 --set the format??
 --Assume that if the construction is not finished, the end_date is NULL.
-CREATE OR REPLACE VIEW view_unfinishing AS
+CREATE OR REPLACE VIEW view_unfinished_houses AS
 	SELECT h.house_id, con.contract_id, c.customer_id, 
 				 c.first_name AS FN, c.last_name AS LN, c.phone_number AS PhoneNo,
 				 cp.estimated_end_date AS Estimated_End_Date
