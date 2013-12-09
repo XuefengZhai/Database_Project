@@ -1793,7 +1793,6 @@ EXCEPTION
 END;
 /
 
-<<<<<<< HEAD
 
 --Function: The number of employees work for Eggshell
 
@@ -2089,14 +2088,13 @@ CREATE OR REPLACE VIEW view_unfinished_houses AS
 
 --2. All empty lot
 
---set the format?!
 --Assume that if a lot is empty then there is no house_id assigned to the lot.
 CREATE OR REPLACE VIEW view_emptylot AS
 	SELECT l.lot_id, l.latitude, l.longitude, l.subdivision_id, s.name
 	FROM Lot l
 	LEFT JOIN Subdivision s on l.subdivision_id = s.subdivision_id
 	WHERE house_id is NULL;
-=======
+
 --CREATE INDEXES
 DROP INDEX ind_contract_cust_id;
 DROP INDEX ind_contract_cntrct_id;
@@ -2107,4 +2105,3 @@ CREATE INDEX ind_contract_cust_id on CUSTOMER_CONTRACT (customer_id);
 CREATE INDEX ind_contract_cntrct_id on CUSTOMER_CONTRACT (contract_id); 
 CREATE INDEX ind_prj_house_id on CONSTRUCTION_PROJECT (house_id); 
 CREATE INDEX ind_prj_pm_id on CONSTRUCTION_PROJECT (project_manager_employee_id); 
->>>>>>> c76d973fef2c2035dfc5899827c26e4634da1581
