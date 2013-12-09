@@ -1,11 +1,11 @@
 --The number of employees work for Eggshell
 
-DECLARE
+CREATE OR REPLACE PROCEDURE employee_number
+AS
 	employee_no NUMBER;
 BEGIN
 	employee_no := cal_employee_no();
-	DBMS_OUTPUT.PUT_LINE('The number of the employee work for eggshell is: '||employee_no
-											 '.');
+	DBMS_OUTPUT.PUT_LINE('The number of the employee work for eggshell is: '||employee_no||'.');
 END;
 /
 
@@ -41,6 +41,7 @@ EXCEPTION
 
 END;
 /
+
 
 	
 
