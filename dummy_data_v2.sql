@@ -379,8 +379,8 @@ insert into sale(escrow_paid, financing_option, house_id, employee_id)
 
 
 delete from construction_project;
-insert into construction_project(start_date, estimated_end_date, project_manager_employee_id, crew_id, house_id)
-	values (TO_DATE('05-JUN-13'), TO_DATE('05-JUN-14'), 
+insert into construction_project(start_date, estimated_end_date, end_date, project_manager_employee_id, crew_id, house_id)
+	values (TO_DATE('05-JUN-13'), TO_DATE('05-JUN-14'), sysdate
 		(select e.employee_id from project_manager pm, employee e where first_name like 'Jim' and last_name like 'Roberts'),
 		(select crew_id from crew where crew_manager_employee_id = (select employee_id from employee where first_name like 'James' and last_name like 'Smiley')),
 		(select house_id from lot where street like '121 W. North Street'));
