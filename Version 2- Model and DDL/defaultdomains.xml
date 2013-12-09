@@ -22,7 +22,7 @@
          <dataTypeSize>1</dataTypeSize>
          <defaultValue>N</defaultValue>
          <fileName>defaultdomains</fileName>
-         <logicalDatatype>LOGDT024</logicalDatatype>
+         <logicalDatatype>LOGDT025</logicalDatatype>
          <listOfValues>
             <valueDef value="N" description="No"/>
             <valueDef value="Y" description="Yes"/>
@@ -159,15 +159,6 @@
          <fileName>defaultdomains</fileName>
          <logicalDatatype>LOGDT010</logicalDatatype>
       </Domain>
-      <Domain class="oracle.dbtools.crest.model.design.Domain" name="escrow_paid" id="7A94C4D1-93DE-2737-27D5-94A7F3D7279B">
-         <createdBy>Sonal</createdBy>
-         <createdTime>2013-11-27 21:16:57 UTC</createdTime>
-         <ownerDesignName>System</ownerDesignName>
-         <importedID>7A94C4D1-93DE-2737-27D5-94A7F3D7279B</importedID>
-         <avTSortOrder>0</avTSortOrder>
-         <fileName>defaultdomains</fileName>
-         <logicalDatatype>LOGDT006</logicalDatatype>
-      </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="num_windows" id="7B49A09F-469C-976D-A2C3-80360DE26C9C">
          <createdBy>Sonal</createdBy>
          <createdTime>2013-11-27 21:16:57 UTC</createdTime>
@@ -202,7 +193,7 @@
          <ownerDesignName>System</ownerDesignName>
          <importedID>86AA045B-36F3-1583-4152-E165A08977B7</importedID>
          <avTSortOrder>0</avTSortOrder>
-         <dataTypeSize>25</dataTypeSize>
+         <dataTypeSize>50</dataTypeSize>
          <fileName>defaultdomains</fileName>
          <logicalDatatype>LOGDT024</logicalDatatype>
       </Domain>
@@ -336,7 +327,7 @@
          <fileName>defaultdomains</fileName>
          <logicalDatatype>LOGDT024</logicalDatatype>
       </Domain>
-      <Domain class="oracle.dbtools.crest.model.design.Domain" name="option_type" id="CFE589A4-C8F9-1DE2-BCBC-C7C1F1FD842B">
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="option_category" id="CFE589A4-C8F9-1DE2-BCBC-C7C1F1FD842B">
          <createdBy>Sonal</createdBy>
          <createdTime>2013-11-27 21:16:57 UTC</createdTime>
          <ownerDesignName>System</ownerDesignName>
@@ -349,8 +340,11 @@
             <valueDef value="Decoration" description="Decoration"/>
             <valueDef value="Electrical" description="Electrical"/>
             <valueDef value="Exterior" description="Exterior"/>
+            <valueDef value="Fixture" description="Fixture"/>
+            <valueDef value="Flooring" description="Flooring"/>
             <valueDef value="Interior" description="Interior"/>
             <valueDef value="Plumbing" description="Plumbing"/>
+            <valueDef value="Wall Texture" description="Wall Texture"/>
          </listOfValues>
       </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="stage_number" id="D2545A4D-3262-B77A-2A7C-63A345F86857">
@@ -383,6 +377,7 @@
          <importedID>DF80E0FA-38E9-25E6-C1DE-B17E2FA05E3F</importedID>
          <avTSortOrder>0</avTSortOrder>
          <dataTypeSize>15</dataTypeSize>
+         <defaultValue>standard</defaultValue>
          <fileName>defaultdomains</fileName>
          <logicalDatatype>LOGDT024</logicalDatatype>
          <listOfValues>
@@ -408,7 +403,7 @@
          <dataTypeSize>1</dataTypeSize>
          <defaultValue>Y</defaultValue>
          <fileName>defaultdomains</fileName>
-         <logicalDatatype>LOGDT024</logicalDatatype>
+         <logicalDatatype>LOGDT025</logicalDatatype>
          <listOfValues>
             <valueDef value="N" description="No"/>
             <valueDef value="Y" description="Yes"/>
@@ -426,8 +421,8 @@
          <listOfValues>
             <valueDef value="Attic" description="Attic"/>
             <valueDef value="Basement" description="Basement"/>
-            <valueDef value="Bath Room" description="Bath Room"/>
-            <valueDef value="Bed Room" description="Bed Room"/>
+            <valueDef value="Bathroom" description="Bathroom"/>
+            <valueDef value="Bedroom" description="Bedroom"/>
             <valueDef value="Den" description="Den"/>
             <valueDef value="Dining Room" description="Dining Room"/>
             <valueDef value="Foyer" description="Foyer"/>
