@@ -2696,5 +2696,7 @@ DEFAULT TABLESPACE users
 TEMPORARY TABLESPACE temp;
 GRANT project_manager TO pm_example;
 
+COMMIT; 
+
 
 
