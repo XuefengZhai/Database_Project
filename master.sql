@@ -1792,3 +1792,306 @@ EXCEPTION
 		DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM || '.');
 END;
 /
+
+
+--Function: The number of employees work for Eggshell
+
+CREATE OR REPLACE PROCEDURE employee_number
+AS
+	employee_no NUMBER;
+BEGIN
+	employee_no := cal_employee_no();
+	DBMS_OUTPUT.PUT_LINE('The number of the employee work for eggshell is: '||employee_no||'.');
+END;
+/
+
+CREATE OR REPLACE FUNCTION cal_employee_no
+RETURN NUMBER
+AS
+	EM employee.employee_id%TYPE;
+	employee_no NUMBER;
+	
+	CURSOR c1 is
+	SELECT employee_id FROM employee;
+BEGIN
+	employee_no := 0;
+	
+	Open c1;
+	LOOP
+		FETCH c1 INTO EM;
+		EXIT WHEN c1%NOTFOUND;
+		employee_no := employee_no + 1;
+	END LOOP;
+	Close c1;
+	RETURN employee_no;
+
+EXCEPTION
+	WHEN INVALID_CURSOR THEN
+		DBMS_OUTPUT.PUT_LINE ('The cursor is invalid.');
+	WHEN CURSOR_ALREADY_OPEN THEN
+		DBMS_OUTPUT.PUT_LINE ('The cursor is already opened.');
+	WHEN OTHERS THEN
+		 DBMS_OUTPUT.PUT_LINE ('The PLSQL function executed by '||USER||
+		 	' returned and unhandled exception on '||SYSDATE||'.');
+
+
+END;
+/
+
+--Procedure for job
+
+CREATE OR REPLACE PROCEDURE Update_Construction_End_Today
+
+
+AS
+CP CONSTRUCTION_END_TODAY%ROWTYPE;
+
+CURSOR c1 is
+	SELECT 
+	construction_project_id,
+	start_date,
+	end_date,
+	project_manager_employee_id,
+	crew_id,
+	house_id 
+	FROM CONSTRUCTION_PROJECT
+	WHERE TO_CHAR(CONSTRUCTION_PROJECT.end_date,'DD-MM-YY') = TO_CHAR(SYSDATE,'DD-MM-YY');
+
+BEGIN
+	OPEN c1;
+	LOOP
+		FETCH c1 INTO CP;
+		EXIT WHEN c1%NOTFOUND;
+		
+		INSERT INTO CONSTRUCTION_END_TODAY(construction_project_id, start_date, end_date, project_manager_employee_id,
+			crew_id, house_id)
+		Values(CP.construction_project_id,
+			   CP.start_date,
+			   CP.end_date,
+			   CP.project_manager_employee_id,
+			   CP.crew_id,
+			   CP.house_id);
+
+	END LOOP;
+	Close c1;
+	COMMIT;
+
+EXCEPTION
+	WHEN NO_DATA_FOUND THEN
+			DBMS_OUTPUT.PUT_LINE ('No such employee.');
+	WHEN INVALID_CURSOR THEN
+		DBMS_OUTPUT.PUT_LINE ('The cursor is invalid.');
+	WHEN CURSOR_ALREADY_OPEN THEN
+		DBMS_OUTPUT.PUT_LINE ('The cursor is already opened.');
+	WHEN OTHERS THEN
+		 DBMS_OUTPUT.PUT_LINE ('The PLSQL procedure executed by '||USER||
+		 	' returned and unhandled exception on '||SYSDATE||'.');
+
+
+END;
+/
+
+-- This job refresh the consturction_end_today table everyday
+--	to see which construction project should end today.
+
+BEGIN
+DBMS_SCHEDULER.CREATE_JOB
+(
+	job_name 			=> 'find_construction_end_today',
+	job_type			=> 'STORED_PROCEDURE',
+	job_action 			=> 'Update_Construction_End_Today',
+	repeat_interval 	=> 'FREQ=SECONDLY; INTERVAL=30',
+	comments 			=> 'Update Construction_End_Today table'
+);
+
+END;
+/
+
+--List all the sales of a sales agent
+
+-- Create the package header 
+create or replace package list_sales 
+AS 
+  procedure sales (em_id IN employee.employee_id%TYPE);
+END list_sales;
+/
+
+
+-- This is a package
+--Create the package bodies
+create or replace package body list_sales 
+AS
+
+  procedure sales (em_id IN employee.employee_id%TYPE)
+  AS
+  	FN employee.first_name%TYPE;
+  	LN employee.last_name%TYPE;
+  	SR sale%ROWTYPE;
+  	
+  	CURSOR c1 is
+	  SELECT * FROM sale
+	  where sale.employee_id = em_id;
+
+  BEGIN
+  	select employee.first_name, employee.last_name
+  	into FN, LN
+  	from employee
+  	where employee.employee_id = em_id;
+  	DBMS_OUTPUT.PUT_LINE('The employee No.' ||em_id||' '||FN||' '||LN||
+  										 'has the following sales:' );
+  	DBMS_OUTPUT.NEW_LINE;
+  	
+		OPEN c1;
+		LOOP
+			FETCH c1 INTO SR;
+			EXIT WHEN c1%NOTFOUND;
+			DBMS_OUTPUT.PUT_LINE('The sale No.'||SR.sale_id||' of house No.'||SR.house_id||'. ');
+			DBMS_OUTPUT.NEW_LINE;
+		END LOOP;
+		Close c1;
+
+	EXCEPTION
+	
+	WHEN NO_DATA_FOUND THEN
+			DBMS_OUTPUT.PUT_LINE ('No such employee.');
+		WHEN INVALID_CURSOR THEN
+			DBMS_OUTPUT.PUT_LINE ('The employee has no sales.');
+		WHEN CURSOR_ALREADY_OPEN THEN
+			DBMS_OUTPUT.PUT_LINE ('The cursor is already opened.');
+		WHEN OTHERS THEN
+		 	DBMS_OUTPUT.PUT_LINE ('The PLSQL procedure executed by '||USER||
+		 	' returned and unhandled exception on '||SYSDATE||'.');
+	END;
+	
+END list_sales;
+/ 
+
+--Report1
+
+--1.Construction status of a given house
+
+CREATE OR REPLACE PROCEDURE display_home_status
+	( house_no IN house.house_id%TYPE
+	)
+AS
+
+FN Customer.first_name%TYPE;
+LN Customer.last_name%TYPE;
+HN Contract.house_id%TYPE;
+SD Construction_project.start_date%TYPE;
+ED Construction_project.end_date%TYPE;
+EsD Construction_project.estimated_end_date%TYPE;
+
+BEGIN
+	SELECT Customer.first_name, Customer.last_name, Contract.house_id, 
+				 Construction_project.start_date, Construction_project.end_date,
+				 Construction_project.estimated_end_date
+  	INTO FN, LN, HN, SD, ED, EsD
+	FROM Customer LEFT JOIN
+	Customer_contract on Customer.customer_id = Customer_contract.customer_id LEFT JOIN
+	Contract on Customer_contract.contract_id = Contract.contract_id LEFT JOIN
+	House on Contract.house_id = House.house_id LEFT JOIN
+	Construction_project on House.house_id = Construction_project.house_id
+	WHERE House.house_id = house_no
+	and contract.is_terminated = 'N';
+	
+	IF ED is NULL THEN
+		 DBMS_OUTPUT.PUT_LINE('The construction project of customer: '||FN||' '||LN|| 
+		 											  ' for house No.'||HN||' has not finished yet. '
+		 											  ||'It started on '||SD||
+		 										    '. The estimated finish date is: '||EsD||'.');
+	ELSE
+		DBMS_OUTPUT.PUT_LINE('The construction project of customer: '||FN||' '||LN|| 
+		 											  ' for house No.'||HN||' has finished! '
+		 											  ||'It started on '||SD|| 
+		 											  '. It finished on '||ED||'.');
+	
+	END IF;
+EXCEPTION
+	WHEN NO_DATA_FOUND THEN
+			DBMS_OUTPUT.PUT_LINE ('No such house.');
+	WHEN OTHERS THEN
+		 DBMS_OUTPUT.PUT_LINE ('The PLSQL procedure executed by '||USER||
+		 	' returned and unhandled exception on '||SYSDATE||'.');
+
+END;
+/
+
+--Report2
+--2.Which project manager works on which construction project. (Assignment)
+
+
+
+CREATE OR REPLACE PROCEDURE PM_Assignment
+AS
+CP construction_project%ROWTYPE;
+FN employee.first_name%TYPE;
+LN employee.last_name%TYPE;
+
+CURSOR c1 is
+	SELECT * FROM CONSTRUCTION_PROJECT;
+
+BEGIN
+	OPEN c1;
+	LOOP
+		FETCH c1 INTO CP;
+		EXIT WHEN c1%NOTFOUND;
+		
+		SELECT e.first_name, e.last_name
+		INTO FN,LN
+		FROM employee e
+		WHERE e.employee_id = CP.project_manager_employee_id;
+		
+		DBMS_OUTPUT.PUT_LINE('The employee No.'||CP.project_manager_employee_id||
+										' Name:'||FN||' '||LN||
+										' is working on project No.'||CP.construction_project_id||
+										'.');
+		DBMS_OUTPUT.NEW_LINE;
+	END LOOP;
+	Close c1;
+
+EXCEPTION
+	WHEN NO_DATA_FOUND THEN
+			DBMS_OUTPUT.PUT_LINE ('No such employee.');
+	WHEN INVALID_CURSOR THEN
+		DBMS_OUTPUT.PUT_LINE ('The cursor is invalid.');
+	WHEN CURSOR_ALREADY_OPEN THEN
+		DBMS_OUTPUT.PUT_LINE ('The cursor is already opened.');
+	WHEN OTHERS THEN
+		 DBMS_OUTPUT.PUT_LINE ('The PLSQL procedure executed by '||USER||
+		 	' returned and unhandled exception on '||SYSDATE||'.');
+
+
+END;
+/
+
+--View1
+
+--1. Customer information of all the unfinished houses
+
+
+--set the format??
+--Assume that if the construction is not finished, the end_date is NULL.
+CREATE OR REPLACE VIEW view_unfinished_houses AS
+	SELECT h.house_id, con.contract_id, c.customer_id, 
+				 c.first_name AS FN, c.last_name AS LN, c.phone_number AS PhoneNo,
+				 cp.estimated_end_date AS Estimated_End_Date
+	FROM construction_project cp
+	LEFT JOIN house h on h.house_id = cp.house_id
+	LEFT JOIN contract con on cp.house_id = con.house_id
+	LEFT JOIN customer_contract cc on con.contract_id = cc.contract_id
+	LEFT JOIN Customer c on cc.customer_id = c.customer_id
+	WHERE cp.end_date is NULL
+	AND con.is_terminated like 'N';
+
+--View2
+
+--2. All empty lot
+
+--set the format?!
+--Assume that if a lot is empty then there is no house_id assigned to the lot.
+CREATE OR REPLACE VIEW view_emptylot AS
+	SELECT l.lot_id, l.latitude, l.longitude, l.subdivision_id, s.name
+	FROM Lot l
+	LEFT JOIN Subdivision s on l.subdivision_id = s.subdivision_id
+	WHERE house_id is NULL;
