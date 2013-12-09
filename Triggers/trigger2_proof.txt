@@ -1,0 +1,2 @@
+INSERT INTO selected_stage_option (selected_date, option_choice_id, construction_project_stage_id)
+VALUES(sysdate, 1, 9); 
