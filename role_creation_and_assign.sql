@@ -1,5 +1,6 @@
 DROP ROLE sales_agent;
 CREATE ROLE sales_agent;
+GRANT CONNECT, CREATE SESSION, RESOURCE to sales_agent;
 GRANT select, update, insert, delete on customer to sales_agent;
 GRANT select, update, insert, delete on house to sales_agent;
 GRANT select, update, insert, delete on contract to sales_agent;
@@ -26,6 +27,7 @@ GRANT select on elevation to sales_agent;
 
 DROP ROLE project_manager;
 CREATE ROLE project_manager;
+GRANT CONNECT, CREATE SESSION, RESOURCE to project_manager;
 GRANT select, update, insert, delete on house to project_manager;
 GRANT select, update, insert, delete on construction_project to project_manager;
 GRANT select, update, insert, delete on construction_project_stage to project_manager;
@@ -48,14 +50,12 @@ DROP USER sa_example;
 CREATE USER sa_example IDENTIFIED BY sa_example_pw
 DEFAULT TABLESPACE users
 TEMPORARY TABLESPACE temp;
-GRANT CREATE SESSION, RESOURCE to sa_example;
 GRANT sales_agent TO sa_example;
 
 DROP USER pm_example;
 CREATE USER pm_example IDENTIFIED BY pm_example_pw
 DEFAULT TABLESPACE users
 TEMPORARY TABLESPACE temp;
-GRANT CREATE SESSION, RESOURCE to pm_example;
 GRANT project_manager TO pm_example;
 
 
